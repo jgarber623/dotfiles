@@ -1,0 +1,12 @@
+# Shortcut to this dotfiles path is $ZSH
+export ZSH=$HOME/.dotfiles
+
+# Source every .zsh file in this repo
+for config_file ($ZSH/**/*.zsh) source $config_file
+
+# Use .localrc for settings specific to one system
+[[ -f ~/.localrc ]] && . ~/.localrc
+
+# Initialize autocomplete
+autoload -U compinit
+compinit
