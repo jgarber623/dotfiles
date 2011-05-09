@@ -1,0 +1,3 @@
+[user]
+	name = <%= print( "Name: " ); STDOUT.flush; STDIN.gets.chomp %>
+	email = <%= print( "Email: " ); STDOUT.flush; STDIN.gets.chomp %>
