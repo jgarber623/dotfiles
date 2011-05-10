@@ -37,7 +37,7 @@ task :install do
         when "o"
           replace_file( file, filename, target )
         else
-          puts "Skipping ~/.#{filename}"
+          puts "Skipping ~/.#{filename}."
       end
     else
       link_file( file, filename, target )
@@ -45,7 +45,7 @@ task :install do
   end
 end
 
-desc "Removes dotfiles symlinks from user's home directory"
+desc "Removes dotfiles symlinks from user's home directory."
 task :uninstall do
   dotfiles.each do |file|
     link = File.expand_path( "~/.#{file}" )
