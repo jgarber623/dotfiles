@@ -1,13 +1,32 @@
 require "rake"
 require "erb"
 
+def dotfiles
+  Dir.glob( "*/**{.symlink}" )
+end
+
+def link_file( file, filename, target )
+  if file =~ /.erb.symlink$/
+    puts "Generating ~/.#{filename}"
+    File.open( target, "w" ) do |new_file|
+      new_file.write ERB.new( File.read( file ) ).result( binding )
+    end
+  else
+    puts "Linking ~/.#{filename}"
+    system %Q{ln -fs "$PWD/#{file}" "#{target}"}
+  end
+end
+
+def replace_file( file, filename, target )
+  system %Q{rm -rf "#{target}"}
+  link_file( file, filename, target )
+end
+
 task :default => "install"
 
-desc "Install dot files into user's home directory."
+desc "Installs dotfiles symlinks into user's home directory."
 task :install do
-  files = Dir.glob( "*/**{.symlink}" )
-  
-  files.each do |file|
+  dotfiles.each do |file|
     filename = file.split( "/" ).last.split( "." ).first
     target = "#{ENV["HOME"]}/.#{filename}"
     
@@ -26,19 +45,12 @@ task :install do
   end
 end
 
-def replace_file( file, filename, target )
-  system %Q{rm -rf "#{target}"}
-  link_file( file, filename, target )
-end
-
-def link_file( file, filename, target )
-  if file =~ /.erb.symlink$/
-    puts "Generating ~/.#{filename}"
-    File.open( target, "w" ) do |new_file|
-      new_file.write ERB.new( File.read( file ) ).result( binding )
+desc "Removes dotfiles symlinks from user's home directory"
+task :uninstall do
+  dotfiles.each do |file|
+    link = File.expand_path( "~/.#{file}" )
+    if File.symlink?( link )
+      system %Q{rm "#{link}"}
     end
-  else
-    puts "Linking ~/.#{filename}"
-    system %Q{ln -fs "$PWD/#{file}" "#{target}"}
   end
 end
