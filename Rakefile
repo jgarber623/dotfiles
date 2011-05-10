@@ -11,17 +11,13 @@ task :install do
     target = "#{ENV["HOME"]}/.#{filename}"
     
     if File.exists?( target ) || File.symlink?( target )
-      if File.identical?( file, target )
-        puts "#{filename} is identical to #{target}"
-      else
-        puts "~/.#{filename} already exists! Do you want to [o]verwrite or [s]kip this file?"
-        
-        case STDIN.gets.chomp
-          when "o"
-            replace_file( file, filename, target )
-          else
-            puts "Skipping ~/.#{filename}"
-        end
+      puts "~/.#{filename} already exists! Do you want to [o]verwrite or [s]kip this file?"
+      
+      case STDIN.gets.chomp
+        when "o"
+          replace_file( file, filename, target )
+        else
+          puts "Skipping ~/.#{filename}"
       end
     else
       link_file( file, filename, target )
