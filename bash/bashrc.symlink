@@ -1,0 +1,37 @@
+# Source files
+source ~/.dotfiles/bash/aliases.bash
+source ~/.dotfiles/bash/config.bash
+source ~/.dotfiles/ruby/rvm.zsh
+
+
+# Use .localrc for settings specific to one system
+if [ -f ~/.localrc ]; then
+  source ~/.localrc
+fi
+
+
+# Set git autocompletion and PS1 integration
+if [ -f /usr/local/Cellar/git/1.7.3.1/etc/bash_completion.d/git-completion.bash ]; then
+  . /usr/local/Cellar/git/1.7.3.1/etc/bash_completion.d/git-completion.bash
+fi
+
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
+
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
+
+
+# Helpful functions
+function deploy() {
+  sh "/Users/jason/Dropbox/Library/Scripts/deploy/$1.sh"
+}
+
+function fed() {
+  sh "/Users/jason/Dropbox/Library/Scripts/create-front-end-project.sh" $1
+}
+
+function vpn() {
+  osascript "/Users/jason/Dropbox/Library/Scripts/vpn/$1-$2.scpt"
+}
