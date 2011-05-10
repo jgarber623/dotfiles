@@ -41,3 +41,5 @@ def link_file( file, filename, target )
     system %Q{ln -fs "$PWD/#{file}" "#{target}"}
   end
 end
+
+task :default => "install"
