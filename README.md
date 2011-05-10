@@ -3,6 +3,12 @@ This is how I work.
 
 ## Installation
 
+	git clone git://github.com/jgarber623/dotfiles.git ~/.dotfiles
+	cd ~/.dotfiles
+	rake install
+
+The installation rake task will configure symlinks in `~/` that point to the appropriate files in `~/.dotfiles`.
+
 ## Environment
 
 ## Features
