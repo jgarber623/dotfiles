@@ -1,3 +1,3 @@
 vpn() {
-  osascript "~/Dropbox/Library/Scripts/vpn/$1-$2.scpt"
+  osascript "/Users/jason/Dropbox/Library/Scripts/vpn/$1-$2.scpt"
 }
