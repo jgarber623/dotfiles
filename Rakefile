@@ -1,8 +1,9 @@
 require "rake"
 require "erb"
 
-desc "Install dot files into user's home directory."
+task :default => "install"
 
+desc "Install dot files into user's home directory."
 task :install do
   files = Dir.glob( "*/**{.symlink}" )
   
@@ -41,5 +42,3 @@ def link_file( file, filename, target )
     system %Q{ln -fs "$PWD/#{file}" "#{target}"}
   end
 end
-
-task :default => "install"
