@@ -30,18 +30,18 @@ task :install do
 end
 
 def replace_file( file, filename, target )
-  # system %Q{rm -rf "#{target}"}
+  system %Q{rm -rf "#{target}"}
   link_file( file, filename, target )
 end
 
 def link_file( file, filename, target )
   if file =~ /.erb.symlink$/
     puts "Generating ~/.#{filename}"
-    # File.open( target, "w" ) do |new_file|
-    #   new_file.write ERB.new( File.read( file ) ).result( binding )
-    # end
+    File.open( target, "w" ) do |new_file|
+      new_file.write ERB.new( File.read( file ) ).result( binding )
+    end
   else
     puts "Linking ~/.#{filename}"
-    # system %Q{ln -fs "$PWD/#{file}" "#{target}"}
+    system %Q{ln -fs "$PWD/#{file}" "#{target}"}
   end
 end
