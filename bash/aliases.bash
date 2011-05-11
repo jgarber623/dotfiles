@@ -20,8 +20,8 @@ alias status="git status -sb"
 alias tag="git tag"
 
 # MySQL
-alias mysqlstart="mysql.server start"
-alias mysqlstop="mysql.server stop"
+alias mystart="mysql.server start"
+alias mystop="mysql.server stop"
 
 # PostgreSQL
 alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
