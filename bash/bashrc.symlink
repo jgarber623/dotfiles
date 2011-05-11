@@ -25,13 +25,13 @@ fi
 
 # Helpful functions
 function deploy() {
-  sh "/Users/jason/Dropbox/Library/Scripts/deploy/$1.sh"
+  sh "~/Dropbox/Library/Scripts/deploy/$1.sh"
 }
 
 function fed() {
-  sh "/Users/jason/Dropbox/Library/Scripts/create-front-end-project.sh" $1
+  sh "~/Dropbox/Library/Scripts/create-front-end-project.sh" $1
 }
 
 function vpn() {
-  osascript "/Users/jason/Dropbox/Library/Scripts/vpn/$1-$2.scpt"
+  osascript "~/Dropbox/Library/Scripts/vpn/$1-$2.scpt"
 }
