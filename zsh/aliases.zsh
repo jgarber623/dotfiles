@@ -6,3 +6,7 @@ alias dotcd="cd $ZSH"
 alias webstart="sudo apachectl start"
 alias webstop="sudo apachectl stop"
 alias webrestart="sudo apachectl restart"
+
+# MySQL
+alias mystart="mysql.server start"
+alias mystop="mysql.server stop"
