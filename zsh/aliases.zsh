@@ -1,6 +1,7 @@
 # Shortcuts to project files
-alias dotmate="mate $ZSH"
 alias dotcd="cd $ZSH"
+alias dotmate="mate $ZSH"
+alias sysmate="mate ~/Dropbox/Projects/system-configuration"
 
 # Apache
 alias webstart="sudo apachectl start"
