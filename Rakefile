@@ -58,6 +58,17 @@ task :install do
     else
       puts "Skipping Apache configuration."
   end
+  
+  puts "Would you like to switch your shell to zsh?"
+  case STDIN.gets.chomp
+    when "y"
+      system %Q{chsh -s /bin/zsh}
+      
+      puts "You're now using zsh! Be sure to restart your shell for the changes to take effect."
+    else
+      puts "Keeping your current shell."
+    end
+  end
 end
 
 desc "Removes dotfiles symlinks from user's home directory."
