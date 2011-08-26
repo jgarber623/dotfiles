@@ -44,21 +44,6 @@ task :install do
     end
   end
   
-  puts "Would you like to configure Apache at this time? [yn]"
-  case STDIN.gets.chomp
-    when "y"
-      puts "Removing user-specific configuration file."
-      system %Q{sudo rm /private/etc/apache2/users/jason.conf}
-      
-      puts "Symlinking /etc/apache2/httpd.conf and /etc/php.ini."
-      system %Q{sudo ln -fs $PWD/etc/httpd.conf /etc/apache2/httpd.conf}
-      system %Q{sudo ln -fs $PWD/etc/php.ini /etc/php.ini}
-      
-      puts "Apache was successfully configured!"
-    else
-      puts "Skipping Apache configuration."
-  end
-  
   puts "Would you like to switch your shell to zsh?"
   case STDIN.gets.chomp
     when "y"
