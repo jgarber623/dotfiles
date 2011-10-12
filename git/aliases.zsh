@@ -1,4 +1,5 @@
 alias add="git add"
+alias branch="git branch"
 alias clone="git clone"
 alias co="git checkout"
 alias commit="git commit"
