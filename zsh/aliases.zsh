@@ -1,6 +1,7 @@
 # Shortcuts to project files
 alias dotcd="cd $ZSH"
 alias dotmate="mate $ZSH"
+alias syscd="cd ~/Dropbox/Projects/system-configuration"
 alias sysmate="mate ~/Dropbox/Projects/system-configuration"
 
 # Apache

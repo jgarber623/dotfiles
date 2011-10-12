@@ -1,1 +1,6 @@
-alias migrate="rake db:migrate"
+alias dbc="rake db:create"
+alias dbm="rake db:migrate"
+alias dbr="rake db:reset"
+alias dbs="rake db:seed"
+alias rs="rails server"
+alias ss="script/server"
