@@ -1,6 +1,7 @@
 export CC="/usr/bin/gcc-4.2"
 export EDITOR="mate -w"
 export PATH="/usr/local/bin:$PATH"
+export NODE_PATH="/usr/local/lib/node_modules"
 
 fpath=($ZSH/zsh/functions $fpath)
 
