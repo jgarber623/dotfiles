@@ -1,9 +1,3 @@
-# Shortcuts to project files
-alias dotcd="cd $ZSH"
-alias dotmate="mate $ZSH"
-alias syscd="cd ~/Dropbox/Projects/system-configuration"
-alias sysmate="mate ~/Dropbox/Projects/system-configuration"
-
 # Apache
 alias webstart="sudo apachectl start"
 alias webstop="sudo apachectl stop"
@@ -19,3 +13,9 @@ alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 
 # Miscellaneous
 alias ipcopy="ipconfig getifaddr en1 | pbcopy"
+
+# Shortcuts to project files
+alias dotcd="cd $ZSH"
+alias dotmate="mate $ZSH"
+alias syscd="cd ~/Dropbox/Projects/system-configuration"
+alias sysmate="mate ~/Dropbox/Projects/system-configuration"
