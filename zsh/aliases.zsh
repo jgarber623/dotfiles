@@ -6,7 +6,7 @@ alias webrestart="sudo apachectl restart"
 # MySQL
 alias mystart="mysql.server start"
 alias mystop="mysql.server stop"
-alias mystatus="mysql.server status"
+alias mystat="mysql.server status"
 
 # PostgreSQL
 alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
