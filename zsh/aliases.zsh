@@ -1,6 +1,6 @@
 # Apache
-alias webstart="sudo apachectl start"
-alias webstop="sudo apachectl stop"
+alias webstart="sudo apachectl graceful"
+alias webstop="sudo apachectl graceful-stop"
 alias webrestart="sudo apachectl restart"
 
 # MySQL
