@@ -1,0 +1,1 @@
+curl http://placekitten.com/$1/$2 -o kitten-$1x$2.jpg
