@@ -52,7 +52,6 @@ task :install do
       puts "You're now using zsh! Be sure to restart your shell for the changes to take effect."
     else
       puts "Keeping your current shell."
-    end
   end
 end
 
