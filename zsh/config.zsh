@@ -1,6 +1,6 @@
-export CC="/usr/bin/gcc-4.2"
+export CC="/usr/local/bin/gcc-4.2"
 export EDITOR="mate -w"
-export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:$PATH:$HOME/.rvm/bin"
 
 fpath=($ZSH/zsh/functions $fpath)
 
