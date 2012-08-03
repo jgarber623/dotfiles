@@ -1,9 +1,6 @@
 [user]
 	name = <%= print( "Name: " ); STDOUT.flush; STDIN.gets.chomp %>
 	email = <%= print( "Email: " ); STDOUT.flush; STDIN.gets.chomp %>
-[github]
-	user = <%= print( "GitHub Username: " ); STDOUT.flush; STDIN.gets.chomp %>
-	token = <%= print( "GitHub API Token: " ); STDOUT.flush; STDIN.gets.chomp %>
 [branch]  
 	autosetuprebase = always
 [color]
