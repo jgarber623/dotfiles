@@ -44,7 +44,7 @@ task :install do
     end
   end
   
-  puts "Would you like to switch your shell to zsh?"
+  puts "Would you like to switch your shell to zsh? [yn]"
   case STDIN.gets.chomp
     when "y"
       system %Q{chsh -s /bin/zsh}
