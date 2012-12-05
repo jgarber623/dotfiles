@@ -1,3 +1,4 @@
+alias be="bundle exec"
 alias dbc="rake db:create"
 alias dbm="rake db:migrate"
 alias dbr="rake db:reset"
