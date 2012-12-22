@@ -1,8 +1,6 @@
 [user]
 	name = <%= print( "Name: " ); STDOUT.flush; STDIN.gets.chomp %>
 	email = <%= print( "Email: " ); STDOUT.flush; STDIN.gets.chomp %>
-[credential]
-	helper = osxkeychain
 [branch]  
 	autosetuprebase = always
 [color]
@@ -23,5 +21,7 @@
 [core]
 	editor = "subl -w"
 	excludesfile = "~/.gitignore"
+[credential]
+	helper = osxkeychain
 [push]
 	default = simple
