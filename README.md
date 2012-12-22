@@ -2,6 +2,11 @@
 
 This is how I work.
 
+## Requirements ##
+
+1. ruby (1.9.3 or higher)
+2. rake (0.9.2.2 or higher)
+
 ## Installation ##
 
 	git clone git://github.com/jgarber623/dotfiles.git ~/.dotfiles
