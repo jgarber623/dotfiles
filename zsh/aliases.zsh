@@ -13,7 +13,7 @@ alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/serv
 alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 
 # Miscellaneous
-alias ipcopy="ipconfig getifaddr en0 | pbcopy"
+alias ipcopy="ipconfig getifaddr en0 | tr -d '\n' | pbcopy"
 
 # Shortcuts to project files
 alias dotcd="cd $ZSH"
