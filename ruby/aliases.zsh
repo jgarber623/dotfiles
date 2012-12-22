@@ -1,7 +1,4 @@
 alias be="bundle exec"
-alias dbc="rake db:create"
-alias dbm="rake db:migrate"
-alias dbr="rake db:reset"
-alias dbs="rake db:seed"
+alias rc="rails console"
 alias rs="rails server"
 alias ss="script/server"
