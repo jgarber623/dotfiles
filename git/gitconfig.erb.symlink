@@ -23,3 +23,5 @@
 [core]
 	editor = "subl -w"
 	excludesfile = "~/.gitignore"
+[push]
+	default = simple
