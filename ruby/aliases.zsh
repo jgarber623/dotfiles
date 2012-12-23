@@ -1,4 +1,4 @@
-alias be="bundle exec"
-alias rc="rails console"
-alias rs="rails server"
-alias ss="script/server"
+alias brews='brew list'
+alias rc='rails console'
+alias rs='rails server'
+alias ss='script/server'

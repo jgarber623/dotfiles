@@ -1,7 +1,0 @@
-# Source: https://github.com/jgarber623/html5-boilerplate
-
-git clone git@github.com:jgarber623/html5-boilerplate.git $1;
-rm -rf $1/.git;
-rm $1/README.md;
-find $1 -name ".gitignore" -delete;
-mate $1;

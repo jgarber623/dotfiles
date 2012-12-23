@@ -1,15 +1,15 @@
-alias add="git add"
-alias branch="git branch"
-alias clone="git clone"
-alias co="git checkout"
-alias commit="git commit"
-alias diff="git diff"
-alias fetch="git fetch"
-alias gh="github"
-alias hist="git log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short | subl"
-alias merge="git merge"
-alias pull="git pull"
-alias push="git push"
-alias rebase="git rebase"
-alias stash="git stash"
-alias status="git status -sb"
+alias add='git add'
+alias branch='git branch'
+alias clone='git clone'
+alias co='git checkout'
+alias commit='git commit'
+alias diff='git diff'
+alias fetch='git fetch'
+alias gh='github'
+alias hist='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short | subl'
+alias merge='git merge'
+alias pull='git pull'
+alias push='git push'
+alias rebase='git rebase'
+alias stash='git stash'
+alias status='git status -sb'

@@ -4,8 +4,8 @@ This is how I work.
 
 ## Requirements ##
 
-1. ruby (1.9.3 or higher)
-2. rake (0.9.2.2 or higher)
+1. [ruby](http://www.ruby-lang.org/) (1.9.3 or higher)
+2. [rake](http://rake.rubyforge.org/) (0.9.2.2 or higher)
 
 ## Installation ##
 
@@ -13,7 +13,7 @@ This is how I work.
 	cd ~/.dotfiles
 	rake install
 
-The installation rake task will configure symlinks in `~/` that point to the appropriate files in `~/.dotfiles`.
+The installation rake task will create symlinks in `~/` that point to the appropriate files in `~/.dotfiles`.
 
 ## Environment ##
 
@@ -21,4 +21,4 @@ The installation rake task will configure symlinks in `~/` that point to the app
 
 ## Credit, Where Due ##
 
-Most of this work is based on [Ryan Bates' dotfiles](https://github.com/ryanb/dotfiles) project. The rest is picked up from various sources online, co-workers, friends, and others. Thanks, everyone!
+Most of this work is based on [Ryan Bates' dotfiles](https://github.com/ryanb/dotfiles) and [Robby Russell's oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh). The rest is picked up from various sources online, co-workers, friends, and others. Thanks, everyone!
