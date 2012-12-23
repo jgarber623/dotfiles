@@ -3,9 +3,6 @@ alias webstart='sudo apachectl start'
 alias webstop='sudo apachectl stop'
 alias webrestart='sudo apachectl restart'
 
-# Commands
-alias ls='ls -laG'
-
 # MySQL
 alias mystart='mysql.server start'
 alias mystop='mysql.server stop'
@@ -18,7 +15,11 @@ alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 # Miscellaneous
 alias ipcopy='ipconfig getifaddr en0 | tr -d "\n" | pbcopy'
 alias ipshow='ipconfig getifaddr en0'
+alias mate='subl'
 
 # Shortcuts to project files
 alias dotcd='cd $ZSH'
 alias dotmate='subl $ZSH'
+
+# Unix commands (I know this!)
+alias ls='ls -laG'
