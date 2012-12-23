@@ -25,4 +25,4 @@ To remove the symlinks created during installation, simply run the following rak
 
 ## Credit, Where Due ##
 
-Most of this work is based on [Ryan Bates' dotfiles](https://github.com/ryanb/dotfiles) and [Robby Russell's oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh). The rest is picked up from various sources online, co-workers, friends, and others. Thanks, everyone!
+Significant portions of this work are based on [Ryan Bates' dotfiles](https://github.com/ryanb/dotfiles), [Robby Russell's oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), and [Mathias Bynens' dotfiles](https://github.com/mathiasbynens/dotfiles). The rest is picked up from various sources online, co-workers, friends, and others. Thanks, everyone!
