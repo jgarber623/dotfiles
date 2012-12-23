@@ -4,7 +4,7 @@ alias webstop='sudo apachectl stop'
 alias webrestart='sudo apachectl restart'
 
 # Commands
-alias ls='ls -la'
+alias ls='ls -laG'
 
 # MySQL
 alias mystart='mysql.server start'
