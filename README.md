@@ -15,9 +15,13 @@ This is how I work.
 
 The installation rake task will create symlinks in `~/` that point to the appropriate files in `~/.dotfiles`.
 
-## Environment ##
-
 ## Features ##
+
+## Uninstall ##
+
+To remove the symlinks created during installation, simply run the following rake task:
+
+	rake uninstall
 
 ## Credit, Where Due ##
 
