@@ -1,6 +1,14 @@
 require 'rake'
 require 'erb'
 
+def apps
+  {
+    'Alfred' => 'gist.github.com/raw/963164/install-alfred.sh',
+    'Dropbox' => 'gist.github.com/raw/963046/install-dropbox.sh',
+    'Google Chrome' => 'gist.github.com/raw/4364590/install-chrome.sh'
+  }
+end
+
 def dotfiles
   Dir.glob( '*/**{.symlink}' )
 end
@@ -81,6 +89,9 @@ namespace :homebrew do
     puts 'Upgrading existing formulae...'
     system 'brew upgrade'
     
+    puts 'Tapping homebrew/dupes'
+    system 'brew tap homebrew/dupes'
+    
     formulae.each do |formula|
       puts "Installing #{formula}..."
       system "brew install #{formula}"
@@ -92,7 +103,23 @@ namespace :homebrew do
 end
 
 namespace :osx do
-  task :config do
+  desc 'Sets reasonable configuration options for OS X Mountain Lion'
+  task :configure do
     
+  end
+  
+  desc 'Sets reasonable configuration options for third-party apps'
+  task :configure_apps do
+    
+  end
+  
+  desc 'Installs several apps not purchased through the Mac App Store'
+  task :install_apps do
+    apps.each do |name, url|
+      # Rake::Task['osx:install_app'].invoke( name, url )
+      
+      puts "Downloading and installing #{name}..."
+      system "curl -fkL #{url} | sh"
+    end
   end
 end
