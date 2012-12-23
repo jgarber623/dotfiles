@@ -132,7 +132,7 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 
 # Use icon view in all Finder windows by default
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
-defaults write com.apple.finder FXPreferredViewStyle -string "icnv"
+# FIX defaults write com.apple.finder FXPreferredViewStyle -string "icnv"
 
 # Empty Trash securely by default
 defaults write com.apple.finder EmptyTrashSecurely -bool true
