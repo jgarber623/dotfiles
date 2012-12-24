@@ -135,7 +135,7 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 # FIX defaults write com.apple.finder FXPreferredViewStyle -string "icnv"
 
 # Empty Trash securely by default
-defaults write com.apple.finder EmptyTrashSecurely -bool true
+# defaults write com.apple.finder EmptyTrashSecurely -bool true
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
