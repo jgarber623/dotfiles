@@ -12,7 +12,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Set computer name (as done via System Preferences → Sharing)
 sudo scutil --set ComputerName "Rodimus Prime"
-sudo scutil --set HostName "Rodimus Prime"
+sudo scutil --set HostName "Rodimus-Prime"
 sudo scutil --set LocalHostName "Rodimus-Prime"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Rodimus-Prime"
 
