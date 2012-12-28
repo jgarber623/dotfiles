@@ -14,7 +14,7 @@ def dotfiles
 end
 
 def formulae
-  ['apple-gcc42', 'base64', 'git', 'mysql', 'pidof', 'postgresql']
+  ['apple-gcc42', 'base64', 'git', 'mysql', 'pidof', 'postgresql', 'zsh']
 end
 
 def link_file( file, filename, target )
@@ -56,7 +56,7 @@ task :install do
   puts 'Would you like to switch your shell to ZSH? [yn]'
   case STDIN.gets.chomp
     when 'y'
-      system 'chsh -s /bin/zsh'
+      system 'chsh -s /usr/local/bin/zsh'
       puts 'You\'re now using ZSH! Restart your shell for this change to take effect.'
     else
       puts 'Keeping your current shell.'
