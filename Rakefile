@@ -14,7 +14,7 @@ def dotfiles
 end
 
 def formulae
-  ['apple-gcc42', 'base64', 'git', 'mysql', 'pidof', 'postgresql', 'zsh']
+  ['apple-gcc42', 'base64', 'git', 'mysql', 'pidof', 'postgresql', 'rbenv', 'ruby-build', 'zsh']
 end
 
 def link_file( file, filename, target )
