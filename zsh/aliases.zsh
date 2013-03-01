@@ -19,6 +19,7 @@ alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias redstart='redis-server /usr/local/etc/redis.conf'
 
 # Miscellaneous
+alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
 alias ipcp='ipconfig getifaddr en0 | tr -d "\n" | pbcopy'
 alias ipshow='ipconfig getifaddr en0'
 alias mate='subl' #lolforever
