@@ -1,8 +1,8 @@
 #!/bin/bash
 
 ###############################################################################
-# Alfred                                                                      #
+# Alfred 2                                                                    #
 ###############################################################################
 
-rm -rf ~/Library/Application\ Support/Alfred;
-ln -fs ~/Dropbox/Library/Application\ Support/Alfred/ ~/Library/Application\ Support/Alfred;
+rm -rf ~/Library/Application\ Support/Alfred\ 2;
+ln -fs ~/Dropbox/Library/Application\ Support/Alfred\ 2/ ~/Library/Application\ Support/Alfred\ 2;
