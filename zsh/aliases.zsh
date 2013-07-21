@@ -23,10 +23,11 @@ alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/
 alias ipcp='ipconfig getifaddr en0 | tr -d "\n" | pbcopy'
 alias ipshow='ipconfig getifaddr en0'
 alias mate='subl' #lolforever
+alias pk='more ~/.ssh/id_rsa.pub | pbcopy | echo "=> Public key copied to pasteboard."'
 
 # Shortcuts to project files
 alias dotcd='cd $ZSH'
 alias dotmate='subl $ZSH'
 
 # Unix commands (I know this!)
-alias ls='ls -laG'
+alias ls='ls -flaG'
