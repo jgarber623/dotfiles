@@ -1,3 +1,4 @@
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 fpath=($ZSH/zsh/functions $fpath)
