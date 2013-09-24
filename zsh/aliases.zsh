@@ -24,7 +24,6 @@ alias ipcp='ipconfig getifaddr en0 | tr -d "\n" | pbcopy'
 alias ipshow='ipconfig getifaddr en0'
 alias mate='subl' #lolforever
 alias pk='more ~/.ssh/id_rsa.pub | pbcopy | echo "=> Public key copied to pasteboard."'
-alias speedtest='wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip'
 
 # Shortcuts to project files
 alias dotcd='cd $ZSH'
