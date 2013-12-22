@@ -1,20 +1,13 @@
 require 'rake'
 require 'erb'
+require 'yaml'
 
-def apps
-  {
-    'Alfred' => 'gist.github.com/raw/963164/install-alfred.sh',
-    'Dropbox' => 'gist.github.com/raw/963046/install-dropbox.sh',
-    'Google Chrome' => 'gist.github.com/raw/4364590/install-chrome.sh'
-  }
+def config
+  YAML.load_file('config.yml')
 end
 
 def dotfiles
   Dir.glob( '*/**{.symlink}' )
-end
-
-def formulae
-  ['apple-gcc42', 'base64', 'brew-cask', 'git', 'mysql', 'pidof', 'postgresql', 'rbenv', 'ruby-build', 'zsh']
 end
 
 def link_file( file, filename, target )
@@ -52,10 +45,15 @@ task :install do
       link_file( file, filename, target )
     end
   end
+end
 
+desc 'Switches shell to ZSH'
+task :switch_shell do
   puts 'Would you like to switch your shell to ZSH? [yn]'
   case STDIN.gets.chomp
     when 'y'
+      system 'sudo mv /etc/zshenv /etc/zprofile'
+      system "sudo -s 'echo \"/usr/local/bin/zsh\" >> /etc/shells'"
       system 'chsh -s /usr/local/bin/zsh'
       puts 'You\'re now using ZSH! Restart your shell for this change to take effect.'
     else
@@ -95,9 +93,14 @@ namespace :homebrew do
     puts 'Tapping phinze/homebrew-cask...'
     system 'brew tap phinze/homebrew-cask'
 
-    formulae.each do |formula|
+    config['formulae'].each do |formula|
       puts "Installing #{formula}..."
       system "brew install #{formula}"
+    end
+
+    config['casks'].each do |cask|
+      puts "Installing #{cask}..."
+      system "brew cask install #{cask}"
     end
 
     puts 'Taking out the trash...'

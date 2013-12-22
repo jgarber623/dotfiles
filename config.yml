@@ -1,0 +1,19 @@
+casks:
+  - alfred
+  - dropbox
+  - google-chrome
+  - keyremap4macbook
+  - pckeyboardhack
+
+formulae:
+  - apple-gcc42
+  - base64
+  - brew-cask
+  - git
+  - mysql
+  - node
+  - pidof
+  - postgresql
+  - rbenv
+  - ruby-build
+  - zsh
