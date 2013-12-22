@@ -107,17 +107,3 @@ namespace :homebrew do
     system 'brew cleanup'
   end
 end
-
-namespace :osx do
-  desc 'Sets reasonable configuration options for OS X Mountain Lion'
-  task :configure do
-    puts 'This task will configure a variety of Mac OS X Mountain Lion settings and applications. Would you like to continue? [yn]'
-    case STDIN.gets.chomp
-      when 'y'
-        system 'sh $PWD/osx/config.sh'
-        puts 'System configuration complete! Note that some of these changes require a restart to take effect.'
-      else
-        puts 'Cancelling Mac OS X Mountain Lion configuration.'
-    end
-  end
-end
