@@ -73,7 +73,7 @@ namespace :homebrew do
   desc 'Installs Homebrew'
   task :install do
     puts 'Installing Homebrew...'
-    system 'ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"'
+    system 'ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"'
   end
 
   desc 'Installs several useful formulae'
