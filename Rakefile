@@ -49,7 +49,6 @@ task :switch_shell do
   puts 'Would you like to switch your shell to ZSH? [yn]'
   case STDIN.gets.chomp
     when 'y'
-      system 'sudo mv /etc/zshenv /etc/zprofile'
       system "sudo -s 'echo \"/usr/local/bin/zsh\" >> /etc/shells'"
       system 'chsh -s /usr/local/bin/zsh'
       puts 'You\'re now using ZSH! Restart your shell for this change to take effect.'
