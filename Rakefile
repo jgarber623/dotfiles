@@ -1,25 +1,23 @@
 require 'rake'
 require 'erb'
-require 'yaml'
 
-config = YAML.load_file('config.yml')
 dotfiles = Dir.glob('*/**{.symlink}')
-
-def colorize(out, code = 34)
-  "\033[#{code}m#{out}\033[0m"
-end
 
 def link_file(file, filename, target)
   if file =~ /.erb.symlink$/
-    puts "Generating ~/.#{filename}..."
+    prmpt "Generating ~/.#{filename}..."
 
     File.open(target, 'w') do |new_file|
       new_file.write ERB.new(File.read(file)).result(binding)
     end
   else
-    puts "Linking ~/.#{filename}..."
+    prmpt "Linking ~/.#{filename}..."
     system "ln -fs $PWD/#{file} #{target}"
   end
+end
+
+def prmpt(out, code = 32)
+  puts "\033[#{code}m#{out}\033[0m"
 end
 
 desc 'Installs dotfiles symlinks into user\'s home directory'
@@ -29,14 +27,14 @@ task :install do
     target = "#{ENV["HOME"]}/.#{filename}"
 
     if File.exists?(target) || File.symlink?(target)
-      puts "~/.#{filename} already exists! Do you want to [o]verwrite or [s]kip this file?"
+      prmpt "~/.#{filename} already exists! Do you want to [o]verwrite or [s]kip this file?"
 
       case STDIN.gets.chomp
         when 'o'
           system "rm -rf #{target}"
           link_file(file, filename, target)
         else
-          puts "Skipping ~/.#{filename}."
+          prmpt("Skipping ~/.#{filename}.", 37)
       end
     else
       link_file(file, filename, target)
@@ -45,15 +43,15 @@ task :install do
 end
 
 desc 'Switches shell to ZSH'
-task :switch_shell do
-  puts 'Would you like to switch your shell to ZSH? [yn]'
+task :chsh do
+  prmpt 'Would you like to switch your shell to ZSH? [Yn]'
   case STDIN.gets.chomp
-    when 'y'
+    when 'Y'
       system "sudo -s 'echo \"/usr/local/bin/zsh\" >> /etc/shells'"
       system 'chsh -s /usr/local/bin/zsh'
-      puts 'You\'re now using ZSH! Restart your shell for this change to take effect.'
+      prmpt 'You\'re now using ZSH! Restart your shell for this change to take effect.'
     else
-      puts 'Keeping your current shell.'
+      prmpt('Keeping your current shell.', 37)
   end
 end
 
@@ -71,36 +69,12 @@ end
 namespace :homebrew do
   desc 'Installs Homebrew'
   task :install do
-    puts 'Installing Homebrew...'
     system 'ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"'
   end
 
-  desc 'Installs several useful formulae'
-  task :install_formulae do
-    puts colorize('Updating Homebrew...')
-    system 'brew update'
-
-    puts colorize('Upgrading existing formulae...')
-    system 'brew upgrade'
-
-    puts colorize('Tapping homebrew/dupes...')
-    system 'brew tap homebrew/dupes'
-
-    puts colorize('Tapping phinze/homebrew-cask...')
-    system 'brew tap phinze/homebrew-cask'
-
-    config['formulae'].each do |formula|
-      puts colorize("Installing #{formula}...")
-      system "brew install #{formula}"
-    end
-
-    config['casks'].each do |cask|
-      puts colorize("Installing #{cask}...")
-      system "brew cask install #{cask}"
-    end
-
-    puts colorize('Taking out the trash...')
-    system 'brew cleanup'
+  desc 'Installs formulae defined in Brewfile'
+  task :bundle do
+    system 'brew bundle'
   end
 end
 
