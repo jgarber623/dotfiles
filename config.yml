@@ -7,9 +7,9 @@ casks:
 
 formulae:
   - apple-gcc42
-  - base64
   - brew-cask
   - git
+  - hub
   - mysql
   - node
   - pidof
