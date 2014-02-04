@@ -11,8 +11,8 @@ alias mygo='mysql.server start'
 alias mystop='mysql.server stop'
 alias mystat='mysql.server status'
 
-alias amgo='mygo && webgo'
-alias amstop='mystop && webstop'
+alias amgo='webgo && mygo'
+alias amstop='webstop && mystop'
 
 # Miscellaneous aliases
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
