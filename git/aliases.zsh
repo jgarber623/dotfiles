@@ -6,3 +6,5 @@ if (( $+commands[hub] ))
 then
   alias git=$hub_path
 fi
+
+alias hist='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
