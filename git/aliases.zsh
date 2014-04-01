@@ -8,3 +8,4 @@ then
 fi
 
 alias hist='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
+alias status='git status -sb'
