@@ -2,6 +2,8 @@ update
 upgrade
 
 tap homebrew/dupes
+tap homebrew/versions
+tap homebrew/homebrew-php
 tap caskroom/fonts
 tap phinze/homebrew-cask
 
