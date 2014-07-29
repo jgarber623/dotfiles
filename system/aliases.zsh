@@ -10,8 +10,8 @@ alias arestart='sudo apachectl restart'
 alias mygo='mysql.server start'
 alias mystop='mysql.server stop'
 
-alias amgo='webgo && mygo'
-alias amstop='webstop && mystop'
+alias amgo='ago && mygo'
+alias amstop='astop && mystop'
 
 # PostgreSQL
 alias pggo='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
