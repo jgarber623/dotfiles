@@ -3,13 +3,12 @@ alias dotcd='cd $ZSH'
 alias dotmate='subl $ZSH'
 
 # Apache and MySQL-related aliases
-alias webgo='sudo apachectl start'
-alias webstop='sudo apachectl stop'
-alias webrestart='sudo apachectl restart'
+alias ago='sudo apachectl start'
+alias astop='sudo apachectl stop'
+alias arestart='sudo apachectl restart'
 
 alias mygo='mysql.server start'
 alias mystop='mysql.server stop'
-alias mystat='mysql.server status'
 
 alias amgo='webgo && mygo'
 alias amstop='webstop && mystop'
