@@ -2,7 +2,7 @@
 
 # The following is based on https://github.com/gma/bundler-exec
 
-bundled_commands=(berks cap capify chefspec chef-apply chef-client chef-shell chef-solo cucumber foodcritic foreman guard haml html2haml jasmine kitchen knife middleman pry rackup rake rake2thor rspec ruby sass sass-convert serve shotgun spec spork strainer thin thor tilt tt turn unicorn unicorn_rails)
+bundled_commands=(berks cap capify chefspec chef-apply chef-client chef-shell chef-solo cucumber foodcritic foreman guard haml html2haml jasmine kitchen knife middleman pry rackup rake rake2thor rspec ruby sass sass-convert serve shotgun spec spork strainer thin thor tilt tt turn tux unicorn unicorn_rails)
 
 ## Functions
 
