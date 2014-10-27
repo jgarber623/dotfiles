@@ -4,6 +4,7 @@ alias dotmate='subl $ZSH'
 
 # Apache and MySQL-related aliases
 alias apache='sudo apachectl'
+alias hosts='subl /etc/hosts'
 alias vhosts='subl /etc/apache2/extra/httpd-vhosts.conf'
 
 # alias mygo='mysql.server start'
