@@ -2,20 +2,13 @@
 alias dotcd='cd $ZSH'
 alias dotmate='subl $ZSH'
 
-# Apache and MySQL-related aliases
+# Apache aliases
 alias apache='sudo apachectl'
 alias hosts='subl /etc/hosts'
 alias vhosts='subl /etc/apache2/extra/httpd-vhosts.conf'
 
-# alias mygo='mysql.server start'
-# alias mystop='mysql.server stop'
-
-# alias amgo='ago && mygo'
-# alias amstop='astop && mystop'
-
 # PostgreSQL
-# alias pggo='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-# alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+alias pg='pg_ctl -D /usr/local/var/postgres'
 
 # Miscellaneous aliases
 # alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
