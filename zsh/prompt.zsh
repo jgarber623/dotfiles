@@ -77,5 +77,5 @@ git_prompt_status() {
   echo $STATUS
 }
 
-export PROMPT='%{$fg_bold[yellow]%}%n%{$reset_color%} at %{$fg_bold[cyan]%}%m%{$reset_color%}: $(collapse_pwd)$(git_prompt_info) 
+export PROMPT='%{$fg_bold[yellow]%}%n%{$reset_color%} at %{$fg_bold[cyan]%}%m%{$reset_color%}: $(collapse_pwd)$(git_prompt_info)
 $(prompt_char) '
