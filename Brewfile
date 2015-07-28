@@ -3,19 +3,17 @@ upgrade
 
 tap homebrew/dupes
 tap homebrew/versions
-tap homebrew/homebrew-php
-tap caskroom/fonts
 tap phinze/homebrew-cask
 
-install apple-gcc42
 install brew-cask
 install git
 install hr
 install hub
+install imagemagick
 install lynx
 install mysql
+install nginx
 install node
-install nvm
 install pidof
 install postgresql
 install rbenv
@@ -24,7 +22,10 @@ install zsh
 
 cask install alfred
 cask install appcleaner
+cask install colorpicker-skalacolor
 cask install dropbox
+cask install fluid
+cask install handbrake
 cask install imagealpha
 cask install imageoptim
 cask install karabiner
