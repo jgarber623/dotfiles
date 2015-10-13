@@ -1,31 +1,6 @@
 # jgarber623's Dotfiles
 
-This is how I work.
-
-## Requirements
-
-1. [ruby](http://www.ruby-lang.org/) (1.9.3 or higher)
-2. [rake](http://rake.rubyforge.org/) (0.9.2.2 or higher)
-
-## Installation
-
-	git clone git://github.com/jgarber623/dotfiles.git ~/.dotfiles
-	cd ~/.dotfiles
-	rake install
-
-The installation rake task will create symlinks in `~/` that point to the appropriate files in `~/.dotfiles`.
-
-## Features
-
-- To change the active shell to ZSH: `rake chsh`
-- To install Homebrew: `rake homebrew`
-- To install useful Homebrew formulae: `rake homebrew:bundle`
-
-## Uninstall
-
-To remove the symlinks created during installation, simply run the following rake task:
-
-	rake uninstall
+Check out the branches in this repo for device-specific configurations.
 
 ## Credit, Where Due
 
