@@ -72,9 +72,11 @@ namespace :homebrew do
     system 'ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
   end
 
-  desc 'Installs formulae defined in Brewfile'
+  desc 'Install useful formulae'
   task :bundle do
-    system 'brew bundle'
+    system 'brew update && brew upgrade'
+    system 'brew install caskroom/cask/brew-cask git hr hub imagemagick node pidof postgresql rbenv ruby-build zsh'
+    system 'brew cleanup -S'
   end
 end
 

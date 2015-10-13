@@ -17,6 +17,10 @@ The installation rake task will create symlinks in `~/` that point to the approp
 
 ## Features
 
+- To change the active shell to ZSH: `rake chsh`
+- To install Homebrew: `rake homebrew`
+- To install useful Homebrew formulae: `rake homebrew:bundle`
+
 ## Uninstall
 
 To remove the symlinks created during installation, simply run the following rake task:
