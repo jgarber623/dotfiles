@@ -41,6 +41,7 @@ mas 'Tweetbot', id: 557168941
 cask 'alfred'
 cask 'appcleaner'
 cask 'atom'
+cask 'dropbox'
 cask 'firefox'
 cask 'fluid'
 cask 'google-chrome'
