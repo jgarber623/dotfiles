@@ -1,6 +1,27 @@
-# jgarber623's Dotfiles
+# jgarber623's dotfiles
 
-Check out the branches in this repo for device-specific configurations.
+This is how I work.
+
+## Installation
+
+First, install Xcode command line tools:
+
+```sh
+xcode-select --install
+```
+
+Then, clone this repository and run the installation command:
+
+```sh
+git clone git@github.com:jgarber623/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+git checkout macbook-pro
+rake install
+```
+
+The installation task will install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), install [Homebrew](http://brew.sh/), and create symlinks in `~` that point to the appropriate system configuration files in `~/.dotfiles`.
+
+After successfully installing dotfiles, you may also run `rake homebrew:bundle` to install additional software as defined in `Brewfile`.
 
 ## Credit, Where Due
 
