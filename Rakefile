@@ -103,7 +103,7 @@ end
 namespace :oh_my_zsh do
   desc 'Install oh-my-zsh, a community-driven framework for managing your ZSH configuration'
   task :install do
-    prompt('Are you sure you want to uninstall oh-my-zsh? [Yn]')
+    prompt('Are you sure you want to install oh-my-zsh? [Yn]')
 
     case $stdin.gets.chomp
     when 'Y'
