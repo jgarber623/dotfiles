@@ -19,7 +19,6 @@ mas '1Password', id: 443987910
 mas 'Airmail 3', id: 918858936
 mas 'Byword', id: 420212497
 mas 'Clear', id: 504544917
-mas 'CloudApp', id: 417602904
 mas 'Deliveries', id: 924726344
 mas 'Fantastical 2', id: 975937182
 mas 'Icon Slate', id: 439697913
