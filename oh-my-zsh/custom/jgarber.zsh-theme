@@ -1,3 +1,6 @@
+ZSH_THEME_TERM_TITLE_IDLE=""
+ZSH_THEME_TERM_TAB_TITLE_IDLE=""
+
 ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg_no_bold[green]%}‹"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg_no_bold[green]%}›%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=" ✓"
