@@ -13,7 +13,6 @@ brew 'postgresql'
 brew 'rbenv'
 brew 'ruby-build'
 brew 'youtube-dl'
-brew 'zsh'
 
 mas '1Password', id: 443987910
 mas 'Airmail 3', id: 918858936
