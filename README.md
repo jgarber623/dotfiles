@@ -16,7 +16,7 @@ Then, clone this repository and run the installation command:
 git clone git@github.com:jgarber623/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 git checkout macbook-pro
-rake install
+rake
 ```
 
 The installation task will install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), install [Homebrew](http://brew.sh/), and create symlinks in `~` that point to the appropriate system configuration files in `~/.dotfiles`.
