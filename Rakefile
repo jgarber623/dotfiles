@@ -107,15 +107,21 @@ namespace :oh_my_zsh do
 
     case $stdin.gets.chomp
     when 'Y'
-      theme_path = 'oh-my-zsh/custom/jgarber.zsh-theme'
-
       prompt('Installing oh-my-zsh...')
 
       sh 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
-      sh "ln -fs $PWD/#{theme_path} $HOME/.#{theme_path}"
     else
       prompt('Skipping oh-my-zsh installation...', 37)
     end
+  end
+
+  desc 'Install custom oh-my-zsh theme'
+  task :install_theme do
+    prompt('Installing custom oh-my-zsh theme...')
+
+    theme_path = 'oh-my-zsh/custom/jgarber.zsh-theme'
+
+    sh "ln -fs $PWD/#{theme_path} $HOME/.#{theme_path}"
   end
 
   desc 'Uninstall oh-my-zsh'
