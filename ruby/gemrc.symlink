@@ -1,9 +1,6 @@
 ---
-gem: --no-ri --no-rdoc
-:backtrace: false
-:benchmark: false
-:bulk_threshold: 1000
 :sources:
-- https://rubygems.org
-:update_sources: true
+  - https://rubygems.org
+  - https://rails-assets.org
 :verbose: true
+gem: --no-document

@@ -1,1 +1,1 @@
-export BUNDLE_JOBS=4
+export BUNDLE_JOBS=6
