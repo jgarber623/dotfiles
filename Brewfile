@@ -17,7 +17,7 @@ brew 'youtube-dl'
 
 mas '1Password', id: 443987910
 mas 'Airmail 3', id: 918858936
-mas 'Byword', id: 420212497
+mas 'Bear', id: 1091189122
 mas 'Clear', id: 504544917
 mas 'Day One', id: 1055511498
 mas 'Deliveries', id: 924726344
@@ -42,9 +42,10 @@ cask 'alfred'
 cask 'appcleaner'
 cask 'atom'
 cask 'cloak'
-cask 'dropbox'
+cask 'devdocs'
 cask 'firefox'
 cask 'google-chrome'
+cask 'handbrake'
 cask 'imagealpha'
 cask 'imageoptim'
 cask 'mplayerx'
@@ -54,5 +55,6 @@ cask 'padbury-clock'
 cask 'postman'
 cask 'psequel'
 cask 'sketch'
+cask 'transmit'
 cask 'vmware-fusion'
 cask 'yubikey-piv-manager'
