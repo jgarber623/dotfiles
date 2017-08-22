@@ -19,7 +19,7 @@ git checkout macbook-pro
 rake
 ```
 
-The installation task will install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), install [Homebrew](http://brew.sh/), and create symlinks in `~` that point to the appropriate system configuration files in `~/.dotfiles`.
+The available installation tasks will install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), install [Homebrew](http://brew.sh/), and create symlinks in `~` that point to the appropriate system configuration files in `~/.dotfiles`.
 
 After successfully installing dotfiles, you may also run `rake homebrew:bundle` to install additional software as defined in `Brewfile`.
 

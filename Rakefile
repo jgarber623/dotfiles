@@ -79,7 +79,6 @@ namespace :homebrew do
 
       sh '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
       sh 'brew tap homebrew/bundle'
-      sh 'brew tap homebrew/services'
     else
       prompt('Skipping Homebrew installation...', 37)
     end
@@ -139,4 +138,4 @@ namespace :oh_my_zsh do
   end
 end
 
-task default: ['oh_my_zsh:install', 'homebrew:install', 'dotfiles:install']
+task default: ['oh_my_zsh:install']

@@ -1,3 +1,6 @@
+tap 'homebrew/services'
+tap 'caskroom/fonts'
+
 brew 'base64'
 brew 'ffmpeg'
 brew 'git'
