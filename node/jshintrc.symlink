@@ -1,3 +1,8 @@
 {
-  "esversion": 6
+  "camelcase": true,
+  "curly": true,
+  "eqeqeq": true,
+  "esversion": 6,
+  "quotmark": 'single',
+  "strict": true
 }
