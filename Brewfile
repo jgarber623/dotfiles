@@ -1,3 +1,6 @@
+tap 'homebrew/services'
+tap 'caskroom/fonts'
+
 brew 'git'
 brew 'hr'
 brew 'mas'
