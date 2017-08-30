@@ -7,9 +7,7 @@ def link_file(file_path, file_name)
   if file_path =~ /\.erb\.symlink$/
     prompt "Generating ~/.#{file_name}..."
 
-    File.open(link, 'w') do |file|
-      file.write ERB.new(File.read(file_path)).result(binding)
-    end
+    File.write link, ERB.new(File.read(file_path)).result(binding)
   else
     prompt "Symlinking ~/.#{file_name}..."
 
