@@ -1,4 +1,5 @@
 tap 'homebrew/services'
+tap 'caskroom/drivers'
 tap 'caskroom/fonts'
 
 brew 'base64'
@@ -17,6 +18,7 @@ brew 'pidof'
 brew 'postgresql'
 brew 'rbenv'
 brew 'ruby-build'
+brew 'trash'
 brew 'youtube-dl'
 
 mas '1Password', id: 443987910
