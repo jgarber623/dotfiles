@@ -1,4 +1,4 @@
-# jgarber623's Dotfiles
+# jgarber623's dotfiles
 
 Check out [this repo's branches](https://github.com/jgarber623/dotfiles/branches) for device-specific configurations.
 
