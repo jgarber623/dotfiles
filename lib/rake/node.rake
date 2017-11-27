@@ -7,7 +7,7 @@ namespace :node do
     when 'Y'
       prompt 'Installing Node packages...'
 
-      sh "npm install -g changelog.md fast-cli npm pa11y sass-lint snyk svgo vtop"
+      sh "npm install -g changelog.md eslint fast-cli npm pa11y sass-lint snyk svgo vtop"
     else
       prompt 'Skipping Node package installation...', 37
     end
