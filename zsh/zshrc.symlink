@@ -88,5 +88,5 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias ll='ls -FlAGh'
+alias ll='l'
 alias reload!='. ~/.zshrc'
