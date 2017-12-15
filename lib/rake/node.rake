@@ -1,17 +1,18 @@
+require 'modules/promptable'
+
 namespace :node do
+  include Promptable
+
   desc 'Install common Node packages'
-  task :install_packages do
+  task :packages do
     prompt 'Are you sure you want to install Node packages? [Yn]'
 
-    case $stdin.gets.chomp
-    when 'Y'
-      prompt 'Installing Node packages...'
+    return prompt('Skipping Node package installation...', 37) unless $stdin.gets.chomp == 'Y'
 
-      sh "npm install -g changelog.md eslint fast-cli npm pa11y sass-lint snyk svgo vtop"
-    else
-      prompt 'Skipping Node package installation...', 37
-    end
+    prompt 'Installing Node packages...'
+
+    sh 'npm install -g changelog.md eslint fast-cli npm pa11y sass-lint snyk svgo vtop'
   end
 end
 
-task node: 'node:install_packages'
+task node: 'node:packages'

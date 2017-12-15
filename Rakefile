@@ -6,4 +6,4 @@ require 'rake'
 
 Dir.glob('lib/rake/*.rake').each { |r| import r }
 
-task default: :oh_my_zsh
+task default: :zsh

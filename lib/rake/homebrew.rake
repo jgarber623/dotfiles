@@ -7,29 +7,23 @@ namespace :homebrew do
   task :install do
     prompt 'Are you sure you want to install Homebrew? [Yn]'
 
-    case $stdin.gets.chomp
-    when 'Y'
-      prompt 'Installing Homebrew...'
+    return prompt('Skipping Homebrew installation...', 37) unless $stdin.gets.chomp == 'Y'
 
-      sh '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
-      sh 'brew tap homebrew/bundle'
-    else
-      prompt 'Skipping Homebrew installation...', 37
-    end
+    prompt 'Installing Homebrew...'
+
+    sh '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
+    sh 'brew tap homebrew/bundle'
   end
 
   desc 'Install bundled software declared in Brewfile'
   task :bundle do
     prompt 'Are you sure you want to install bundled software? [Yn]'
 
-    case $stdin.gets.chomp
-    when 'Y'
-      prompt 'Installing bundled software...'
+    return prompt('Skipping bundled software installation...', 37) unless $stdin.gets.chomp == 'Y'
 
-      sh 'brew bundle'
-    else
-      prompt 'Skipping bundled software installation...', 37
-    end
+    prompt 'Installing bundled software...'
+
+    sh 'brew bundle'
   end
 end
 

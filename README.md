@@ -26,14 +26,13 @@ After successfully installing dotfiles, you may also run `rake homebrew:bundle` 
 A typical installation process might look like:
 
 ```sh
-rake oh_my_zsh                # rake oh_my_zsh:install
-rake oh_my_zsh:install_theme
-rake homebrew                 # rake homebrew:install
+rake zsh:install
+rake homebrew:install
 rake homebrew:bundle
-rake dotfiles                 # rake dotfiles:install
-rake ruby                     # rake ruby:install
-rake ruby:install_gems
-rake node                     # rake node:install_packages
+rake dotfiles:install
+rake ruby:install
+rake ruby:gems
+rake node:packages
 ```
 
 ## Acknowledgments

@@ -1,54 +1,45 @@
-require 'modules/linkable'
 require 'modules/promptable'
 
 namespace :dotfiles do
-  include Linkable
   include Promptable
 
-  desc 'Install dotfile symlinks into ~'
+  desc "Install dotfile symlinks into #{ENV['HOME']}"
   task :install do
-    file_paths = Dir.glob('*/**{.symlink}')
+    file_paths = Dir.glob(File.join(ENV['PWD'], 'home', '*.symlink'))
 
     file_paths.each do |file_path|
-      file_name = File.basename(file_path).sub(/(?:\.erb)?\.symlink$/, '')
-      link = File.join(ENV['HOME'], ".#{file_name}")
+      linked_file_name = File.join(ENV['HOME'], ".#{File.basename(file_path).sub(/\.symlink$/, '')}")
 
-      if File.exist?(link)
-        prompt "~/.#{file_name} already exists! Overwrite this file? [Yn]"
+      if File.exist?(linked_file_name)
+        prompt "#{linked_file_name} already exists! Overwrite this file? [Yn]"
 
-        case $stdin.gets.chomp
-        when 'Y'
-          prompt "Overwriting ~/.#{file_name}..."
+        next prompt("Skipping #{linked_file_name}...", 37) unless $stdin.gets.chomp == 'Y'
 
-          FileUtils.rm_rf link
+        prompt "Removing #{linked_file_name}..."
 
-          link_file file_path, file_name
-        else
-          prompt "Skipping ~/.#{file_name}...", 37
-        end
-      else
-        link_file file_path, file_name
+        FileUtils.rm_rf linked_file_name
       end
+
+      prompt "Symlinking #{linked_file_name}..."
+
+      FileUtils.ln_sf file_path, linked_file_name
     end
   end
 
-  desc 'Removes dotfile symlinks from ~'
+  desc "Removes dotfile symlinks from #{ENV['HOME']}"
   task :uninstall do
-    prompt 'Are you sure you want to remove symlinks from ~? [Yn]'
+    prompt "Are you sure you want to remove symlinks from #{ENV['HOME']}? [Yn]"
 
-    case $stdin.gets.chomp
-    when 'Y'
-      prompt 'Removing symlinks from ~...'
+    return prompt('Skipping symlink removal...', 37) unless $stdin.gets.chomp == 'Y'
 
-      file_paths = Dir.glob('*/**{.symlink}')
+    prompt "Removing symlinks from #{ENV['HOME']}..."
 
-      file_paths.each do |file_path|
-        full_path = File.join(ENV['HOME'], ".#{File.basename(file_path).sub(/(?:\.erb)?\.symlink/, '')}")
+    file_paths = Dir.glob(File.join(ENV['PWD'], 'home', '*.symlink'))
 
-        FileUtils.rm(full_path) if File.symlink?(full_path)
-      end
-    else
-      prompt 'Skipping symlink removal...', 37
+    file_paths.each do |file_path|
+      linked_file_name = File.join(ENV['HOME'], ".#{File.basename(file_path).sub(/\.symlink$/, '')}")
+
+      FileUtils.rm(linked_file_name) if File.symlink?(linked_file_name)
     end
   end
 end
