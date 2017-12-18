@@ -17,7 +17,7 @@
   untracked = cyan
 [core]
   editor = atom --wait
-  excludesFile = $HOME/.gitignore
+  excludesFile = ~/.gitignore
 [credential]
   helper = osxkeychain
 [user]
