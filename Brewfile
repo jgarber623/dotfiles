@@ -4,6 +4,7 @@ tap 'caskroom/fonts'
 
 brew 'base64'
 brew 'curl'
+brew 'doctl'
 brew 'fd'
 brew 'ffmpeg'
 brew 'git'
