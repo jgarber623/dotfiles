@@ -5,14 +5,14 @@ namespace :ruby do
 
   desc 'Install latest Ruby and set global default'
   task :install do
-    prompt 'Are you sure you want to install Ruby 2.4.2? [Yn]'
+    prompt 'Are you sure you want to install Ruby 2.5.0? [Yn]'
 
-    return prompt('Skipping Ruby 2.4.2 installation...', 37) unless $stdin.gets.chomp == 'Y'
+    return prompt('Skipping Ruby 2.5.0 installation...', 37) unless $stdin.gets.chomp == 'Y'
 
-    prompt 'Installing Ruby 2.4.2...'
+    prompt 'Installing Ruby 2.5.0...'
 
-    sh 'rbenv install 2.4.2'
-    sh 'rbenv global 2.4.2'
+    sh 'rbenv install 2.5.0'
+    sh 'rbenv global 2.5.0'
   end
 
   desc 'Install common Ruby gems'
