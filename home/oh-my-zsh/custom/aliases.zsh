@@ -1,2 +1,2 @@
 alias ll='l'
-alias reload!='. ~/.zshrc'
+alias reload!='source ~/.zshrc'
