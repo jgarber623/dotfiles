@@ -23,5 +23,13 @@ function rbenv_prompt_info() {
   RUBY_VERSION="ruby-${rbv}" && echo "$ZSH_THEME_RBENV_PROMPT_PREFIX$RUBY_VERSION$ZSH_THEME_RBENV_PROMPT_SUFFIX"
 }
 
-PROMPT='%{$fg_bold[yellow]%}%n%{$reset_color%} at %{$fg_bold[cyan]%}%m%{$reset_color%}: $(collapse_pwd)$(rbenv_prompt_info)$(git_prompt_info)
+function set_prompt() {
+  PROMPT='%{$fg_bold[yellow]%}%n%{$reset_color%} \
+at %{$fg_bold[cyan]%}%m%{$reset_color%}: \
+$(collapse_pwd)$(rbenv_prompt_info)$(git_prompt_info)
 $(prompt_char) '
+}
+
+precmd() {
+  set_prompt
+}
