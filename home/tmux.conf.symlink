@@ -1,0 +1,19 @@
+# remap prefix from 'C-b' to 'C-a'
+unbind C-b
+set-option -g prefix C-a
+bind-key C-a send-prefix
+
+# split panes using | and -
+unbind '"'
+unbind %
+bind | split-window -h
+bind - split-window -v
+
+# reload config file
+bind r source-file ~/.tmux.conf
+
+# enable mouse mode
+set -g mouse on
+
+# don't rename windows automatically
+set-option -g allow-rename off
