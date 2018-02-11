@@ -1,35 +1,34 @@
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[green]%}‹"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[green]%}›%{$reset_color%} "
+ZSH_THEME_GIT_PROMPT_CLEAN=" ✓"
+ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}✗"
+
+ZSH_THEME_NVM_PROMPT_PREFIX="%{$fg[magenta]%}‹node-"
+ZSH_THEME_NVM_PROMPT_SUFFIX="%{$fg[magenta]%}›%{$reset_color%} "
+
+ZSH_THEME_RBENV_PROMPT_PREFIX="%{$fg[yellow]%}‹ruby-"
+ZSH_THEME_RBENV_PROMPT_SUFFIX="%{$fg[yellow]%}›%{$reset_color%} "
+
 ZSH_THEME_TERM_TITLE_IDLE=""
 ZSH_THEME_TERM_TAB_TITLE_IDLE=""
 
-ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg_no_bold[green]%}‹"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg_no_bold[green]%}›%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN=" ✓"
-ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg_no_bold[red]%}✗%{$reset_color%}"
-
-ZSH_THEME_RBENV_PROMPT_PREFIX=" %{$fg_no_bold[yellow]%}‹"
-ZSH_THEME_RBENV_PROMPT_SUFFIX="%{$fg_no_bold[yellow]%}›%{$reset_color%}"
-
-function collapse_pwd() {
-  echo $(pwd | sed -e "s,^$HOME,~,")
-}
-
-function prompt_char() {
+prompt_char() {
   git branch > /dev/null 2> /dev/null && echo '±' && return
-  echo '○'
+  echo '$'
 }
 
-function rbenv_prompt_info() {
-  rbv=$(rbenv local 2> /dev/null) || return
-  RUBY_VERSION="ruby-${rbv}" && echo "$ZSH_THEME_RBENV_PROMPT_PREFIX$RUBY_VERSION$ZSH_THEME_RBENV_PROMPT_SUFFIX"
+rbenv_prompt_info() {
+  RUBY_VERSION=$(rbenv local 2> /dev/null) || return
+  echo "$ZSH_THEME_RBENV_PROMPT_PREFIX$RUBY_VERSION$ZSH_THEME_RBENV_PROMPT_SUFFIX"
 }
 
-function set_prompt() {
-  PROMPT='%{$fg_bold[yellow]%}%n%{$reset_color%} \
-at %{$fg_bold[cyan]%}%m%{$reset_color%}: \
-$(collapse_pwd)$(rbenv_prompt_info)$(git_prompt_info)
-$(prompt_char) '
+set_prompt() {
+  local _USER="%{$fg_bold[yellow]%}%n%{$reset_color%} at %{$fg_bold[blue]%}%m%{$reset_color%}"
+  local _PWD=$(pwd | sed -e "s,^$HOME,~,")
+
+  PROMPT="$_USER: $_PWD $(git_prompt_info)$(nvm_prompt_info)$(rbenv_prompt_info)"
+  PROMPT+=$'\n$(prompt_char) '
 }
 
-precmd() {
-  set_prompt
-}
+setopt prompt_subst
+precmd_functions+=set_prompt

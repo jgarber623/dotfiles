@@ -3,12 +3,12 @@ require 'modules/promptable'
 namespace :ruby do
   include Promptable
 
+  GLOBAL_RUBY_VERSION = '2.5.0'.freeze
+
   DEFAULT_RUBY_GEMS = %w(
     bundler
     travis
   )
-
-  GLOBAL_RUBY_VERSION = '2.5.0'.freeze
 
   desc 'Install latest Ruby and set global default'
   task :install do

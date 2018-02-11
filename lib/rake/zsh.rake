@@ -11,7 +11,7 @@ namespace :zsh do
 
     prompt 'Installing oh-my-zsh...'
 
-    sh 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
+    sh 'git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh'
   end
 
   desc 'Uninstall oh-my-zsh'
