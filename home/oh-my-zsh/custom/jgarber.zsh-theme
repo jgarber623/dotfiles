@@ -6,8 +6,8 @@ ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}✗"
 ZSH_THEME_NVM_PROMPT_PREFIX="%{$fg[magenta]%}‹node-"
 ZSH_THEME_NVM_PROMPT_SUFFIX="%{$fg[magenta]%}›%{$reset_color%} "
 
-ZSH_THEME_RBENV_PROMPT_PREFIX="%{$fg[yellow]%}‹ruby-"
-ZSH_THEME_RBENV_PROMPT_SUFFIX="%{$fg[yellow]%}›%{$reset_color%} "
+ZSH_THEME_RBENV_PROMPT_PREFIX="%{$fg[red]%}‹ruby-"
+ZSH_THEME_RBENV_PROMPT_SUFFIX="%{$fg[red]%}›%{$reset_color%} "
 
 ZSH_THEME_TERM_TITLE_IDLE=""
 ZSH_THEME_TERM_TAB_TITLE_IDLE=""
