@@ -2,8 +2,8 @@ tap 'homebrew/services'
 tap 'caskroom/drivers'
 tap 'caskroom/fonts'
 
+brew 'ansible'
 brew 'base64'
-brew 'doctl'
 brew 'fd'
 brew 'ffmpeg'
 brew 'git'
@@ -41,6 +41,7 @@ mas 'Deliveries', id: 924726344
 mas 'Fantastical 2', id: 975937182
 mas 'Icon Slate', id: 439697913
 mas 'iMovie', id: 408981434
+mas 'Keypad', id: 928906884
 mas 'Keynote', id: 409183694
 mas 'Marked 2', id: 890031187
 mas 'Monity', id: 915542151
@@ -60,18 +61,19 @@ cask 'appcleaner'
 cask 'atom'
 cask 'devdocs'
 cask 'encryptme'
+cask 'etcher'
 cask 'firefox'
 cask 'fission'
 cask 'google-chrome'
 cask 'handbrake'
 cask 'imagealpha'
 cask 'imageoptim'
+cask 'insomnia'
 cask 'mplayerx'
 cask 'monity-helper'
 cask 'onyx'
 cask 'opera'
 cask 'padbury-clock'
-cask 'postman'
 cask 'psequel'
 cask 'qlcolorcode'
 cask 'qlimagesize'
