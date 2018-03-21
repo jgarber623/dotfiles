@@ -5,6 +5,18 @@
   "formatters": [
     "codeframe"
   ],
+  "rules": {
+    "http-compression": ["warning", {
+      "html": {
+        "brotli": false,
+        "zopfli": false
+      },
+      "resource": {
+        "brotli": false,
+        "zopfli": false
+      }
+    }]
+  },
   "ignoredUrls": [
     {
       "domain": ".*\\.googleapis\\.com/.*",
