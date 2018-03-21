@@ -4,16 +4,19 @@ namespace :node do
   include Promptable
 
   NVM_VERSION = 'v0.33.8'.freeze
-  DEFAULT_NODE_VERSION = 'v9.6.1'.freeze
+  DEFAULT_NODE_VERSION = 'v9.8.0'.freeze
 
   DEFAULT_NODE_PACKAGES = %w(
+    @sonarwhal/configuration-web-recommended
     eslint
     eslint-plugin-frontmatter
     fast-cli
     npm
+    node-ssllabs
     pa11y
     sass-lint
     snyk
+    sonarwhal
     svgo
     vtop
   )

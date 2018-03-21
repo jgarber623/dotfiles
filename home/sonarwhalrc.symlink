@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "web-recommended"
+  ],
+  "formatters": [
+    "codeframe"
+  ],
+  "ignoredUrls": [
+    {
+      "domain": ".*\\.googleapis\\.com/.*",
+      "rules": ["*"]
+    }
+  ]
+}
