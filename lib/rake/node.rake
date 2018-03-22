@@ -11,6 +11,7 @@ namespace :node do
     eslint
     eslint-plugin-frontmatter
     fast-cli
+    imaging-heap
     npm
     node-ssllabs
     pa11y
