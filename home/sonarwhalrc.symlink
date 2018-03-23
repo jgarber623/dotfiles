@@ -3,7 +3,7 @@
     "web-recommended"
   ],
   "formatters": [
-    "codeframe"
+    "stylish"
   ],
   "rules": {
     "http-compression": ["warning", {

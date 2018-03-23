@@ -4,7 +4,7 @@ namespace :node do
   include Promptable
 
   NVM_VERSION = 'v0.33.8'.freeze
-  DEFAULT_NODE_VERSION = 'v9.8.0'.freeze
+  DEFAULT_NODE_VERSION = 'v9.9.0'.freeze
 
   DEFAULT_NODE_PACKAGES = %w(
     @sonarwhal/configuration-web-recommended
@@ -13,7 +13,6 @@ namespace :node do
     fast-cli
     imaging-heap
     npm
-    node-ssllabs
     pa11y
     sass-lint
     snyk
