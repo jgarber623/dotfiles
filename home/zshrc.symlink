@@ -59,7 +59,15 @@ ZSH_CUSTOM=$HOME/.dotfiles/home/oh-my-zsh/custom
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  brew bundler gem git marked2 nmap nvm osx rails rake rbenv
+  brew
+  bundler
+  git
+  marked2
+  nvm
+  osx
+  rails
+  rake
+  rbenv
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -75,7 +83,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='vi'
+  export EDITOR='nano'
 fi
 
 # Compilation flags
