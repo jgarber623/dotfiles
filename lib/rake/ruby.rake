@@ -10,7 +10,7 @@ namespace :ruby do
     travis
   )
 
-  desc 'Install latest Ruby and set global default'
+  desc 'Install latest Ruby and set global version'
   task :install do
     prompt "Are you sure you want to install Ruby #{GLOBAL_RUBY_VERSION}? [Yn]"
 

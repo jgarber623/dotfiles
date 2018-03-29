@@ -4,7 +4,7 @@ namespace :node do
   include Promptable
 
   NVM_VERSION = 'v0.33.8'.freeze
-  DEFAULT_NODE_VERSION = 'v9.9.0'.freeze
+  DEFAULT_NODE_VERSION = 'v9.10.0'.freeze
 
   DEFAULT_NODE_PACKAGES = %w(
     @sonarwhal/configuration-web-recommended
@@ -21,7 +21,7 @@ namespace :node do
     vtop
   )
 
-  desc 'Install Node and set global default'
+  desc 'Install Node and set default version'
   task :install do
     prompt "Are you sure you want to install Node #{DEFAULT_NODE_VERSION}? [Yn]"
 
