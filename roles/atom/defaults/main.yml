@@ -1,0 +1,43 @@
+atom_homebrew_cask_packages:
+  - atom
+
+atom_linked_files:
+  - .atom/config.cson
+  - .atom/init.coffee
+  - .atom/keymap.cson
+  - .atom/snippets.cson
+  - .atom/styles.less
+
+atom_packages:
+  - autocomplete-json
+  - autocomplete-semantic-web
+  - busy-signal
+  - close-tags
+  - editorconfig
+  - emmet
+  - erb-snippets
+  - file-icons
+  - intentions
+  - language-chef
+  - language-dotenv
+  - language-gitignore
+  - language-liquid
+  - language-markdown
+  - language-nginx
+  - language-systemd
+  - language-terraform
+  - linter
+  - linter-eslint
+  - linter-js-yaml
+  - linter-jsonlint
+  - linter-markdown
+  - linter-ruby
+  - linter-sass-lint
+  - linter-ui-default
+  - nord-atom-syntax
+  - nord-atom-ui
+  - package-sync
+  - pigments
+  - pretty-json
+  - sort-lines
+  - ssh-config

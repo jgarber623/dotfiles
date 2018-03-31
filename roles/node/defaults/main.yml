@@ -1,0 +1,13 @@
+node_homebrew_packages:
+  - node
+  - yarn
+
+node_linked_files:
+  - .npmrc
+
+node_global_packages:
+  - fast-cli
+  - npm
+  - pa11y
+  - svgo
+  - vtop

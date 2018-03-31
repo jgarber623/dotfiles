@@ -1,0 +1,25 @@
+homebrew_cask_packages:
+  - alfred
+  - appcleaner
+  - devdocs
+  - encryptme
+  - etcher
+  - firefox
+  - fission
+  - google-chrome
+  - handbrake
+  - imagealpha
+  - imageoptim
+  - insomnia
+  - mplayerx
+  - monity-helper
+  - onyx
+  - opera
+  - padbury-clock
+  - psequel
+  - signal
+  - sketch
+  - touchswitcher
+  - transmit
+  - vmware-fusion
+  - yubico-yubikey-piv-manager

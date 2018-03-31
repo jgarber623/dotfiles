@@ -1,0 +1,7 @@
+- name: Link configuration files
+  file:
+    src: "{{ role_path }}/files/{{ item }}"
+    dest: "~/{{ item }}"
+    state: link
+    force: yes
+  with_items: "{{ remark_linked_files }}"

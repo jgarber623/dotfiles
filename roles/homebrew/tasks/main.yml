@@ -1,0 +1,9 @@
+- name: Tap Homebrew repositories
+  homebrew_tap:
+    name: "{{ item }}"
+  with_items: "{{ homebrew_taps }}"
+
+- name: Install packages with Homebrew
+  homebrew:
+    name: "{{ item }}"
+  with_items: "{{ homebrew_packages }}"

@@ -1,0 +1,18 @@
+ruby_homebrew_packages:
+  - rbenv
+  - rbenv-default-gems
+  - ruby-build
+
+ruby_linked_files:
+  - .bundle/config
+  - .gemrc
+
+ruby_global_version: 2.5.1
+
+ruby_versions:
+  - "{{ ruby_global_version }}"
+
+ruby_default_gems:
+  - bundler
+  - bundler-audit
+  - travis

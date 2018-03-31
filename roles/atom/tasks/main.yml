@@ -1,0 +1,18 @@
+- name: Install packages with Homebrew-Cask
+  homebrew_cask:
+    name: "{{ item }}"
+  with_items: "{{ atom_homebrew_cask_packages }}"
+
+- name: Link configuration files
+  file:
+    src: "{{ role_path }}/files/{{ item }}"
+    dest: "~/{{ item }}"
+    state: link
+    force: yes
+  with_items: "{{ atom_linked_files }}"
+
+- name: Install Atom packages
+  command: "apm install {{ item }}"
+  args:
+    creates: "~/.atom/packages/{{ item }}"
+  with_items: "{{ atom_packages }}"
