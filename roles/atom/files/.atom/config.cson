@@ -76,6 +76,8 @@
   linter:
     lintOnChange: false
   "linter-eslint": {}
+  "linter-markdown":
+    presetStyleGuideWithoutConfig: true
   "linter-sass-lint":
     noConfigDisable: true
   "linter-ui-default":
