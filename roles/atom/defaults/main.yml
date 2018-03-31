@@ -5,6 +5,7 @@ atom_linked_files:
   - .atom/config.cson
   - .atom/init.coffee
   - .atom/keymap.cson
+  - .atom/packages.cson
   - .atom/snippets.cson
   - .atom/styles.less
 
