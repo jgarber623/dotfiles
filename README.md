@@ -10,7 +10,7 @@ First, open up Terminal.app and install Xcode Command Line Tools:
 xcode-select --install
 ```
 
-Then, clone this repository and run the bootstrap command:
+Then, clone this repository and run the following commands:
 
 ```sh
 git clone git@github.com:jgarber623/dotfiles.git ~/.dotfiles
