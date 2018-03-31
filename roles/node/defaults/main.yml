@@ -6,6 +6,7 @@ node_linked_files:
   - .npmrc
 
 node_global_packages:
+  - bower
   - fast-cli
   - npm
   - pa11y
