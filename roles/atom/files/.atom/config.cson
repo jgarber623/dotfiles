@@ -82,7 +82,6 @@
     noConfigDisable: true
   "linter-ui-default":
     decorateOnTreeView: "None"
-    showPanel: true
   "markdown-preview":
     useGitHubStyle: true
   "nord-atom-ui":
