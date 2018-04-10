@@ -10,6 +10,7 @@
 - import_playbook: playbooks/ruby.yml
 - import_playbook: playbooks/node.yml
 - import_playbook: playbooks/atom.yml
+- import_playbook: playbooks/docker.yml
 - import_playbook: playbooks/remark.yml
 - import_playbook: playbooks/tmux.yml
 - import_playbook: playbooks/homebrew-cask.yml

@@ -1,0 +1,8 @@
+- name: Install packages with Homebrew-Cask
+  homebrew_cask:
+    name: docker
+
+- name: Install packages with Homebrew
+  homebrew:
+    name: docker-squash
+    install_options: without-docker,without-docker-machine
