@@ -1,6 +1,3 @@
-git_homebrew_packages:
-  - git
-
 git_linked_files:
   - .gitconfig
   - .gitignore

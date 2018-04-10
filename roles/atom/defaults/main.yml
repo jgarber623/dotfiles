@@ -1,6 +1,3 @@
-atom_homebrew_cask_packages:
-  - atom
-
 atom_linked_files:
   - .atom/config.cson
   - .atom/init.coffee

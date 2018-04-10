@@ -1,8 +1,6 @@
 - name: Install packages with Homebrew
   homebrew:
-    name: "{{ item }}"
-    state: latest
-  with_items: "{{ git_homebrew_packages }}"
+    name: git
 
 - name: Link configuration files
   file:

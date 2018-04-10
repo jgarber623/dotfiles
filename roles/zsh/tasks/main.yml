@@ -1,8 +1,6 @@
 - name: Install packages with Homebrew
   homebrew:
-    name: "{{ item }}"
-    state: latest
-  with_items: "{{ zsh_homebrew_packages }}"
+    name: zsh
 
 - name: Change shell to ZSH
   user:

@@ -1,6 +1,3 @@
-zsh_homebrew_packages:
-  - zsh
-
 zsh_linked_files:
   - .oh-my-zsh/custom/aliases.zsh
   - .oh-my-zsh/custom/jgarber.zsh-theme

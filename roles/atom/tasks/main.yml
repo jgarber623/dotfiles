@@ -1,7 +1,6 @@
 - name: Install packages with Homebrew-Cask
   homebrew_cask:
-    name: "{{ item }}"
-  with_items: "{{ atom_homebrew_cask_packages }}"
+    name: atom
 
 - name: Link configuration files
   file:
