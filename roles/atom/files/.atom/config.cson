@@ -25,6 +25,7 @@
       ]
       "source.yaml": [
         "gemrc"
+        "reek"
       ]
       "text.html.ruby": [
         "html.erb"
@@ -71,8 +72,6 @@
     scrollToResultOnLiveSearch: true
   github:
     viewChangesForCurrentFileDiffPaneSplitDirection: "right"
-  "language-generic-config":
-    enableAutomatch: false
   linter:
     lintOnChange: false
   "linter-eslint": {}
@@ -86,10 +85,6 @@
     useGitHubStyle: true
   "nord-atom-ui":
     darkerFormFocusEffect: true
-  "northem-atom-ui":
-    tabSizing: false
-  "northem-dark-atom-ui":
-    tabSizing: false
   "package-sync":
     createOnChange: true
     forceOverwrite: true
