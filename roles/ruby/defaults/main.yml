@@ -3,6 +3,10 @@ ruby_homebrew_packages:
   - rbenv-default-gems
   - ruby-build
 
+ruby_directories:
+  - .bundle
+  - .rbenv
+
 ruby_linked_files:
   - .bundle/config
   - .gemrc

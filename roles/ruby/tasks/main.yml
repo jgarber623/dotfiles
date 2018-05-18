@@ -4,10 +4,11 @@
     state: latest
   with_items: "{{ ruby_homebrew_packages }}"
 
-- name: Create ~/.bundle directory
+- name: Create directories
   file:
-    path: ~/.bundle
+    path: "~/{{ item }}"
     state: directory
+  with_items: "{{ ruby_directories }}"
 
 - name: Link configuration files
   file:
