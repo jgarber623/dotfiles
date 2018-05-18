@@ -13,7 +13,7 @@ xcode-select --install
 Then, clone this repository and run the following commands:
 
 ```sh
-git clone git@github.com:jgarber623/dotfiles ~/.dotfiles
+git clone -b macbook-pro git@github.com:jgarber623/dotfiles ~/.dotfiles
 cd ~/.dotfiles
 make bootstrap
 make provision
