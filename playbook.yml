@@ -10,4 +10,4 @@
 - import_playbook: playbooks/ruby.yml
 - import_playbook: playbooks/node.yml
 - import_playbook: playbooks/homebrew-cask.yml
-- import_playbook: playbooks/mas-cli.yml
+- import_playbook: playbooks/mas.yml
