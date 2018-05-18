@@ -1,0 +1,6 @@
+zsh_linked_files:
+  - .oh-my-zsh/custom/aliases.zsh
+  - .oh-my-zsh/custom/jgarber.zsh-theme
+  - .oh-my-zsh/custom/rbenv.zsh
+  - .oh-my-zsh/custom/travis.zsh
+  - .zshrc

@@ -1,0 +1,20 @@
+homebrew_taps:
+  - caskroom/drivers
+  - caskroom/fonts
+
+homebrew_packages:
+  - base64
+  - fd
+  - ffmpeg
+  - hr
+  - htop
+  - jq
+  - lame
+  - m-cli
+  - nano
+  - nmap
+  - pandoc
+  - pidof
+  - trash
+  - tree
+  - youtube-dl

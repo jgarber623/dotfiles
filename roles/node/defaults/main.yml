@@ -1,0 +1,12 @@
+node_homebrew_packages:
+  - node
+  - yarn
+
+node_linked_files:
+  - .npmrc
+
+node_global_packages:
+  - bower
+  - fast-cli
+  - npm
+  - vtop

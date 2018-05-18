@@ -1,0 +1,9 @@
+- name: Install mas-cli with Homebrew
+  homebrew:
+    name: mas-cli
+
+- name: Install applications with mas-cli
+  shell: "mas install {{ item.id }}"
+  register: mas_install_result
+  with_items: "{{ mas_applications }}"
+  changed_when: "' is already installed' not in mas_install_result.stdout"
