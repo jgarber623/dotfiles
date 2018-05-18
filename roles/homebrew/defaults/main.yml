@@ -13,7 +13,6 @@ homebrew_packages:
   - lame
   - lynx
   - m-cli
-  - mas
   - nano
   - nmap
   - pandoc

@@ -20,6 +20,7 @@ packages: [
   "linter"
   "linter-docker"
   "linter-eslint"
+  "linter-flake8"
   "linter-js-yaml"
   "linter-jsonlint"
   "linter-markdown"

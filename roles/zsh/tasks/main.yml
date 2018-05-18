@@ -1,6 +1,7 @@
-- name: Install packages with Homebrew
+- name: Install ZSH with Homebrew
   homebrew:
     name: zsh
+    state: latest
 
 - name: Change shell to ZSH
   user:

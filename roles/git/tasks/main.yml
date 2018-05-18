@@ -1,6 +1,7 @@
-- name: Install packages with Homebrew
+- name: Install Git with Homebrew
   homebrew:
     name: git
+    state: latest
 
 - name: Link configuration files
   file:

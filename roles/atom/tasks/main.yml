@@ -1,4 +1,4 @@
-- name: Install packages with Homebrew-Cask
+- name: Install Atom with Homebrew-Cask
   homebrew_cask:
     name: atom
 

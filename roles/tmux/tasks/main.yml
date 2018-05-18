@@ -1,6 +1,7 @@
-- name: Install packages with Homebrew
+- name: Install tmux with Homebrew
   homebrew:
     name: tmux
+    state: latest
 
 - name: Link configuration files
   file:
