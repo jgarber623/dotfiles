@@ -18,11 +18,6 @@
     force: yes
   with_items: "{{ ruby_linked_files }}"
 
-- name: Write default-gems file
-  template:
-    src: default-gems.j2
-    dest: "~/.rbenv/default-gems"
-
 - name: Install Ruby versions
   command: "rbenv install {{ item }}"
   args:

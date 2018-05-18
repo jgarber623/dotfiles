@@ -10,12 +10,9 @@ ruby_directories:
 ruby_linked_files:
   - .bundle/config
   - .gemrc
+  - .rbenv/default-gems
 
 ruby_global_version: 2.5.1
 
 ruby_versions:
   - "{{ ruby_global_version }}"
-
-ruby_default_gems:
-  - bundler
-  - bundler-audit
