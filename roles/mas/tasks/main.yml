@@ -1,9 +1,9 @@
-- name: Install mas-cli with Homebrew
+- name: Install mas with Homebrew
   homebrew:
     name: mas
     state: latest
 
-- name: Install applications with mas-cli
+- name: Install applications with mas
   shell: "mas install {{ item.id }}"
   register: mas_install_result
   with_items: "{{ mas_applications }}"
