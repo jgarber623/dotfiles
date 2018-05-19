@@ -17,6 +17,7 @@ homebrew_cask_packages:
   - opera
   - padbury-clock
   - psequel
+  - screens
   - signal
   - sketch
   - touchswitcher
