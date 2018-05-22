@@ -3,6 +3,8 @@ ruby_homebrew_packages:
   - rbenv-default-gems
   - ruby-build
 
+ruby_rubies_directory: /opt/rubies
+
 ruby_directories:
   - .bundle
   - .rbenv
