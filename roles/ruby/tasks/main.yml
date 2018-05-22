@@ -6,9 +6,16 @@
 
 - name: Create directories
   file:
-    path: "~/{{ item }}"
+    path: "{{ item }}"
     state: directory
   with_items: "{{ ruby_directories }}"
+
+- name: Link Ruby installation directory
+  file:
+    src: /opt/rubies
+    dest: ~/.rbenv/versions
+    state: link
+    force: yes
 
 - name: Link configuration files
   file:
@@ -21,7 +28,7 @@
 - name: Install Ruby versions
   command: "rbenv install {{ item }}"
   args:
-    creates: "~/.rbenv/versions/{{ item }}"
+    creates: "/opt/rubies/{{ item }}"
   with_items: "{{ ruby_versions }}"
 
 - name: Set global Ruby version

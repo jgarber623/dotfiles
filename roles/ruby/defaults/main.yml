@@ -4,8 +4,9 @@ ruby_homebrew_packages:
   - ruby-build
 
 ruby_directories:
-  - .bundle
-  - .rbenv
+  - /opt/rubies
+  - ~/.bundle
+  - ~/.rbenv
 
 ruby_linked_files:
   - .bundle/config
