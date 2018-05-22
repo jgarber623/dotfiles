@@ -4,9 +4,15 @@
     state: latest
   with_items: "{{ ruby_homebrew_packages }}"
 
+- name: Create /opt/rubies
+  file:
+    path: /opt/rubies
+    state: directory
+  become: yes
+
 - name: Create directories
   file:
-    path: "{{ item }}"
+    path: "~/{{ item }}"
     state: directory
   with_items: "{{ ruby_directories }}"
 
