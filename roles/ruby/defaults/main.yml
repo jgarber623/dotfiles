@@ -1,18 +1,15 @@
 ruby_homebrew_packages:
   - rbenv
-  - rbenv-default-gems
   - ruby-build
 
 ruby_rubies_directory: /opt/rubies
 
 ruby_directories:
   - .bundle
-  - .rbenv
 
 ruby_linked_files:
   - .bundle/config
   - .gemrc
-  - .rbenv/default-gems
 
 ruby_global_version: 2.5.1
 
