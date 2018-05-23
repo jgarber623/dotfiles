@@ -1,6 +1,4 @@
 mas_applications:
-  - name: 1Password
-    id: 443987910
   - name: Airmail 3
     id: 918858936
   - name: Bear
