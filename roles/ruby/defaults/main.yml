@@ -1,17 +1,17 @@
-ruby_homebrew_packages:
+ruby__homebrew_packages:
   - rbenv
   - ruby-build
 
-ruby_rubies_directory: /opt/rubies
+ruby__bundler_config_path: "{{ lookup('env', 'HOME') }}/.bundle"
+ruby__rbenv_config_path: "{{ lookup('env', 'HOME') }}/.rbenv"
 
-ruby_directories:
-  - .bundle
-
-ruby_linked_files:
+ruby__linked_files:
   - .bundle/config
   - .gemrc
 
-ruby_global_version: 2.5.1
+ruby__rubies_path: /opt/rubies
 
-ruby_versions:
-  - "{{ ruby_global_version }}"
+ruby__global_version: 2.5.1
+
+ruby__versions:
+  - "{{ ruby__global_version }}"

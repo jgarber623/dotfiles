@@ -2,18 +2,18 @@
   homebrew:
     name: "{{ item }}"
     state: latest
-  with_items: "{{ node_homebrew_packages }}"
+  with_items: "{{ node__homebrew_packages }}"
 
-- name: Link configuration files
+- name: Link config files
   file:
     src: "{{ role_path }}/files/{{ item }}"
-    dest: "~/{{ item }}"
+    dest: "{{ lookup('env', 'HOME') }}/{{ item }}"
     state: link
     force: yes
-  with_items: "{{ node_linked_files }}"
+  with_items: "{{ node__linked_files }}"
 
-- name: Install global Node packages
+- name: Install packages with npm
   npm:
     name: "{{ item }}"
     global: yes
-  with_items: "{{ node_global_packages }}"
+  with_items: "{{ node__npm_packages }}"

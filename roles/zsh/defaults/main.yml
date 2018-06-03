@@ -1,4 +1,9 @@
-zsh_linked_files:
+zsh__homebrew_packages:
+  - zsh
+
+zsh__config_path: "{{ lookup('env', 'HOME') }}/.oh-my-zsh"
+
+zsh__linked_files:
   - .oh-my-zsh/custom/aliases.zsh
   - .oh-my-zsh/custom/jgarber.zsh-theme
   - .oh-my-zsh/custom/rbenv.zsh

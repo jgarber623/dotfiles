@@ -1,8 +1,8 @@
-homebrew_taps:
-  - caskroom/drivers
-  - caskroom/fonts
+homebrew__taps:
+  - homebrew/cask-drivers
+  - homebrew/cask-fonts
 
-homebrew_packages:
+homebrew__packages:
   - base64
   - fd
   - ffmpeg

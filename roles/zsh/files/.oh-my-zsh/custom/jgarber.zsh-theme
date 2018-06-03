@@ -30,10 +30,11 @@ rbenv_prompt_info() {
 }
 
 set_prompt() {
-  local _user="%{$fg_bold[yellow]%}%n%{$reset_color%} at %{$fg_bold[blue]%}%m%{$reset_color%}"
+  local _status="%(?:%{$fg_bold[green]%}●:%{$fg_bold[red]%}●)%{$reset_color%}"
+  local _user="%{$fg_bold[yellow]%}%n%{$reset_color%} @ %{$fg_bold[blue]%}%m%{$reset_color%}"
   local _pwd=$(pwd | sed -e "s,^$HOME,~,")
 
-  PROMPT="${_user}: ${_pwd} $(git_prompt_info)$(node_prompt_info)$(rbenv_prompt_info)"
+  PROMPT="${_status} ${_user}: ${_pwd} $(git_prompt_info)$(node_prompt_info)$(rbenv_prompt_info)"
   PROMPT+=$'\n$(prompt_char) '
 }
 

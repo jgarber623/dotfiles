@@ -1,11 +1,11 @@
-node_homebrew_packages:
+node__homebrew_packages:
   - node
   - yarn
 
-node_linked_files:
+node__linked_files:
   - .npmrc
 
-node_global_packages:
+node__npm_packages:
   - bower
   - fast-cli
   - npm
