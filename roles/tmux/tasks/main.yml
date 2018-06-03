@@ -1,12 +1,13 @@
-- name: Install tmux with Homebrew
+- name: Install packages with Homebrew
   homebrew:
-    name: tmux
+    name: "{{ item }}"
     state: latest
+  with_items: "{{ tmux__homebrew_packages }}"
 
-- name: Link configuration files
+- name: Link config files
   file:
     src: "{{ role_path }}/files/{{ item }}"
-    dest: "~/{{ item }}"
+    dest: "{{ lookup('env', 'HOME') }}/{{ item }}"
     state: link
     force: yes
-  with_items: "{{ tmux_linked_files }}"
+  with_items: "{{ tmux__linked_files }}"

@@ -1,4 +1,9 @@
-atom_linked_files:
+atom__homebrew_cask_packages:
+  - atom
+
+atom__config_path: "{{ lookup('env', 'HOME') }}/.atom"
+
+atom__linked_files:
   - .atom/config.cson
   - .atom/init.coffee
   - .atom/keymap.cson
@@ -6,7 +11,7 @@ atom_linked_files:
   - .atom/snippets.cson
   - .atom/styles.less
 
-atom_packages:
+atom__apm_packages:
   - autocomplete-json
   - autocomplete-semantic-web
   - busy-signal
@@ -17,6 +22,7 @@ atom_packages:
   - file-icons
   - intentions
   - language-chef
+  - language-docker
   - language-dotenv
   - language-gitignore
   - language-liquid
@@ -25,7 +31,9 @@ atom_packages:
   - language-systemd
   - language-terraform
   - linter
+  - linter-docker
   - linter-eslint
+  - linter-flake8
   - linter-js-yaml
   - linter-jsonlint
   - linter-markdown

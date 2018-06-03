@@ -1,17 +1,23 @@
-- name: Install Atom with Homebrew-Cask
+- name: Install packages with Homebrew-Cask
   homebrew_cask:
-    name: atom
+    name: "{{ item }}"
+  with_items: "{{ atom__homebrew_cask_packages }}"
 
-- name: Link configuration files
+- name: Create config path
+  file:
+    path: "{{ atom__config_path }}"
+    state: directory
+
+- name: Link config files
   file:
     src: "{{ role_path }}/files/{{ item }}"
-    dest: "~/{{ item }}"
+    dest: "{{ lookup('env', 'HOME') }}/{{ item }}"
     state: link
     force: yes
-  with_items: "{{ atom_linked_files }}"
+  with_items: "{{ atom__linked_files }}"
 
-- name: Install Atom packages
+- name: Install packages with apm
   command: "apm install {{ item }}"
   args:
-    creates: "~/.atom/packages/{{ item }}"
-  with_items: "{{ atom_packages }}"
+    creates: "{{ atom__config_path }}/packages/{{ item }}"
+  with_items: "{{ atom__apm_packages }}"

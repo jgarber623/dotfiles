@@ -13,5 +13,4 @@
 - import_playbook: playbooks/docker.yml
 - import_playbook: playbooks/remark.yml
 - import_playbook: playbooks/tmux.yml
-- import_playbook: playbooks/homebrew-cask.yml
-- import_playbook: playbooks/mas.yml
+- import_playbook: playbooks/apps.yml
