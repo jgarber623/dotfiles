@@ -1,4 +1,16 @@
-mas_applications:
+apps__homebrew_packages:
+  - mas
+
+apps__homebrew_cask_packages:
+  - appcleaner
+  - backblaze
+  - monity-helper
+  - mplayerx
+  - onyx
+  - pdfinfo
+  - xld
+
+apps__mas_apps:
   - name: Display Menu
     id: 549083868
   - name: Monity

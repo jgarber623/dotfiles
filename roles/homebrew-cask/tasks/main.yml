@@ -1,4 +1,0 @@
-- name: Install packages with Homebrew-Cask
-  homebrew_cask:
-    name: "{{ item }}"
-  with_items: "{{ homebrew_cask_packages }}"

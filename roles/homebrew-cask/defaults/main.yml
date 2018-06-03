@@ -1,8 +1,0 @@
-homebrew_cask_packages:
-  - appcleaner
-  - backblaze
-  - monity-helper
-  - mplayerx
-  - onyx
-  - pdfinfo
-  - xld
