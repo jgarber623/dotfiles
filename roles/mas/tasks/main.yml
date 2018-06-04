@@ -1,0 +1,9 @@
+- import_tasks: ../common/tasks/homebrew.yml
+  vars:
+    packages: "{{ mas__homebrew_packages }}"
+
+- name: Install packages with mas
+  shell: "mas install {{ item.id }}"
+  register: mas_install_result
+  with_items: "{{ mas__packages }}"
+  changed_when: "' is already installed' not in mas_install_result.stdout"

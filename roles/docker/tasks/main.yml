@@ -1,10 +1,7 @@
-- name: Install packages with Homebrew-Cask
-  homebrew_cask:
-    name: "{{ item }}"
-  with_items: "{{ docker__homebrew_cask_packages }}"
+- import_tasks: ../common/tasks/homebrew-cask.yml
+  vars:
+    packages: "{{ docker__homebrew_cask_packages }}"
 
-- name: Install packages with Homebrew
-  homebrew:
-    name: "{{ item }}"
-    state: latest
-  with_items: "{{ docker__homebrew_packages }}"
+- import_tasks: ../common/tasks/homebrew.yml
+  vars:
+    packages: "{{ docker__homebrew_packages }}"

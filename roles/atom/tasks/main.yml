@@ -1,20 +1,15 @@
-- name: Install packages with Homebrew-Cask
-  homebrew_cask:
-    name: "{{ item }}"
-  with_items: "{{ atom__homebrew_cask_packages }}"
+- import_tasks: ../common/tasks/homebrew-cask.yml
+  vars:
+    packages: "{{ atom__homebrew_cask_packages }}"
 
 - name: Create config path
   file:
     path: "{{ atom__config_path }}"
     state: directory
 
-- name: Link config files
-  file:
-    src: "{{ role_path }}/files/{{ item }}"
-    dest: "{{ lookup('env', 'HOME') }}/{{ item }}"
-    state: link
-    force: yes
-  with_items: "{{ atom__linked_files }}"
+- import_tasks: ../common/tasks/link-config-files.yml
+  vars:
+    linked_files: "{{ atom__linked_files }}"
 
 - name: Install packages with apm
   command: "apm install {{ item }}"

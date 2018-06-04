@@ -1,35 +1,7 @@
-apps__homebrew_packages:
+mas__homebrew_packages:
   - mas
 
-apps__homebrew_cask_packages:
-  - 1password
-  - alfred
-  - appcleaner
-  - devdocs
-  - encryptme
-  - etcher
-  - firefox
-  - fission
-  - google-chrome
-  - handbrake
-  - imagealpha
-  - imageoptim
-  - insomnia
-  - mplayerx
-  - monity-helper
-  - onyx
-  - opera
-  - padbury-clock
-  - psequel
-  - screens
-  - signal
-  - sketch
-  - touchswitcher
-  - transmit
-  - vmware-fusion
-  - yubico-yubikey-piv-manager
-
-apps__mas_apps:
+mas__packages:
   - name: Airmail 3
     id: 918858936
   - name: Bear
@@ -46,10 +18,10 @@ apps__mas_apps:
     id: 439697913
   - name: iMovie
     id: 408981434
-  - name: Keypad
-    id: 928906884
   - name: Keynote
     id: 409183694
+  - name: Keypad
+    id: 928906884
   - name: Marked 2
     id: 890031187
   - name: Monity
@@ -75,4 +47,4 @@ apps__mas_apps:
   - name: The Unarchiver
     id: 425424353
   - name: Tweetbot
-    id: 557168941
+    id: 1384080005

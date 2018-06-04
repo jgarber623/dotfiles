@@ -1,8 +1,8 @@
-- name: apps playbook
+- name: mas playbook
   hosts: localhost
   connection: local
   become_method: sudo
   gather_facts: false
 
   roles:
-    - ../roles/apps
+    - ../roles/mas

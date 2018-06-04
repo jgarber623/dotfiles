@@ -1,8 +1,6 @@
-- name: Install packages with Homebrew
-  homebrew:
-    name: "{{ item }}"
-    state: latest
-  with_items: "{{ ruby__homebrew_packages }}"
+- import_tasks: ../common/tasks/homebrew.yml
+  vars:
+    packages: "{{ ruby__homebrew_packages }}"
 
 - name: Create config paths
   file:
@@ -12,13 +10,9 @@
     - "{{ ruby__bundler_config_path }}"
     - "{{ ruby__rbenv_config_path }}"
 
-- name: Link config files
-  file:
-    src: "{{ role_path }}/files/{{ item }}"
-    dest: "{{ lookup('env', 'HOME') }}/{{ item }}"
-    state: link
-    force: yes
-  with_items: "{{ ruby__linked_files }}"
+- import_tasks: ../common/tasks/link-config-files.yml
+  vars:
+    linked_files: "{{ ruby__linked_files }}"
 
 - name: Create {{ ruby__default_gems_config }} file
   template:

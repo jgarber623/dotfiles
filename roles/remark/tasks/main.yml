@@ -1,7 +1,3 @@
-- name: Link config files
-  file:
-    src: "{{ role_path }}/files/{{ item }}"
-    dest: "{{ lookup('env', 'HOME') }}/{{ item }}"
-    state: link
-    force: yes
-  with_items: "{{ remark__linked_files }}"
+- import_tasks: ../common/tasks/link-config-files.yml
+  vars:
+    linked_files: "{{ remark__linked_files }}"

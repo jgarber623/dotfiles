@@ -3,8 +3,6 @@
     name: "{{ item }}"
   with_items: "{{ homebrew__taps }}"
 
-- name: Install packages with Homebrew
-  homebrew:
-    name: "{{ item }}"
-    state: latest
-  with_items: "{{ homebrew__packages }}"
+- import_tasks: ../common/tasks/homebrew.yml
+  vars:
+    packages: "{{ homebrew__packages }}"
