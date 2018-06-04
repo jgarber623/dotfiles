@@ -9,4 +9,5 @@
 - import_playbook: playbooks/zsh.yml
 - import_playbook: playbooks/ruby.yml
 - import_playbook: playbooks/node.yml
-- import_playbook: playbooks/apps.yml
+- import_playbook: playbooks/homebrew-cask.yml
+- import_playbook: playbooks/mas.yml

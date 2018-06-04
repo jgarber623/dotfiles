@@ -1,8 +1,6 @@
-- name: Install packages with Homebrew
-  homebrew:
-    name: "{{ item }}"
-    state: latest
-  with_items: "{{ zsh__homebrew_packages }}"
+- import_tasks: ../common/tasks/homebrew.yml
+  vars:
+    packages: "{{ zsh__homebrew_packages }}"
 
 - name: Change shell to ZSH
   user:
@@ -15,10 +13,6 @@
     repo: https://github.com/robbyrussell/oh-my-zsh
     dest: "{{ zsh__config_path }}"
 
-- name: Link config files
-  file:
-    src: "{{ role_path }}/files/{{ item }}"
-    dest: "{{ lookup('env', 'HOME') }}/{{ item }}"
-    state: link
-    force: yes
-  with_items: "{{ zsh__linked_files }}"
+- import_tasks: ../common/tasks/link-config-files.yml
+  vars:
+    linked_files: "{{ zsh__linked_files }}"

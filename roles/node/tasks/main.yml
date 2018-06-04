@@ -1,16 +1,10 @@
-- name: Install packages with Homebrew
-  homebrew:
-    name: "{{ item }}"
-    state: latest
-  with_items: "{{ node__homebrew_packages }}"
+- import_tasks: ../common/tasks/homebrew.yml
+  vars:
+    packages: "{{ node__homebrew_packages }}"
 
-- name: Link config files
-  file:
-    src: "{{ role_path }}/files/{{ item }}"
-    dest: "{{ lookup('env', 'HOME') }}/{{ item }}"
-    state: link
-    force: yes
-  with_items: "{{ node__linked_files }}"
+- import_tasks: ../common/tasks/link-config-files.yml
+  vars:
+    linked_files: "{{ node__linked_files }}"
 
 - name: Install packages with npm
   npm:
