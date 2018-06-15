@@ -1,6 +1,7 @@
 homebrew__taps:
   - homebrew/cask-drivers
   - homebrew/cask-fonts
+  - jgarber623/homebrew-extras
 
 homebrew__packages:
   - base64
