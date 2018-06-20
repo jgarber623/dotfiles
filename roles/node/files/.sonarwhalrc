@@ -3,5 +3,14 @@
         "web-recommended",
         "progressive-web-apps"
     ],
-    "formatters": "stylish"
+    "formatters": "stylish",
+    "rules": {
+      "http-compression": "warning"
+    },
+    "ignoredUrls": [
+      {
+        "domain": "fonts.googleapis.com",
+        "rules": ["*"]
+      }
+    ]
 }
