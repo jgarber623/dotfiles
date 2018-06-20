@@ -5,6 +5,7 @@ homebrew__taps:
 
 homebrew__packages:
   - base64
+  - docker-completion
   - fd
   - ffmpeg
   - hr
@@ -22,7 +23,12 @@ homebrew__packages:
   - screen
   - sqlite
   - tldr
+  - tmux
   - trash
   - tree
   - ykman
   - youtube-dl
+
+homebrew__linked_files:
+  - .remarkrc
+  - .tmux.conf

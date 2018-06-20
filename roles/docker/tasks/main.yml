@@ -1,7 +1,0 @@
-- import_tasks: ../common/tasks/homebrew-cask.yml
-  vars:
-    packages: "{{ docker__homebrew_cask_packages }}"
-
-- import_tasks: ../common/tasks/homebrew.yml
-  vars:
-    packages: "{{ docker__homebrew_packages }}"

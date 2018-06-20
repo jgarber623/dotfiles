@@ -1,3 +1,0 @@
-- import_tasks: ../common/tasks/link-config-files.yml
-  vars:
-    linked_files: "{{ remark__linked_files }}"

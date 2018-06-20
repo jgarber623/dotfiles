@@ -3,9 +3,15 @@ node__homebrew_packages:
   - yarn
 
 node__npm_packages:
+  - "@sonarwhal/configuration-progressive-web-apps"
+  - "@sonarwhal/configuration-web-recommended"
   - axe-cli
   - bower
   - fast-cli
   - npm
   - pa11y
+  - sonarwhal
   - svgo
+
+node__linked_files:
+  - .sonarwhalrc

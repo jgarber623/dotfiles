@@ -1,7 +1,0 @@
-- import_tasks: ../common/tasks/homebrew.yml
-  vars:
-    packages: "{{ tmux__homebrew_packages }}"
-
-- import_tasks: ../common/tasks/link-config-files.yml
-  vars:
-    linked_files: "{{ tmux__linked_files }}"

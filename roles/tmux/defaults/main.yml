@@ -1,5 +1,0 @@
-tmux__homebrew_packages:
-  - tmux
-
-tmux__linked_files:
-  - .tmux.conf

@@ -1,5 +1,0 @@
-docker__homebrew_cask_packages:
-  - docker
-
-docker__homebrew_packages:
-  - docker-completion

@@ -1,0 +1,7 @@
+{
+    "extends": [
+        "web-recommended",
+        "progressive-web-apps"
+    ],
+    "formatters": "stylish"
+}
