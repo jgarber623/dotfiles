@@ -8,6 +8,7 @@ homebrew__packages:
   - docker-completion
   - fd
   - ffmpeg
+  - git
   - hr
   - htop
   - imagemagick
@@ -29,5 +30,7 @@ homebrew__packages:
   - youtube-dl
 
 homebrew__linked_files:
+  - .gitconfig
+  - .gitignore
   - .remarkrc
   - .tmux.conf
