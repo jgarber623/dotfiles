@@ -7,7 +7,3 @@
     name: "{{ item }}"
     global: yes
   with_items: "{{ node__npm_packages }}"
-
-- import_tasks: ../common/tasks/link-config-files.yml
-  vars:
-    linked_files: "{{ node__linked_files }}"
