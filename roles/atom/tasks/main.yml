@@ -15,4 +15,4 @@
   command: "apm install {{ item }}"
   args:
     creates: "{{ atom__config_path }}/packages/{{ item }}"
-  with_items: "{{ atom__apm_packages }}"
+  with_lines: cat {{ role_path }}/files/{{ atom__packages_config_path }}

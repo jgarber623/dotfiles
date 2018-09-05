@@ -3,47 +3,12 @@ atom__homebrew_cask_packages:
 
 atom__config_path: "{{ lookup('env', 'HOME') }}/.atom"
 
+atom__packages_config_path: .atom/packages.txt
+
 atom__linked_files:
   - .atom/config.cson
   - .atom/init.coffee
   - .atom/keymap.cson
-  - .atom/packages.cson
+  - "{{ atom__packages_config_path }}"
   - .atom/snippets.cson
   - .atom/styles.less
-
-atom__apm_packages:
-  - autocomplete-json
-  - autocomplete-semantic-web
-  - busy-signal
-  - close-tags
-  - editorconfig
-  - emmet
-  - erb-snippets
-  - file-icons
-  - intentions
-  - language-chef
-  - language-docker
-  - language-dotenv
-  - language-gitignore
-  - language-liquid
-  - language-markdown
-  - language-nginx
-  - language-systemd
-  - language-terraform
-  - linter
-  - linter-docker
-  - linter-eslint
-  - linter-flake8
-  - linter-js-yaml
-  - linter-jsonlint
-  - linter-markdown
-  - linter-ruby
-  - linter-sass-lint
-  - linter-ui-default
-  - nord-atom-syntax
-  - nord-atom-ui
-  - package-sync
-  - pigments
-  - pretty-json
-  - sort-lines
-  - ssh-config
