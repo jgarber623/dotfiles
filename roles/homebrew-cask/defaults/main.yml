@@ -8,6 +8,7 @@ homebrew_cask__packages:
   - etcher
   - firefox
   - fission
+  - font-public-sans
   - font-san-francisco-compact
   - font-san-francisco-pro
   - google-chrome
