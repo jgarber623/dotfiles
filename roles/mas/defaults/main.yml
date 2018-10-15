@@ -24,6 +24,8 @@ mas__packages:
     id: 409183694
   - name: Keypad
     id: 928906884
+  - name: Mactracker
+    id: 430255202
   - name: Marked 2
     id: 890031187
   - name: Monity

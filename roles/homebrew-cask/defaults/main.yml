@@ -18,8 +18,8 @@ homebrew_cask__packages:
   - insomnia
   - little-snitch
   - micro-snitch
-  - mplayerx
   - monity-helper
+  - mplayerx
   - onyx
   - opera
   - padbury-clock
