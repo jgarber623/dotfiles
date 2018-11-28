@@ -22,6 +22,7 @@ homebrew__packages:
   - pandoc
   - pidof
   - postgresql
+  - redis
   - screen
   - sqlite
   - tldr
