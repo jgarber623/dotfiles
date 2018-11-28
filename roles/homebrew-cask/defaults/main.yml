@@ -28,6 +28,7 @@ homebrew_cask__packages:
   - signal
   - sketch
   - touchswitcher
+  - transmission
   - transmit
   - vmware-fusion
   - yubico-yubikey-piv-manager
