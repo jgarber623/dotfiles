@@ -17,7 +17,7 @@ ruby__default_gems:
   - bundler-audit
   - travis
 
-ruby__global_version: 2.5.1
+ruby__global_version: 2.5.3
 
 ruby__versions:
   - "{{ ruby__global_version }}"
