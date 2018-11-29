@@ -40,5 +40,5 @@
   'tab': 'emmet:expand-abbreviation-with-tab'
 
 # 'atom-text-editor[data-grammar~="html"][data-grammar~="ruby"]:not([mini])':
-'atom-text-editor[data-grammar="text html ruby"]:not([mini])':
+'atom-text-editor[data-grammar="text html ruby"]:not([mini]), atom-text-editor[data-grammar="text html erb"]:not([mini])':
   'ctrl->': 'erb-snippets:erb_tags'
