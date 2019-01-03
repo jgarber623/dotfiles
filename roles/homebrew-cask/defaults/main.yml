@@ -9,14 +9,18 @@ homebrew_cask__packages:
   - firefox
   - fission
   - font-optician-sans
-  - font-public-sans
-  - font-san-francisco-compact
-  - font-san-francisco-pro
   - google-chrome
   - handbrake
   - imagealpha
   - imageoptim
   - insomnia
+  - jgarber623/extras/font-ia-writer-duo
+  - jgarber623/extras/font-ia-writer-duospace
+  - jgarber623/extras/font-ia-writer-mono
+  - jgarber623/extras/font-ia-writer-quattro
+  - jgarber623/extras/font-public-sans
+  - jgarber623/extras/font-san-francisco-compact
+  - jgarber623/extras/font-san-francisco-pro
   - little-snitch
   - micro-snitch
   - monity-helper
