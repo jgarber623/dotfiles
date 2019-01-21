@@ -11,7 +11,7 @@ ruby__linked_files:
 
 ruby__rubies_path: /opt/rubies
 
-ruby__global_version: 2.5.1
+ruby__global_version: 2.5.3
 
 ruby__versions:
   - "{{ ruby__global_version }}"
