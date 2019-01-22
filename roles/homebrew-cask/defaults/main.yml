@@ -8,6 +8,7 @@ homebrew_cask__packages:
   - etcher
   - firefox
   - fission
+  - font-ia-writer-duo
   - font-ia-writer-duospace
   - font-ia-writer-quattro
   - font-optician-sans
@@ -16,7 +17,6 @@ homebrew_cask__packages:
   - imagealpha
   - imageoptim
   - insomnia
-  - jgarber623/extras/font-ia-writer-duo
   - jgarber623/extras/font-ia-writer-mono
   - jgarber623/extras/font-public-sans
   - jgarber623/extras/font-san-francisco-compact
