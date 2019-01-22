@@ -9,6 +9,7 @@ homebrew_cask__packages:
   - firefox
   - fission
   - font-ia-writer-duospace
+  - font-ia-writer-quattro
   - font-optician-sans
   - google-chrome
   - handbrake
@@ -17,7 +18,6 @@ homebrew_cask__packages:
   - insomnia
   - jgarber623/extras/font-ia-writer-duo
   - jgarber623/extras/font-ia-writer-mono
-  - jgarber623/extras/font-ia-writer-quattro
   - jgarber623/extras/font-public-sans
   - jgarber623/extras/font-san-francisco-compact
   - jgarber623/extras/font-san-francisco-pro
