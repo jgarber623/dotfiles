@@ -29,11 +29,13 @@ homebrew_cask__packages:
   - opera
   - padbury-clock
   - psequel
+  - rocket
   - safari-technology-preview
   - screens
   - signal
   - sketch
   - transmission
   - transmit
+  - vanilla
   - vmware-fusion
   - yubico-yubikey-piv-manager
