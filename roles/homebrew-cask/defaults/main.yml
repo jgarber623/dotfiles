@@ -32,7 +32,6 @@ homebrew_cask__packages:
   - screens
   - signal
   - sketch
-  - touchswitcher
   - transmission
   - transmit
   - vmware-fusion
