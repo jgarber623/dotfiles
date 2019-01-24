@@ -29,6 +29,7 @@ homebrew_cask__packages:
   - opera
   - padbury-clock
   - psequel
+  - safari-technology-preview
   - screens
   - signal
   - sketch
