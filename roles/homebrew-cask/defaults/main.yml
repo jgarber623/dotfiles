@@ -2,6 +2,7 @@ homebrew_cask__packages:
   - 1password
   - alfred
   - appcleaner
+  - bartender
   - clocksaver
   - devdocs
   - docker
@@ -36,6 +37,5 @@ homebrew_cask__packages:
   - sketch
   - transmission
   - transmit
-  - vanilla
   - vmware-fusion
   - yubico-yubikey-piv-manager
