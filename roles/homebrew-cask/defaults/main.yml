@@ -2,6 +2,7 @@ homebrew_cask__packages:
   - 1password
   - alfred
   - appcleaner
+  - clocksaver
   - devdocs
   - docker
   - encryptme
@@ -12,13 +13,13 @@ homebrew_cask__packages:
   - font-ia-writer-duospace
   - font-ia-writer-quattro
   - font-optician-sans
+  - font-public-sans
   - google-chrome
   - handbrake
   - imagealpha
   - imageoptim
   - insomnia
   - jgarber623/extras/font-ia-writer-mono
-  - jgarber623/extras/font-public-sans
   - jgarber623/extras/font-san-francisco-compact
   - jgarber623/extras/font-san-francisco-pro
   - little-snitch
@@ -27,10 +28,8 @@ homebrew_cask__packages:
   - mplayerx
   - onyx
   - opera
-  - padbury-clock
   - psequel
   - rocket
-  - safari-technology-preview
   - screens
   - signal
   - sketch
