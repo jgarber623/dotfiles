@@ -12,6 +12,7 @@ homebrew_cask__packages:
   - fission
   - font-ia-writer-duo
   - font-ia-writer-duospace
+  - font-ia-writer-mono
   - font-ia-writer-quattro
   - font-optician-sans
   - font-public-sans
@@ -20,7 +21,6 @@ homebrew_cask__packages:
   - imagealpha
   - imageoptim
   - insomnia
-  - jgarber623/extras/font-ia-writer-mono
   - jgarber623/extras/font-san-francisco-compact
   - jgarber623/extras/font-san-francisco-pro
   - little-snitch
