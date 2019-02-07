@@ -21,6 +21,8 @@ homebrew_cask__packages:
   - imagealpha
   - imageoptim
   - insomnia
+  - jgarber623/extras/font-bodoni
+  - jgarber623/extras/font-jost
   - jgarber623/extras/font-san-francisco-compact
   - jgarber623/extras/font-san-francisco-pro
   - little-snitch
