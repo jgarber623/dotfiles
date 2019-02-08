@@ -3,6 +3,7 @@ node__homebrew_packages:
   - yarn
 
 node__npm_packages:
+  - "@postlight/mercury-parser"
   - axe-cli
   - bower
   - fast-cli
