@@ -11,3 +11,4 @@ node__npm_packages:
   - npm
   - pa11y
   - svgo
+  - vtop
