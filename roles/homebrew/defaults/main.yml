@@ -16,6 +16,7 @@ homebrew__packages:
   - imagemagick
   - jq
   - lame
+  - lynx
   - m-cli
   - nano
   - nmap
