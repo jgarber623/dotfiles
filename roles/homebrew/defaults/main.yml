@@ -2,7 +2,7 @@ homebrew__taps:
   - heroku/brew
   - homebrew/cask-drivers
   - homebrew/cask-fonts
-  - jgarber623/homebrew-extras
+  - jgarber623/extras
 
 homebrew__packages:
   - base64
