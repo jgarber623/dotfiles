@@ -22,7 +22,6 @@
       ]
       "source.yaml": [
         "gemrc"
-        "reek"
       ]
       "text.html.ruby": [
         "html.erb"
