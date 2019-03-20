@@ -1,6 +1,9 @@
 ruby__homebrew_packages:
   - rbenv
   - rbenv-default-gems
+  - rbenv-env
+  - rbenv-gem-update
+  - rbenv-use
   - ruby-build
 
 ruby__bundler_config_path: "{{ lookup('env', 'HOME') }}/.bundle"
@@ -17,7 +20,7 @@ ruby__default_gems:
   - bundler-audit
   - travis
 
-ruby__global_version: 2.5.4
+ruby__global_version: 2.5.5
 
 ruby__versions:
   - "{{ ruby__global_version }}"
