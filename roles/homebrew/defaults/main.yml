@@ -1,20 +1,36 @@
 homebrew__taps:
+  - heroku/brew
   - homebrew/cask-drivers
   - homebrew/cask-fonts
+  - jgarber623/extras
 
 homebrew__packages:
   - base64
   - fd
   - ffmpeg
+  - git
   - hr
   - htop
+  - imagemagick
   - jq
   - lame
+  - lynx
   - m-cli
   - nano
   - nmap
   - pandoc
   - pidof
+  - screen
+  - tesseract
+  - tldr
+  - tmux
   - trash
   - tree
+  - xpdf
+  - ykman
   - youtube-dl
+
+homebrew__linked_files:
+  - .gitconfig
+  - .gitignore
+  - .tmux.conf

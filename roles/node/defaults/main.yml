@@ -2,10 +2,13 @@ node__homebrew_packages:
   - node
   - yarn
 
-node__linked_files:
-  - .npmrc
-
 node__npm_packages:
+  - "@postlight/mercury-parser"
+  - axe-cli
   - bower
   - fast-cli
+  - fx
   - npm
+  - pa11y
+  - svgo
+  - vtop

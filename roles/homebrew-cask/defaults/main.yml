@@ -1,8 +1,14 @@
 homebrew_cask__packages:
   - appcleaner
   - backblaze
+  - handbrake
+  - little-snitch
+  - micro-snitch
   - monity-helper
   - mplayerx
   - onyx
   - pdfinfo
+  - quicklook-json
+  - transmission
   - xld
+  - yubico-yubikey-piv-manager

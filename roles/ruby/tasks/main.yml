@@ -29,6 +29,11 @@
     state: link
     force: yes
 
+- name: Create {{ ruby__default_gems_config }} file
+  template:
+    src: default-gems.j2
+    dest: "{{ ruby__default_gems_config }}"
+
 - name: Install Ruby versions
   command: ruby-build {{ item }} {{ ruby__rubies_path }}/{{ item }}
   args:

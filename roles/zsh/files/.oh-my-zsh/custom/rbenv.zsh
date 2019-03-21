@@ -1,2 +1,1 @@
-# Initialize rbenv
-eval "$(rbenv init -)"
+[[ -d $HOME/.rbenv ]] && eval "$(rbenv init -)"

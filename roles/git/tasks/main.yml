@@ -1,7 +1,0 @@
-- import_tasks: ../common/tasks/homebrew.yml
-  vars:
-    packages: "{{ git__homebrew_packages }}"
-
-- import_tasks: ../common/tasks/link-config-files.yml
-  vars:
-    linked_files: "{{ git__linked_files }}"

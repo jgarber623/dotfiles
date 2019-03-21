@@ -6,3 +6,7 @@
 - import_tasks: ../common/tasks/homebrew.yml
   vars:
     packages: "{{ homebrew__packages }}"
+
+- import_tasks: ../common/tasks/link-config-files.yml
+  vars:
+    linked_files: "{{ homebrew__linked_files }}"
