@@ -8,5 +8,6 @@ zsh__linked_files:
   - .oh-my-zsh/custom/functions.zsh
   - .oh-my-zsh/custom/npm.zsh
   - .oh-my-zsh/custom/rbenv.zsh
+  - .oh-my-zsh/custom/sqlite.zsh
   - .oh-my-zsh/custom/themes/jgarber.zsh-theme
   - .zshrc
