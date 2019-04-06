@@ -25,5 +25,5 @@ ruby__global_version: 2.5.5
 
 ruby__versions:
   - "{{ ruby__global_version }}"
-  - 2.4.5
+  - 2.4.6
   - 2.6.2
