@@ -12,3 +12,4 @@ node__npm_packages:
   - pa11y
   - svgo
   - vtop
+  - yarn
