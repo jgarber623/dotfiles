@@ -82,9 +82,6 @@
     useGitHubStyle: true
   "nord-atom-ui":
     darkerFormFocusEffect: true
-  "package-sync":
-    createOnChange: true
-    forceOverwrite: true
   pigments:
     markerType: "native-dot"
     mergeColorDuplicates: true
