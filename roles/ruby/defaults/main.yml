@@ -1,5 +1,6 @@
 ruby__homebrew_packages:
   - rbenv
+  - rbenv-aliases
   - rbenv-default-gems
   - rbenv-env
   - rbenv-gem-update
