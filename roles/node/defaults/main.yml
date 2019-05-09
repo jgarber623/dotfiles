@@ -5,7 +5,6 @@ node__homebrew_packages:
 node__npm_packages:
   - "@postlight/mercury-parser"
   - axe-cli
-  - bower
   - fast-cli
   - fx
   - npm
