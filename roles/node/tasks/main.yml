@@ -6,4 +6,5 @@
   npm:
     name: "{{ item }}"
     global: yes
+    state: latest
   with_items: "{{ node__npm_packages }}"
