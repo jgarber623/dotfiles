@@ -16,7 +16,7 @@
   changed = green
   untracked = cyan
 [core]
-  editor = atom --wait
+  editor = nano
   excludesFile = ~/.gitignore
 [credential]
   helper = osxkeychain
