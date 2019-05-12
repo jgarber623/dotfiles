@@ -33,6 +33,7 @@ homebrew__packages:
   - trash
   - tree
   - xpdf
+  - yarn
   - ykman
   - youtube-dl
 
