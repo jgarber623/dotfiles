@@ -24,8 +24,8 @@ homebrew_cask__packages:
   - jgarber623/extras/font-bodoni
   - jgarber623/extras/font-jost
   - jgarber623/extras/font-new-york
-  - jgarber623/extras/font-san-francisco-compact
-  - jgarber623/extras/font-san-francisco-pro
+  - jgarber623/extras/font-sf-compact
+  - jgarber623/extras/font-sf-pro
   - jgarber623/extras/font-three
   - little-snitch
   - micro-snitch
