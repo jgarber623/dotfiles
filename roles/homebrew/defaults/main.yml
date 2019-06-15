@@ -13,6 +13,7 @@ homebrew__packages:
   - heroku
   - hr
   - htop
+  - hub
   - imagemagick
   - jq
   - lame
