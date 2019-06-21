@@ -23,6 +23,7 @@ homebrew_cask__packages:
   - insomnia
   - jgarber623/extras/font-bodoni
   - jgarber623/extras/font-jost
+  - jgarber623/extras/font-national-park
   - jgarber623/extras/font-new-york
   - jgarber623/extras/font-sf-compact
   - jgarber623/extras/font-sf-pro
