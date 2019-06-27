@@ -14,6 +14,7 @@ homebrew_cask__packages:
   - font-ia-writer-duospace
   - font-ia-writer-mono
   - font-ia-writer-quattro
+  - font-national-park
   - font-optician-sans
   - font-public-sans
   - google-chrome
@@ -23,7 +24,6 @@ homebrew_cask__packages:
   - insomnia
   - jgarber623/extras/font-bodoni
   - jgarber623/extras/font-jost
-  - jgarber623/extras/font-national-park
   - jgarber623/extras/font-new-york
   - jgarber623/extras/font-sf-compact
   - jgarber623/extras/font-sf-pro
