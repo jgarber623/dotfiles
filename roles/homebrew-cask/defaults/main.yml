@@ -10,6 +10,7 @@ homebrew_cask__packages:
   - etcher
   - firefox
   - fission
+  - font-b612
   - font-ia-writer-duo
   - font-ia-writer-duospace
   - font-ia-writer-mono
