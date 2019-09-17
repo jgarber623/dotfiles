@@ -2,12 +2,12 @@ homebrew_cask__packages:
   - 1password
   - alfred
   - appcleaner
+  - balenaetcher
   - bartender
   - clocksaver
   - devdocs
   - docker
   - encryptme
-  - etcher
   - firefox
   - fission
   - font-b612
