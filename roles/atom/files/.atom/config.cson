@@ -69,6 +69,8 @@
     scrollToResultOnLiveSearch: true
   github:
     viewChangesForCurrentFileDiffPaneSplitDirection: "right"
+  "language-babel":
+    autoIndentJSX: true
   linter:
     lintOnChange: false
   "linter-flake8":
