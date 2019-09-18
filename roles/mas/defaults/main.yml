@@ -4,17 +4,19 @@ mas__homebrew_packages:
 mas__packages:
   - name: 1Blocker
     id: 1107421413
-  - name: Airmail 3
+  - name: Airmail
     id: 918858936
   - name: Bear
     id: 1091189122
+  - name: Cardhop
+    id: 1290358394
   - name: Clear
     id: 504544917
   - name: Day One
     id: 1055511498
   - name: Deliveries
     id: 924726344
-  - name: Fantastical 2
+  - name: Fantastical
     id: 975937182
   - name: GIF Brewery
     id: 1081413713
@@ -34,7 +36,7 @@ mas__packages:
     id: 915542151
   - name: Moom
     id: 419330170
-  - name: Name Mangler 3
+  - name: Name Mangler
     id: 603637384
   - name: Numbers
     id: 409203825
