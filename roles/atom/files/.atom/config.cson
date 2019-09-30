@@ -77,8 +77,6 @@
     maxLineLength: 120
   "linter-markdown":
     presetStyleGuideWithoutConfig: true
-  "linter-sass-lint":
-    noConfigDisable: true
   "linter-ui-default":
     decorateOnTreeView: "None"
     showPanel: true

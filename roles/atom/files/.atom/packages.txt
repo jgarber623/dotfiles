@@ -25,7 +25,7 @@ linter-js-yaml
 linter-jsonlint
 linter-markdown
 linter-ruby
-linter-sass-lint
+linter-stylelint
 linter-ui-default
 nord-atom-syntax
 nord-atom-ui
