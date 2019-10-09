@@ -7,7 +7,6 @@ emmet
 erb-snippets
 file-icons
 intentions
-language-babel
 language-csv
 language-docker
 language-dotenv
