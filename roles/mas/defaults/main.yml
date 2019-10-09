@@ -26,6 +26,8 @@ mas__packages:
     id: 439697913
   - name: iMovie
     id: 408981434
+  - name: Instapaper
+    id: 1481302432
   - name: Keynote
     id: 409183694
   - name: Keypad
