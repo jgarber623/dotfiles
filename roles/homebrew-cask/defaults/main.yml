@@ -21,6 +21,7 @@ homebrew_cask__packages:
   - font-optician-sans
   - font-public-sans
   - google-chrome
+  - google-cloud-sdk
   - handbrake
   - imagealpha
   - imageoptim
