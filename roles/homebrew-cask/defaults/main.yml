@@ -40,7 +40,6 @@ homebrew_cask__packages:
   - onyx
   - opera
   - psequel
-  - quicklook-json
   - rocket
   - screens
   - signal
