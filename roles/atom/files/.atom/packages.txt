@@ -8,12 +8,16 @@ erb-snippets
 file-icons
 intentions
 language-csv
+language-diff
 language-docker
 language-dotenv
 language-gitignore
+language-homebrew-formula
 language-liquid
 language-markdown
 language-nginx
+language-procfile
+language-protobuf
 language-systemd
 language-terraform
 linter
