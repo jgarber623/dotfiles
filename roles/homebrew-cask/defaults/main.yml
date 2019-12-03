@@ -21,6 +21,7 @@ homebrew_cask__packages:
   - font-national-park
   - font-optician-sans
   - font-public-sans
+  - font-vollkorn
   - google-chrome
   - google-cloud-sdk
   - handbrake
