@@ -11,7 +11,6 @@
   user:
     name: "{{ ansible_user }}"
     shell: "{{ zsh__homebrew_prefix.stdout }}/bin/zsh"
-  become: yes
 
 - name: Install oh-my-zsh
   git:
