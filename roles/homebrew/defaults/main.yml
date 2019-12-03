@@ -5,6 +5,7 @@ homebrew__taps:
   - jgarber623/extras
 
 homebrew__packages:
+  - awscli
   - base64
   - docker-completion
   - fd
