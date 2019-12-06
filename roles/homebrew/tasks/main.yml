@@ -1,7 +1,13 @@
-- name: Tap Homebrew repositories
+- name: Tap public Homebrew repositories
   homebrew_tap:
     name: "{{ item }}"
-  with_items: "{{ homebrew__taps }}"
+  with_items: "{{ homebrew__public_taps }}"
+
+- name: Tap private Homebrew repositories
+  homebrew_tap:
+    name: "{{ item.name }}"
+    url: "{{ item.url }}"
+  with_items: "{{ homebrew__private_taps}}"
 
 - import_tasks: ../common/tasks/homebrew.yml
   vars:

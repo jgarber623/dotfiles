@@ -1,8 +1,12 @@
-homebrew__taps:
+homebrew__public_taps:
   - heroku/brew
   - homebrew/cask-drivers
   - homebrew/cask-fonts
   - jgarber623/extras
+
+homebrew__private_taps:
+  - name: jgarber623/private
+    url: github:jgarber623/homebrew-private
 
 homebrew__packages:
   - awscli
