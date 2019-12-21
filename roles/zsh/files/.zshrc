@@ -60,7 +60,7 @@ ZSH_THEME="jgarber"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  brew bundler docker git marked2
+  brew bundler colorize docker git marked2
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -85,6 +85,10 @@ fi
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+# oh-my-zsh colorize plugin style
+# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colorize
+export ZSH_COLORIZE_STYLE="friendly"
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -93,3 +97,6 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias dotcd="cd ~/.dotfiles"
+alias outdated="brew outdated && brew cask outdated && npm outdated -g"
+alias reload!="rehash"

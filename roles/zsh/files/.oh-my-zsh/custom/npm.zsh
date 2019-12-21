@@ -1,2 +1,2 @@
-export NPM_CONFIG_DEPTH=0
-export NPM_CONFIG_PROGRESS=false
+export NPM_CONFIG_DEPTH="0"
+export NPM_CONFIG_PROGRESS="false"

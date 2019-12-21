@@ -30,6 +30,7 @@ homebrew__packages:
   - parallel
   - pidof
   - postgresql
+  - pygments
   - redis
   - screen
   - sqlite
