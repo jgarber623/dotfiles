@@ -67,6 +67,7 @@
     onChanges: true
   "find-and-replace":
     scrollToResultOnLiveSearch: true
+    useRipgrep: true
   github:
     viewChangesForCurrentFileDiffPaneSplitDirection: "right"
   "language-babel":
