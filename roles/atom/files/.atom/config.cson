@@ -3,7 +3,7 @@
     customFileTypes:
       "source.json": [
         "remarkrc"
-        "sonarwhalrc"
+        "webmanifest.liquid"
       ]
       "source.nginx": [
         "conf.erb"
