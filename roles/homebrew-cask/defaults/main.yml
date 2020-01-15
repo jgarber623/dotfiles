@@ -17,6 +17,7 @@ homebrew_cask__packages:
   - font-ia-writer-duospace
   - font-ia-writer-mono
   - font-ia-writer-quattro
+  - font-ibm-plex
   - font-lato
   - font-national-park
   - font-optician-sans
