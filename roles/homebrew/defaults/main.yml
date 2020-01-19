@@ -15,6 +15,7 @@ homebrew__packages:
   - fd
   - ffmpeg
   - git
+  - glow
   - heroku
   - hr
   - htop
