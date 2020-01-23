@@ -46,7 +46,6 @@ homebrew_cask__packages:
   - monity-helper
   - mplayerx
   - onyx
-  - opera
   - psequel
   - rocket
   - screens
