@@ -1,0 +1,7 @@
+- name: Go playbook
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  roles:
+    - ../roles/golang

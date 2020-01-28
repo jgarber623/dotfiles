@@ -1,0 +1,9 @@
+golang__homebrew_packages:
+  - go
+
+golang__workspace_path: "{{ lookup('env', 'HOME') }}/Developer/golang"
+
+golang__workspace_directory_paths:
+  - bin
+  - pkg
+  - src
