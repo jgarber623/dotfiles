@@ -6,7 +6,6 @@ zsh__config_path: "{{ lookup('env', 'HOME') }}/.oh-my-zsh"
 zsh__linked_files:
   - .oh-my-zsh/custom/functions.zsh
   - .oh-my-zsh/custom/golang.zsh
-  - .oh-my-zsh/custom/homebrew.zsh
   - .oh-my-zsh/custom/npm.zsh
   - .oh-my-zsh/custom/rbenv.zsh
   - .oh-my-zsh/custom/sqlite.zsh
