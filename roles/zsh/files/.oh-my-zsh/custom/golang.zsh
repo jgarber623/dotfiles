@@ -1,2 +1,2 @@
 export GOPATH="$HOME/Developer/golang"
-export PATH="$GOPATH/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
