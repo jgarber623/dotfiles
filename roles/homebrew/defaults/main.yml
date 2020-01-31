@@ -9,7 +9,6 @@ homebrew__private_taps:
     url: github:jgarber623/homebrew-private
 
 homebrew__packages:
-  - awscli
   - base64
   - docker-completion
   - fd
