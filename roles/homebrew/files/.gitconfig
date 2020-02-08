@@ -20,6 +20,11 @@
   excludesFile = ~/.gitignore
 [credential]
   helper = osxkeychain
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
 [user]
   name = Jason Garber
   email = jason@sixtwothree.org
