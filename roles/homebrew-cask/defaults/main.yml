@@ -22,6 +22,7 @@ homebrew_cask__packages:
   - font-optician-sans
   - font-public-sans
   - font-vollkorn
+  - github
   - google-chrome
   - google-cloud-sdk
   - handbrake
