@@ -52,6 +52,8 @@ mas__packages:
     id: 429449079
   - name: Pixelmator Pro
     id: 1289583905
+  - name: Playgrounds
+    id: 1496833156
   - name: Reeder
     id: 1449412482
   - name: Slack
