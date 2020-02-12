@@ -1,4 +1,5 @@
 homebrew__public_taps:
+  - github/gh
   - heroku/brew
   - homebrew/cask-drivers
   - homebrew/cask-fonts
@@ -14,11 +15,11 @@ homebrew__packages:
   - fd
   - ffmpeg
   - git
+  - github/gh/gh
   - glow
-  - heroku
+  - heroku/brew/heroku
   - hr
   - htop
-  - hub
   - imagemagick
   - jq
   - lame
