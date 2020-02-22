@@ -1,0 +1,6 @@
+python__homebrew_packages:
+  - python
+
+python__pip3_packages:
+  - csvs-to-sqlite
+  - datasette
