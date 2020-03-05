@@ -44,7 +44,6 @@ homebrew_cask__packages:
   - little-snitch
   - micro-snitch
   - monity-helper
-  - mplayerx
   - onyx
   - psequel
   - rocket
