@@ -1,3 +1,4 @@
+atom-jinja2
 autocomplete-json
 autocomplete-semantic-web
 busy-signal
