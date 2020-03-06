@@ -2,7 +2,6 @@ homebrew_cask__packages:
   - 1password
   - alfred
   - appcleaner
-  - balenaetcher
   - bartender
   - clocksaver
   - devdocs
