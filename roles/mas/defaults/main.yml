@@ -30,6 +30,8 @@ mas__packages:
     id: 408981434
   - name: Instapaper
     id: 1481302432
+  - name: JSONPeep
+    id: 1458969831
   - name: Keynote
     id: 409183694
   - name: Keypad
