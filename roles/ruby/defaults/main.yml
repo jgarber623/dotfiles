@@ -14,6 +14,7 @@ ruby__linked_files:
   - .bundle/config
   - .gemrc
   - .irbrc
+  - .pryrc
 
 ruby__default_gems_config: "{{ ruby__rbenv_config_path }}/default-gems"
 
