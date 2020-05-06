@@ -1,6 +1,6 @@
 Pry.config.history_file = "#{ENV['HOME']}/.irb_history"
-Pry.config.prompt_name = File.basename(Dir.pwd)
+Pry.config.pager        = false
 
-def clear
+Pry::Commands.block_command 'clear', 'Clear the terminal screen' do
   system('clear')
 end
