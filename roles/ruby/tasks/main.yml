@@ -41,7 +41,7 @@
   with_items: "{{ ruby__versions }}"
 
 - name: Alias Ruby versions
-  command: rbenv alias {{ item | regex_replace('^(.+)\.\d$', '\1') }} {{ item }}
+  command: rbenv alias {{ item | regex_replace('^(.+)\.\d+$', '\1') }} {{ item }}
   with_items: "{{ ruby__versions }}"
 
 - name: Set global Ruby version
