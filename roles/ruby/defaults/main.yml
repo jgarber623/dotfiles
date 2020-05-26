@@ -1,9 +1,10 @@
 ruby__homebrew_packages:
+  - jgarber623/extras/rbenv-each
+  - jgarber623/extras/rbenv-env
+  - jgarber623/extras/rbenv-gem-update
   - rbenv
   - rbenv-aliases
   - rbenv-default-gems
-  - rbenv-env
-  - rbenv-gem-update
   - rbenv-use
   - ruby-build
 
