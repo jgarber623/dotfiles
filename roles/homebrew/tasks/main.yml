@@ -13,6 +13,16 @@
   vars:
     packages: "{{ homebrew__packages }}"
 
+- name: Create Git template path
+  file:
+    path: "{{ homebrew__git_template_path }}"
+    state: directory
+
+- name: Create Git template
+  copy:
+    content: "ref: refs/heads/main"
+    dest: "{{ homebrew__git_template_path }}/HEAD"
+
 - import_tasks: ../common/tasks/link-config-files.yml
   vars:
     linked_files: "{{ homebrew__linked_files }}"
