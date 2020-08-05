@@ -46,8 +46,6 @@ homebrew__packages:
   - ykman
   - youtube-dl
 
-homebrew__git_template_path: "{{ lookup('env', 'HOME') }}/.config/git/template"
-
 homebrew__linked_files:
   - .gitconfig
   - .gitignore
