@@ -8,7 +8,7 @@ homebrew_cask__packages:
   - mplayerx
   - onyx
   - pdfinfo
-  - quicklook-json
   - transmission
   - xld
-  - yubico-yubikey-piv-manager
+  - vlc
+  - yubico-yubikey-manager
