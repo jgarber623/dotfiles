@@ -1,5 +1,5 @@
 homebrew__taps:
-  - heroku/brew
+  - github/gh
   - homebrew/cask-drivers
   - homebrew/cask-fonts
   - jgarber623/extras
@@ -9,6 +9,9 @@ homebrew__packages:
   - fd
   - ffmpeg
   - git
+  - github/gh/gh
+  - glow
+  - gpg
   - hr
   - htop
   - imagemagick
@@ -26,8 +29,8 @@ homebrew__packages:
   - tmux
   - trash
   - tree
+  - wget
   - xpdf
-  - yarn
   - ykman
   - youtube-dl
 
