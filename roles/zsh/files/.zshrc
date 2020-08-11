@@ -92,3 +92,7 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias dotcd="cd ~/.dotfiles"
+alias ll="l"
+alias outdated="brew outdated && npm outdated -g"
+alias reload!="rehash"
