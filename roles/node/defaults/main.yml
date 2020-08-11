@@ -7,7 +7,6 @@ node__npm_packages:
   - axe-cli
   - fast-cli
   - fx
-  - npm
   - pa11y
   - svgo
   - vtop
