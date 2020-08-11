@@ -17,6 +17,7 @@ homebrew__packages:
   - git
   - github/gh/gh
   - glow
+  - gpg
   - heroku/brew/heroku
   - hr
   - htop
@@ -42,7 +43,6 @@ homebrew__packages:
   - tree
   - wget
   - xpdf
-  - yarn
   - ykman
   - youtube-dl
 
