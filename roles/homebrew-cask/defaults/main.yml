@@ -11,7 +11,7 @@ homebrew_cask__packages:
   - firefox
   - fission
   - font-b612
-  - font-cascadia
+  - font-cascadia-code
   - font-ia-writer-duo
   - font-ia-writer-duospace
   - font-ia-writer-mono
