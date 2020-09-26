@@ -1,7 +1,0 @@
-- name: Python playbook
-  hosts: localhost
-  connection: local
-  gather_facts: false
-
-  roles:
-    - ../roles/python

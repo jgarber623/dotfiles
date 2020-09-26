@@ -1,8 +1,0 @@
-- import_tasks: ../common/tasks/homebrew.yml
-  vars:
-    packages: "{{ python__homebrew_packages }}"
-
-- name: Install packages with pip3
-  pip:
-    name: "{{ python__pip3_packages }}"
-    executable: pip3
