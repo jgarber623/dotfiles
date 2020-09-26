@@ -8,6 +8,7 @@ node__npm_packages:
   - fast-cli
   - fx
   - netlify-cli
+  - npm
   - pa11y
   - svgo
   - vtop
