@@ -1,5 +1,4 @@
 homebrew__public_taps:
-  - github/gh
   - heroku/brew
   - homebrew/cask-drivers
   - homebrew/cask-fonts
@@ -14,8 +13,8 @@ homebrew__packages:
   - docker-completion
   - fd
   - ffmpeg
+  - gh
   - git
-  - github/gh/gh
   - glow
   - gpg
   - grpcurl
