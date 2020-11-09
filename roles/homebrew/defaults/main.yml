@@ -47,6 +47,7 @@ homebrew__packages:
   - youtube-dl
 
 homebrew__linked_files:
+  - .gitattributes
   - .gitconfig
   - .gitignore
   - .remarkrc

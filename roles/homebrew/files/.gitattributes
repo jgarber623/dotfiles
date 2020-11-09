@@ -1,0 +1,9 @@
+*.sh      diff=bash
+*.css     diff=css
+*.gemspec diff=ruby
+*.html    diff=html
+*.md      diff=markdown
+*.py      diff=python
+*.rake    diff=ruby
+*.rb      diff=ruby
+*.zsh     diff=bash
