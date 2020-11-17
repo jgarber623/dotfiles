@@ -31,6 +31,8 @@ mas__packages:
   - name: iMovie
     id: 408981434
   - name: Instapaper
+    id: 288545208
+  - name: Instapaper Save
     id: 1481302432
   - name: JSONPeep
     id: 1458969831
