@@ -1,6 +1,9 @@
 "*":
   core:
     customFileTypes:
+      "source.js": [
+        "sequelizerc"
+      ]
       "source.json": [
         "remarkrc"
         "webmanifest.liquid"
