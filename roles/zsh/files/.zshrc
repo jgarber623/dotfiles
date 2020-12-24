@@ -5,6 +5,10 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# Automatically load a Node.js version when an .nvmrc file exists in
+# current directory (see: https://github.com/ohmyzsh/ohmyzsh/pull/9542)
+export NVM_AUTOLOAD="1"
+
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -60,7 +64,7 @@ ZSH_THEME="jgarber"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  brew bundler colorize docker git marked2
+  brew bundler colorize docker git marked2 nvm
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -99,5 +103,5 @@ export ZSH_COLORIZE_STYLE="friendly"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dotcd="cd ~/.dotfiles"
 alias ll="l"
-alias outdated="brew outdated && npm outdated -g"
+alias outdated="brew outdated && nvm exec system npm outdated -g"
 alias reload!="rehash"

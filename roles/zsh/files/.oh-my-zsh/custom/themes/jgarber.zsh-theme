@@ -13,7 +13,7 @@ ZSH_THEME_TERM_TITLE_IDLE=""
 ZSH_THEME_TERM_TAB_TITLE_IDLE=""
 
 function node_prompt_info() {
-  [[ -e package.json ]] || return
+  [[ -e .nvmrc ]] || [[ -e package.json ]] || return
   NODE_VERSION=$(node -v 2> /dev/null) || return
   echo "${ZSH_THEME_NODE_PROMPT_PREFIX}${NODE_VERSION}${ZSH_THEME_NODE_PROMPT_SUFFIX}"
 }
