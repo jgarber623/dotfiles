@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -59,7 +60,7 @@ ZSH_THEME="jgarber"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  brew bundler git
+  brew bundler colorize git
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -83,6 +84,10 @@ fi
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+# oh-my-zsh colorize plugin style
+# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colorize
+export ZSH_COLORIZE_STYLE="friendly"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
