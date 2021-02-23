@@ -11,5 +11,6 @@ node__npm_packages:
   - netlify-cli
   - npm
   - pa11y
+  - snyk
   - svgo
   - vtop
