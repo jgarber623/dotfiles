@@ -3,7 +3,7 @@ mas__homebrew_packages:
 
 mas__packages:
   - name: 1Blocker
-    id: 1107421413
+    id: 1365531024
   - name: Airmail
     id: 918858936
   - name: Bear
