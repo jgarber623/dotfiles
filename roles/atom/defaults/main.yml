@@ -1,14 +1,14 @@
-atom__homebrew_cask_packages:
-  - atom
+atom__homebrew_casks:
+  - name: atom
 
-atom__config_path: "{{ lookup('env', 'HOME') }}/.atom"
+atom__config_path: "{{ home_dir }}/.atom"
 
 atom__packages_config_path: .atom/packages.txt
 
-atom__linked_files:
-  - .atom/config.cson
-  - .atom/init.coffee
-  - .atom/keymap.cson
-  - "{{ atom__packages_config_path }}"
-  - .atom/snippets.cson
-  - .atom/styles.less
+atom__files:
+  - name: .atom/config.cson
+  - name: .atom/init.coffee
+  - name: .atom/keymap.cson
+  - name: "{{ atom__packages_config_path }}"
+  - name: .atom/snippets.cson
+  - name: .atom/styles.less

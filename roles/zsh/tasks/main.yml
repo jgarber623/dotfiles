@@ -1,17 +1,3 @@
-- name: Register Homebrew prefix
-  shell: brew --prefix
-  register: zsh__homebrew_prefix
-  changed_when: false
-
-- import_tasks: ../common/tasks/homebrew.yml
-  vars:
-    packages: "{{ zsh__homebrew_packages }}"
-
-- name: Change shell to ZSH
-  user:
-    name: "{{ ansible_user }}"
-    shell: "{{ zsh__homebrew_prefix.stdout }}/bin/zsh"
-
 - name: Install oh-my-zsh
   git:
     repo: https://github.com/robbyrussell/oh-my-zsh
@@ -19,4 +5,4 @@
 
 - import_tasks: ../common/tasks/link-config-files.yml
   vars:
-    linked_files: "{{ zsh__linked_files }}"
+    files: "{{ zsh__files }}"

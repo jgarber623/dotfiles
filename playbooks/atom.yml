@@ -1,7 +1,0 @@
-- name: Atom playbook
-  hosts: localhost
-  connection: local
-  gather_facts: false
-
-  roles:
-    - ../roles/atom

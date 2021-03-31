@@ -1,0 +1,16 @@
+nodejs__homebrew_brews:
+  - name: node
+  - name: nvm
+  - name: yarn
+
+nodejs__npm_packages:
+  - name: "@postlight/mercury-parser"
+  - name: axe-cli
+  - name: fast-cli
+  - name: fx
+  - name: netlify-cli
+  - name: npm
+  - name: pa11y
+  - name: snyk
+  - name: svgo
+  - name: vtop

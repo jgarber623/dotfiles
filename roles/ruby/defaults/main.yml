@@ -1,21 +1,21 @@
-ruby__homebrew_packages:
-  - jgarber623/extras/rbenv-each
-  - jgarber623/extras/rbenv-env
-  - jgarber623/extras/rbenv-gem-update
-  - rbenv
-  - rbenv-aliases
-  - rbenv-default-gems
-  - rbenv-use
-  - ruby-build
+ruby__homebrew_brews:
+  - name: jgarber623/extras/rbenv-each
+  - name: jgarber623/extras/rbenv-env
+  - name: jgarber623/extras/rbenv-gem-update
+  - name: rbenv
+  - name: rbenv-aliases
+  - name: rbenv-default-gems
+  - name: rbenv-use
+  - name: ruby-build
 
-ruby__bundler_config_path: "{{ lookup('env', 'HOME') }}/.bundle"
-ruby__rbenv_config_path: "{{ lookup('env', 'HOME') }}/.rbenv"
+ruby__bundler_config_path: "{{ home_dir }}/.bundle"
+ruby__rbenv_config_path: "{{ home_dir }}/.rbenv"
 
-ruby__linked_files:
-  - .bundle/config
-  - .gemrc
-  - .irbrc
-  - .pryrc
+ruby__files:
+  - name: .bundle/config
+  - name: .gemrc
+  - name: .irbrc
+  - name: .pryrc
 
 ruby__default_gems_config: "{{ ruby__rbenv_config_path }}/default-gems"
 
@@ -24,7 +24,6 @@ ruby__default_gems:
   - bundler-audit
   - foreman
   - rails
-  - travis
 
 ruby__global_version: 2.7.2
 

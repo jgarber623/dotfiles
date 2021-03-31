@@ -1,5 +1,5 @@
-mas__homebrew_packages:
-  - mas
+mas__homebrew_brews:
+  - name: mas
 
 mas__packages:
   - name: 1Blocker
@@ -63,7 +63,7 @@ mas__packages:
   - name: Playgrounds
     id: 1496833156
   - name: Reeder
-    id: 1449412482
+    id: 1529448980
   - name: Slack
     id: 803453959
   - name: StopTheMadness

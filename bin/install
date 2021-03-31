@@ -6,13 +6,8 @@ function puts {
   echo "[ install ] $1"
 }
 
-PLAYBOOK_PATH=./playbook.yml
-if [[ -n ${1} ]]; then
-  PLAYBOOK_PATH="${1}"
-fi
-
 puts "Running install script..."
 
-ansible-playbook $PLAYBOOK_PATH
+ansible-playbook ./playbook.yml
 
 puts "🎉 Done!"

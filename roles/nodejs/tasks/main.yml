@@ -1,10 +1,10 @@
 - import_tasks: ../common/tasks/homebrew.yml
   vars:
-    packages: "{{ node__homebrew_packages }}"
+    packages: "{{ nodejs__homebrew_brews }}"
 
 - name: Install packages with npm
   npm:
-    name: "{{ item }}"
+    name: "{{ item.name }}"
     global: yes
     state: latest
-  with_items: "{{ node__npm_packages }}"
+  with_items: "{{ nodejs__npm_packages }}"

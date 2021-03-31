@@ -1,53 +1,107 @@
-homebrew__public_taps:
-  - heroku/brew
-  - homebrew/cask-drivers
-  - homebrew/cask-fonts
-  - jgarber623/extras
-
-homebrew__private_taps:
+homebrew__taps:
+  - name: heroku/brew
+  - name: homebrew/cask-drivers
+  - name: homebrew/cask-fonts
+  - name: jgarber623/extras
   - name: jgarber623/private
     url: github:jgarber623/homebrew-private
 
-homebrew__packages:
-  - base64
-  - docker-completion
-  - fd
-  - ffmpeg
-  - gh
-  - git
-  - glow
-  - gpg
-  - grpcurl
-  - heroku/brew/heroku
-  - hr
-  - htop
-  - imagemagick
-  - jq
-  - lame
-  - lynx
-  - m-cli
-  - nano
-  - nmap
-  - pandoc
-  - parallel
-  - pidof
-  - postgresql
-  - pygments
-  - redis
-  - screen
-  - sqlite
-  - tesseract
-  - tldr
-  - tmux
-  - trash
-  - tree
-  - wget
-  - xpdf
-  - ykman
-  - youtube-dl
+homebrew__brews:
+  - name: base64
+  - name: docker-completion
+  - name: fd
+  - name: ffmpeg
+  - name: gh
+  - name: git
+  - name: gpg
+  - name: grpcurl
+  - name: heroku/brew/heroku
+  - name: hr
+  - name: htop
+  - name: imagemagick
+  - name: jq
+  - name: lame
+  - name: lynx
+  - name: nano
+  - name: nmap
+  - name: pandoc
+  - name: parallel
+  - name: pidof
+  - name: postgresql
+  - name: pygments
+  - name: redis
+  - name: screen
+  - name: sqlite
+  - name: tmux
+  - name: trash
+  - name: tree
+  - name: wget
+  - name: ykman
+  - name: youtube-dl
 
-homebrew__linked_files:
-  - .gitattributes
-  - .gitconfig
-  - .gitignore
-  - .tmux.conf
+homebrew__casks:
+  - name: 1password
+  - name: alfred
+  - name: appcleaner
+  - name: bartender
+  - name: basecamp
+  - name: clocksaver
+  - name: devdocs
+  - name: docker
+  - name: encryptme
+  - name: firefox
+  - name: fission
+  - name: font-b612
+  - name: font-cascadia-code
+  - name: font-ia-writer-duo
+  - name: font-ia-writer-duospace
+  - name: font-ia-writer-mono
+  - name: font-ia-writer-quattro
+  - name: font-ibm-plex
+  - name: font-lato
+  - name: font-national-park
+  - name: font-optician-sans
+  - name: font-public-sans
+  - name: font-vollkorn
+  - name: font-work-sans
+  - name: github
+  - name: google-chrome
+  - name: google-cloud-sdk
+  - name: handbrake
+  - name: imagealpha
+  - name: imageoptim
+  - name: insomnia
+  - name: jgarber623/extras/font-bodoni
+  - name: jgarber623/extras/font-jost
+  - name: jgarber623/extras/font-new-york
+  - name: jgarber623/extras/font-sf-compact
+  - name: jgarber623/extras/font-sf-mono
+  - name: jgarber623/extras/font-sf-pro
+  - name: jgarber623/extras/font-techna-sans
+  - name: jgarber623/private/font-boss
+  - name: jgarber623/private/font-museo-sans
+  - name: jgarber623/private/font-museo-slab
+  - name: jgarber623/private/font-museo
+  - name: jgarber623/private/font-operator-mono
+  - name: jgarber623/private/font-operator-pro
+  - name: little-snitch
+  - name: micro-snitch
+  - name: monity-helper
+  - name: onyx
+  - name: proxyman
+  - name: psequel
+  - name: rocket
+  - name: screens
+  - name: signal
+  - name: sketch
+  - name: transmission
+  - name: transmit
+  - name: vlc
+  - name: vmware-fusion
+  - name: yubico-yubikey-manager
+
+homebrew__files:
+  - name: .gitattributes
+  - name: .gitconfig
+  - name: .gitignore
+  - name: .tmux.conf

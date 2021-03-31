@@ -1,6 +1,6 @@
 - import_tasks: ../common/tasks/homebrew.yml
   vars:
-    packages: "{{ mas__homebrew_packages }}"
+    packages: "{{ mas__homebrew_brews }}"
 
 - name: Install packages with mas
   shell: "mas install {{ item.id }}"

@@ -1,14 +1,10 @@
-zsh__homebrew_packages:
-  - zsh
+zsh__config_path: "{{ home_dir }}/.oh-my-zsh"
 
-zsh__config_path: "{{ lookup('env', 'HOME') }}/.oh-my-zsh"
-
-zsh__linked_files:
-  - .oh-my-zsh/custom/functions.zsh
-  - .oh-my-zsh/custom/homebrew.zsh
-  - .oh-my-zsh/custom/npm.zsh
-  - .oh-my-zsh/custom/rbenv.zsh
-  - .oh-my-zsh/custom/sqlite.zsh
-  - .oh-my-zsh/custom/travis.zsh
-  - .oh-my-zsh/custom/themes/jgarber.zsh-theme
-  - .zshrc
+zsh__files:
+  - name: .oh-my-zsh/custom/functions.zsh
+  - name: .oh-my-zsh/custom/homebrew.zsh
+  - name: .oh-my-zsh/custom/npm.zsh
+  - name: .oh-my-zsh/custom/rbenv.zsh
+  - name: .oh-my-zsh/custom/sqlite.zsh
+  - name: .oh-my-zsh/custom/themes/jgarber.zsh-theme
+  - name: .zshrc

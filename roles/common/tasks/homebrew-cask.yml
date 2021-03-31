@@ -1,4 +1,6 @@
 - name: Install packages with Homebrew-Cask
   homebrew_cask:
-    name: "{{ item }}"
+    name: "{{ item.name }}"
+    install_options: "{{ item.install_options | default('') }}"
+    state: latest
   with_items: "{{ packages }}"

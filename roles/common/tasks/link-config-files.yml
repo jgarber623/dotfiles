@@ -1,7 +1,7 @@
 - name: Link config files
   file:
-    src: "{{ role_path }}/files/{{ item }}"
-    dest: "{{ lookup('env', 'HOME') }}/{{ item }}"
+    src: "{{ role_path }}/files/{{ item.name }}"
+    dest: "{{ home_dir }}/{{ item.name }}"
     state: link
     force: yes
-  with_items: "{{ linked_files }}"
+  with_items: "{{ files }}"

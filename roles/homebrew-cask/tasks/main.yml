@@ -1,3 +1,0 @@
-- import_tasks: ../common/tasks/homebrew-cask.yml
-  vars:
-    packages: "{{ homebrew_cask__packages }}"

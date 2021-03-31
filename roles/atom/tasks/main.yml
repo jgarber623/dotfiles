@@ -1,6 +1,6 @@
 - import_tasks: ../common/tasks/homebrew-cask.yml
   vars:
-    packages: "{{ atom__homebrew_cask_packages }}"
+    packages: "{{ atom__homebrew_casks }}"
 
 - name: Create config path
   file:
@@ -9,7 +9,7 @@
 
 - import_tasks: ../common/tasks/link-config-files.yml
   vars:
-    linked_files: "{{ atom__linked_files }}"
+    files: "{{ atom__files }}"
 
 - name: Install packages with apm
   command: "apm install {{ item }}"

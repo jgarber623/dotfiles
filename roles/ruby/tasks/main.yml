@@ -1,6 +1,6 @@
 - import_tasks: ../common/tasks/homebrew.yml
   vars:
-    packages: "{{ ruby__homebrew_packages }}"
+    packages: "{{ ruby__homebrew_brews }}"
 
 - name: Create config paths
   file:
@@ -12,7 +12,7 @@
 
 - import_tasks: ../common/tasks/link-config-files.yml
   vars:
-    linked_files: "{{ ruby__linked_files }}"
+    files: "{{ ruby__files }}"
 
 - name: Create {{ ruby__default_gems_config }} file
   template:
