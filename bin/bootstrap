@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+set -e
+
+function puts {
+  echo "[ bootstrap ] $1"
+}
+
+function install_ansible {
+  puts "Installing Ansible..."
+  if command -v ansible &> /dev/null; then
+    puts "Ansible executable found. Skipping installation..."
+  else
+    brew update
+    brew install ansible
+    puts "✅ Ansible installed!"
+  fi
+}
+
+function install_homebrew {
+  puts "Installing Homebrew..."
+  if command -v brew &> /dev/null; then
+    puts "Homebrew executable found. Skipping installation..."
+  else
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    puts "✅ Homebrew installed!"
+  fi
+}
+
+puts "Running bootstrap script..."
+
+install_homebrew
+install_ansible
+
+puts "🎉 Done!"
