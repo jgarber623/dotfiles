@@ -5,7 +5,6 @@
         "sequelizerc"
       ]
       "source.json": [
-        "remarkrc"
         "webmanifest.liquid"
       ]
       "source.nginx": [
@@ -73,12 +72,8 @@
     useRipgrep: true
   github:
     viewChangesForCurrentFileDiffPaneSplitDirection: "right"
-  "language-babel":
-    autoIndentJSX: true
   linter:
     lintOnChange: false
-  "linter-flake8":
-    maxLineLength: 120
   "linter-markdown":
     presetStyleGuideWithoutConfig: true
   "linter-ui-default":
