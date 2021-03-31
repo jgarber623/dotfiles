@@ -50,5 +50,4 @@ homebrew__linked_files:
   - .gitattributes
   - .gitconfig
   - .gitignore
-  - .remarkrc
   - .tmux.conf
