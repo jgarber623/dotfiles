@@ -4,19 +4,19 @@ This is how I work.
 
 ## Installation
 
-First, open up Terminal.app and install Xcode Command Line Tools:
+First, launch Terminal.app and clone this repository:
 
 ```sh
-xcode-select --install
+git clone -b laptop/personal git@github.com:jgarber623/dotfiles ~/.dotfiles
 ```
 
-Then, clone this repository and run the following commands:
+Then, run the following commands:
 
 ```sh
-git clone -b macbook-pro git@github.com:jgarber623/dotfiles ~/.dotfiles
 cd ~/.dotfiles
-make bootstrap
-make provision
+
+bin/bootstrap
+bin/install
 ```
 
 ## Acknowledgments
