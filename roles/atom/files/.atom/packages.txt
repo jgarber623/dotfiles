@@ -15,6 +15,7 @@ language-docker
 language-dotenv
 language-gitignore
 language-homebrew-formula
+language-ini
 language-liquid
 language-markdown
 language-nginx
