@@ -4,7 +4,7 @@ homebrew__taps:
   - name: homebrew/cask-fonts
   - name: jgarber623/extras
   - name: jgarber623/private
-    url: github:jgarber623/homebrew-private
+    url: git@github.com:jgarber623/homebrew-private
 
 homebrew__brews:
   - name: base64
