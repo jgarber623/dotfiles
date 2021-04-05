@@ -75,7 +75,8 @@
   linter:
     lintOnChange: false
   "linter-markdown":
-    presetStyleGuideWithoutConfig: true
+    presetConsistentWithoutConfig: false
+    presetRecommendedWithoutConfig: false
   "linter-ui-default":
     decorateOnTreeView: "None"
   "markdown-preview":
