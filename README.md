@@ -4,15 +4,17 @@ This is how I work.
 
 ## Installation
 
-First, launch Terminal.app and clone this repository:
+First, launch Terminal and install the Xcode Command Line Tools:
+
+```sh
+xcode-select --install
+```
+
+Next, clone this repository and run the following commands:
 
 ```sh
 git clone -b laptop/personal git@github.com:jgarber623/dotfiles ~/.dotfiles
-```
 
-Then, run the following commands:
-
-```sh
 cd ~/.dotfiles
 
 bin/bootstrap
