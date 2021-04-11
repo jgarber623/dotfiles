@@ -9,7 +9,6 @@ nodejs__npm_packages:
   - name: fast-cli
   - name: fx
   - name: netlify-cli
-  - name: npm
   - name: pa11y
   - name: snyk
   - name: svgo
