@@ -3,6 +3,8 @@ homebrew__taps:
   - name: homebrew/cask-drivers
   - name: homebrew/cask-fonts
   - name: jgarber623/extras
+
+homebrew__private_taps:
   - name: jgarber623/private
     url: git@github.com:jgarber623/homebrew-private
 
