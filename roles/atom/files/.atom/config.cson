@@ -11,6 +11,9 @@
         "conf.erb"
         "types"
       ]
+      "source.procfile": [
+        "Procfile.dev"
+      ]
       "source.ruby": [
         "rb.erb"
         "simplecov"
