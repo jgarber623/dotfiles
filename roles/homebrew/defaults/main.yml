@@ -46,7 +46,6 @@ homebrew__casks:
   - name: alfred
   - name: appcleaner
   - name: bartender
-  - name: basecamp
   - name: clocksaver
   - name: devdocs
   - name: docker
