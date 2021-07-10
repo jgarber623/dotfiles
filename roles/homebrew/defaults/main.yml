@@ -10,6 +10,7 @@ homebrew__private_taps:
 
 homebrew__brews:
   - name: base64
+  - name: circleci
   - name: docker-completion
   - name: fd
   - name: ffmpeg
