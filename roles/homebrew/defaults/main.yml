@@ -28,7 +28,6 @@ homebrew__brews:
   - name: nano
   - name: nmap
   - name: pandoc
-  - name: parallel
   - name: pidof
   - name: postgresql
   - name: pygments
@@ -38,6 +37,7 @@ homebrew__brews:
   - name: tmux
   - name: trash
   - name: tree
+  - name: xh
   - name: wget
   - name: ykman
   - name: youtube-dl
