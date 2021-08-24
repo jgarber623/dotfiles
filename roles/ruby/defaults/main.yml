@@ -24,11 +24,11 @@ ruby__default_gems:
   - foreman
   - rails
 
-ruby__global_version: 2.7.3
+ruby__global_version: 2.7.4
 
 ruby__versions:
-  - 3.0.1
+  - 3.0.2
   - "{{ ruby__global_version }}"
-  - 2.6.7
+  - 2.6.8
   - 2.5.9
   - 2.4.10
