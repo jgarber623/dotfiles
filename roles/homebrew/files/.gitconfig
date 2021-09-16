@@ -23,6 +23,8 @@
 	helper = osxkeychain
 [diff "rspec"]
 	xfuncname = "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario)[ \t].*)$"
+[fetch]
+	prune = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
