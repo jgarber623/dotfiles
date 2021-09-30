@@ -1,0 +1,99 @@
+"*":
+  core:
+    customFileTypes:
+      "source.ini": [
+        ".npmrc"
+      ]
+      "source.js": [
+        "sequelizerc"
+      ]
+      "source.json": [
+        "webmanifest.liquid"
+      ]
+      "source.nginx": [
+        "conf.erb"
+        "types"
+      ]
+      "source.procfile": [
+        "Procfile.dev"
+      ]
+      "source.ruby": [
+        "rb.erb"
+        "simplecov"
+      ]
+      "source.ruby.gemfile": [
+        "Gemfile.lock"
+      ]
+      "source.shell": [
+        "zsh"
+        "zsh-theme"
+        "zshrc"
+      ]
+      "source.yaml": [
+        "gemrc"
+      ]
+      "text.html.ruby": [
+        "html.erb"
+      ]
+    disabledPackages: [
+      "autosave"
+      "background-tips"
+      "language-c"
+      "language-clojure"
+      "language-csharp"
+      "language-java"
+      "language-objective-c"
+      "language-perl"
+      "welcome"
+      "whitespace"
+      "link"
+    ]
+    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "emmet"
+    ]
+    projectHome: "/Users/jason/Developer"
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "nord-atom-syntax"
+    ]
+    titleBar: "custom-inset"
+  editor:
+    fontFamily: "Monaco"
+    lineHeight: 1.6
+    scrollPastEnd: true
+    showInvisibles: true
+  "exception-reporting":
+    userId: "3d796ce0-d3d7-4fbf-ae04-b63388f81926"
+  "file-icons":
+    coloured: false
+    onChanges: true
+  "find-and-replace":
+    scrollToResultOnLiveSearch: true
+    useRipgrep: true
+  github:
+    viewChangesForCurrentFileDiffPaneSplitDirection: "right"
+  linter:
+    lintOnChange: false
+  "linter-markdown":
+    presetConsistentWithoutConfig: false
+    presetRecommendedWithoutConfig: false
+  "linter-ui-default":
+    decorateOnTreeView: "None"
+  "markdown-preview":
+    useGitHubStyle: true
+  "nord-atom-ui":
+    darkerFormFocusEffect: true
+  pigments:
+    markerType: "native-dot"
+    mergeColorDuplicates: true
+    sortPaletteColors: "by name"
+  tabs:
+    enableVcsColoring: true
+  "tree-view":
+    alwaysOpenExisting: true
+    autoReveal: true
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false
