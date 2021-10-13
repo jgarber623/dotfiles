@@ -109,7 +109,3 @@ export ZSH_COLORIZE_STYLE="friendly"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias dotcd="cd ~/.dotfiles"
-alias ll="l"
-alias outdated="brew outdated && nvm exec system npm outdated -g"
-alias reload!="rehash"
