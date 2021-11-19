@@ -1,12 +1,18 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Add Homebrew to $PATH.
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# The oh-my-zsh nvm plugin expects Homebrew nvm to be installed to
+# /usr/local/opt/nvm. On ARM64 devices, Homebrew installs to /opt/homebrew.
+export NVM_HOMEBREW="$(brew --prefix)/opt/nvm"
+
 # Automatically load a Node.js version when an .nvmrc file exists in
-# current directory, see:
-# https://github.com/ohmyzsh/ohmyzsh/pull/9542
+# current directory. See https://github.com/ohmyzsh/ohmyzsh/pull/9542
 export NVM_AUTOLOAD="1"
 
 # Set name of the theme to load --- if set to "random", it will
