@@ -47,6 +47,7 @@
       "welcome"
       "whitespace"
       "link"
+      "language-gfm"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
