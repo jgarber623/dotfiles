@@ -16,6 +16,7 @@
 	changed = green
 	untracked = cyan
 [commit]
+	gpgsign = true
 	verbose = true
 [core]
 	attributesFile = ~/.gitattributes
@@ -45,3 +46,4 @@
 [user]
 	name = Jason Garber
 	email = jason@sixtwothree.org
+	signingkey = 58103168713E8E69
