@@ -37,6 +37,8 @@
 	autoCorrect = prompt
 [init]
 	defaultBranch = main
+[tag]
+	gpgsign = true
 [url "git@github.com:"]
 	insteadOf = github:
 	pushInsteadOf = https://github.com/
