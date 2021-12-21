@@ -54,7 +54,7 @@
       "emmet"
     ]
     projectHome: "/Users/jason/Developer"
-    telemetryConsent: "limited"
+    telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "nord-atom-syntax"
