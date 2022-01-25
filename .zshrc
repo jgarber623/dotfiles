@@ -82,7 +82,7 @@ ZSH_THEME="jgarber"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colorize gcloud git gitignore gpg-agent marked2 nvm rbenv yarn)
+plugins=(bundler colorize gcloud git gitignore gpg-agent marked2 nvm rbenv yarn)
 
 source $ZSH/oh-my-zsh.sh
 
