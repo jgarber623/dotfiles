@@ -46,8 +46,8 @@
       "language-perl"
       "welcome"
       "whitespace"
-      "link"
       "language-gfm"
+      "link"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
@@ -81,7 +81,10 @@
     presetConsistentWithoutConfig: false
     presetRecommendedWithoutConfig: false
   "linter-ui-default":
-    decorateOnTreeView: "None"
+    alwaysTakeMinimumSpace: true
+    panelHeight: 200
+    showProviderName: true
+    tooltipFollows: "Keyboard"
   "markdown-preview":
     useGitHubStyle: true
   "nord-atom-ui":
