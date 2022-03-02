@@ -77,9 +77,6 @@
     viewChangesForCurrentFileDiffPaneSplitDirection: "right"
   linter:
     lintOnChange: false
-  "linter-markdown":
-    presetConsistentWithoutConfig: false
-    presetRecommendedWithoutConfig: false
   "linter-ui-default":
     alwaysTakeMinimumSpace: true
     panelHeight: 200
