@@ -4,6 +4,9 @@
 # Add Homebrew to $PATH.
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# Source environment secrets early
+[[ -s $HOME/.env ]] && source $HOME/.env
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -99,6 +102,9 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR="nano"
 fi
+
+# Configure SSH
+export SSH_AUTH_SOCK="$HOME/.ssh/agent"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
