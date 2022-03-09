@@ -32,6 +32,9 @@
       "source.yaml": [
         "gemrc"
       ]
+      "text.git-commit": [
+        "TAG_EDITMSG"
+      ]
       "text.html.ruby": [
         "html.erb"
       ]
