@@ -24,6 +24,7 @@ language-systemd
 linter
 linter-docker
 linter-eslint
+linter-eslint-node
 linter-js-yaml
 linter-jsonlint
 linter-markdown
