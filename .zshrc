@@ -103,9 +103,6 @@ else
   export EDITOR="nano"
 fi
 
-# Configure SSH
-export SSH_AUTH_SOCK="$HOME/.ssh/agent"
-
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
