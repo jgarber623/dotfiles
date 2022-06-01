@@ -87,6 +87,10 @@ ZSH_THEME="jgarber"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(bundler colorize gcloud git gitignore gpg-agent marked2 nvm rbenv yarn)
 
+# Do not create or add to $PATH ~/.yarn global scripts directory.
+# See https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/yarn
+zstyle ":omz:plugins:yarn" global-path false
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
