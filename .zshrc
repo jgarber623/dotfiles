@@ -87,6 +87,11 @@ ZSH_THEME="jgarber"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(bundler colorize gcloud git gpg-agent marked2 nvm rbenv)
 
+# Enable option-stacking in Docker completions
+# See: https://github.com/docker/cli/commit/b10fb43048
+zstyle ":completion:*:*:docker:*" option-stacking yes
+zstyle ":completion:*:*:docker-*:*" option-stacking yes
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
