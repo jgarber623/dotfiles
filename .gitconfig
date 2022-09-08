@@ -37,6 +37,8 @@
 	autoCorrect = prompt
 [init]
 	defaultBranch = main
+[safe]
+	directory = ~/.oh-my-zsh
 [tag]
 	gpgsign = true
 [url "git@github.com:"]
