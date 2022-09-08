@@ -1,6 +1,9 @@
 "*":
   core:
     customFileTypes:
+      "source.gitignore": [
+        ".git-blame-ignore-revs"
+      ]
       "source.ini": [
         ".npmrc"
       ]
