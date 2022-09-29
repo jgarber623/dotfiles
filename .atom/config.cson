@@ -1,6 +1,16 @@
 "*":
   core:
     customFileTypes:
+      "source.dotenv": [
+        ".env.development"
+        ".env.development.local"
+        ".env.local"
+        ".env.production"
+        ".env.production.local"
+        ".env.template"
+        ".env.test"
+        ".env.test.local"
+      ]
       "source.gitignore": [
         ".git-blame-ignore-revs"
       ]
