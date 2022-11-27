@@ -73,3 +73,11 @@
 .syntax--md.syntax--uri {
   font-style: italic;
 }
+
+// file-icons v2.1.47 doesn't seem to obey its own configuration. Neither
+// setting a custom file type nor `.gitattributes` Linguist config seem to work.
+// But... CSS does!
+[data-name="Procfile.dev"]::before {
+  content: "\e67b";
+  font-family: Devicons;
+}
