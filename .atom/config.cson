@@ -48,6 +48,9 @@
       "text.git-commit": [
         "TAG_EDITMSG"
       ]
+      "text.html.basic": [
+        "webc"
+      ]
       "text.html.ruby": [
         "html.erb"
       ]
