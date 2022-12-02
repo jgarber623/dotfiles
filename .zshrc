@@ -75,7 +75,7 @@ ZSH_THEME="jgarber"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -86,6 +86,11 @@ ZSH_THEME="jgarber"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(bundler colorize gcloud git gpg-agent marked2 nvm rbenv)
+
+# Allow square brackets in command invocation. Most useful for calling Rake
+# tasks with arguments.
+# See: https://thoughtbot.com/blog/how-to-use-arguments-in-a-rake-task
+unsetopt nomatch
 
 # Enable option-stacking in Docker completions
 # See: https://github.com/docker/cli/commit/b10fb43048
