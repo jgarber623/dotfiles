@@ -37,6 +37,8 @@
 	autoCorrect = prompt
 [init]
 	defaultBranch = main
+[pager]
+	branch = false
 [tag]
 	gpgsign = true
 [url "git@github.com:"]
