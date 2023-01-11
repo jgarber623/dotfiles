@@ -74,10 +74,16 @@
   font-style: italic;
 }
 
+[data-name="_headers"]::before,
+[data-name="_redirects"]::before {
+  content: "\eabf";
+  font-family: "file-icons";
+}
+
 // file-icons v2.1.47 doesn't seem to obey its own configuration. Neither
 // setting a custom file type nor `.gitattributes` Linguist config seem to work.
 // But... CSS does!
-[data-name="Procfile.dev"]::before {
+[data-name^="Procfile."]::before {
   content: "\e67b";
-  font-family: Devicons;
+  font-family: "Devicons";
 }
