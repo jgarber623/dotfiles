@@ -14,10 +14,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # /usr/local/opt/nvm. On ARM64 devices, Homebrew installs to /opt/homebrew.
 export NVM_HOMEBREW="$(brew --prefix nvm)"
 
-# Automatically load a Node.js version when an .nvmrc file exists in
-# current directory. See https://github.com/ohmyzsh/ohmyzsh/pull/9542
-export NVM_AUTOLOAD="1"
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -92,10 +88,15 @@ plugins=(bundler colorize gcloud git gpg-agent marked2 nvm rbenv)
 # See: https://thoughtbot.com/blog/how-to-use-arguments-in-a-rake-task
 unsetopt nomatch
 
-# Enable option-stacking in Docker completions
+# Configure Docker
 # See: https://github.com/docker/cli/commit/b10fb43048
 zstyle ":completion:*:*:docker:*" option-stacking yes
 zstyle ":completion:*:*:docker-*:*" option-stacking yes
+
+# Configure nvm
+# See: https://github.com/ohmyzsh/ohmyzsh/pull/11335
+zstyle ':omz:plugins:nvm' autoload yes
+zstyle ':omz:plugins:nvm' silent-autoload yes
 
 source $ZSH/oh-my-zsh.sh
 
