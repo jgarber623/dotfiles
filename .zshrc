@@ -8,7 +8,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 [[ -s $HOME/.env ]] && source $HOME/.env
 
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
 
 # The oh-my-zsh nvm plugin expects Homebrew nvm to be installed to
 # /usr/local/opt/nvm. On ARM64 devices, Homebrew installs to /opt/homebrew.
