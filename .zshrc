@@ -12,7 +12,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # The oh-my-zsh nvm plugin expects Homebrew nvm to be installed to
 # /usr/local/opt/nvm. On ARM64 devices, Homebrew installs to /opt/homebrew.
-export NVM_HOMEBREW="$(brew --prefix)/opt/nvm"
+export NVM_HOMEBREW="$(brew --prefix nvm)"
 
 # Automatically load a Node.js version when an .nvmrc file exists in
 # current directory. See https://github.com/ohmyzsh/ohmyzsh/pull/9542
