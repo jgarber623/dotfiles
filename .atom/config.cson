@@ -21,6 +21,8 @@
         "sequelizerc"
       ]
       "source.json": [
+        "json.liquid"
+        "webfinger"
         "webmanifest.liquid"
       ]
       "source.nginx": [
@@ -80,7 +82,6 @@
     ]
     titleBar: "custom-inset"
   editor:
-    fontFamily: "Monaco"
     lineHeight: 1.6
     scrollPastEnd: true
     showInvisibles: true
