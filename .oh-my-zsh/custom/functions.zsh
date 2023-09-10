@@ -1,3 +1,9 @@
+function docker-clobber() {
+  docker system prune -f
+  docker volume prune -f
+  docker system prune -f
+}
+
 function git-production-branch-deploy() {
   git checkout production
   git merge main
