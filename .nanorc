@@ -1,0 +1,10 @@
+set autoindent
+set boldtext
+set emptyline
+set linenumbers
+set numbercolor brightwhite
+set softwrap
+set tabsize 4
+set titlecolor black,white
+
+include "/opt/homebrew/share/nano/*.nanorc"
