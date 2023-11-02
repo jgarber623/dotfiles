@@ -1,6 +1,4 @@
----
 :sources:
-  - https://rubygems.org
-  - https://rails-assets.org
+  - "https://rubygems.org"
 :verbose: true
-gem: --no-document
+gem: "--no-document"
