@@ -1,0 +1,51 @@
+#!/usr/bin/env zsh
+#
+# .zsh_plugins.txt - Antidote plugins file
+#
+
+#
+# Local Plugins
+#
+
+$ZDOTDIR/.aliases
+
+#
+# Plugins
+#
+
+peterhurford/up.zsh
+
+#
+# oh-my-zsh - https://github.com/ohmyzsh/ohmyzsh
+#
+
+ohmyzsh/ohmyzsh path:lib/clipboard.zsh
+ohmyzsh/ohmyzsh path:lib/completion.zsh
+ohmyzsh/ohmyzsh path:lib/key-bindings.zsh
+ohmyzsh/ohmyzsh path:plugins/copyfile
+ohmyzsh/ohmyzsh path:plugins/copypath
+ohmyzsh/ohmyzsh path:plugins/extract
+ohmyzsh/ohmyzsh path:plugins/gcloud kind:defer
+ohmyzsh/ohmyzsh path:plugins/gpg-agent kind:defer
+ohmyzsh/ohmyzsh path:plugins/nvm kind:defer
+
+#
+# zsh-utils - https://github.com/belak/zsh-utils
+#
+
+belak/zsh-utils path:history
+
+#
+# Completions
+#
+
+Homebrew/brew path:completions/zsh kind:fpath
+zsh-users/zsh-completions path:src kind:fpath
+belak/zsh-utils path:completion
+
+#
+# Deferred plugins
+#
+
+zsh-users/zsh-autosuggestions kind:defer
+zsh-users/zsh-history-substring-search kind:defer

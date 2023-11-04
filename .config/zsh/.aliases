@@ -1,0 +1,25 @@
+#!/usr/bin/env zsh
+#
+# .aliases - Useful aliases
+#
+
+#
+# Dotfiles - https://github.com/jgarber623/dotfiles
+#
+
+alias dotcd="cd ${DOTDIR}"
+
+#
+# Homebrew - https://brew.sh
+#
+
+alias brews="brew list"
+
+#
+# Shell built-in commands
+#
+
+alias l="ls -hlAFG"
+alias ll="ls -hlFG"
+alias mkdir="mkdir -p"
+alias type="type -a"
