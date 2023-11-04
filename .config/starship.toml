@@ -1,0 +1,79 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$docker_context\
+$crystal\
+$elixir\
+$erlang\
+$nodejs\
+$ruby\
+$rust\
+$swift\
+$cmd_duration\
+$fill\
+$time\
+$line_break\
+$container\
+$character"""
+
+[character]
+error_symbol = '[●](bold red)'
+success_symbol = '[●](bold green)'
+
+[cmd_duration]
+format = '\([$duration]($style)\)'
+style = 'normal'
+
+[directory]
+style = 'white'
+truncation_symbol = '…/'
+
+[fill]
+symbol = '·'
+
+[git_branch]
+always_show_remote = true
+format = '[<$branch(:$remote_name/$remote_branch)>]($style) '
+style = 'green'
+
+[git_commit]
+format = '[<($hash$tag)>]($style) '
+style = 'green'
+tag_disabled = false
+
+[git_metrics]
+added_style = 'green'
+deleted_style = 'red'
+disabled = false
+
+[hostname]
+format = '@ [$hostname](blue) '
+ssh_only = false
+
+[nodejs]
+format = '[<$version>]($style) '
+style = 'purple'
+
+[ruby]
+format = '[<$version>]($style) '
+style = 'red'
+
+[time]
+format = ' [\[ $time \]]($style)'
+disabled = false
+style = 'normal'
+
+[username]
+format = '[$user]($style) '
+show_always = true
+style_user = 'bold yellow'
