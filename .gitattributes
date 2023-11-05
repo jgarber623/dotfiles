@@ -1,9 +1,28 @@
 *.sh      diff=bash
+*.zsh     diff=bash
+
 *.css     diff=css
-*.gemspec diff=ruby
+*.sass    diff=css
+*.scss    diff=css
+
+*.gif     diff=exif
+*.jpeg    diff=exif
+*.jpg     diff=exif
+*.png     diff=exif
+
+*.ex      diff=elixir
+*.exs     diff=elixir
+
 *.html    diff=html
+
 *.md      diff=markdown
+
+*.epub    diff=pandoc
+
 *.py      diff=python
+
+*_spec.rb diff=rspec
+
+*.gemspec diff=ruby
 *.rake    diff=ruby
 *.rb      diff=ruby
-*.zsh     diff=bash

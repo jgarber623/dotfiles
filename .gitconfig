@@ -1,55 +1,119 @@
+[alias]
+  branches = branch --all --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:iso)) %(color:blue bold)%(authoremail)' --sort=-committerdate
+  changelog = log --format=changelog
+  co = checkout
+  graph = log --graph --format='format:%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%ae>%Creset'
+  last-commit = log -1 HEAD --stat
+  l = log
+  ll = log --oneline
+  ls = log --stat
+  mv-branch = branch --move
+  rm-branch = branch --delete --force
+  s = status
+  search = !git rev-list --all | xargs git grep
+  undo = reset HEAD~1
+  unstage = reset HEAD --
+[blame]
+  coloring = highlightRecent
+  markIgnoredLines = true
+  markUnblamableLines = true
+  showEmail = true
 [branch]
-	autoSetupRebase = always
-[color]
-	ui = auto
+  autoSetupRebase = always
+[checkout]
+  defaultRemote = origin
+[color "blame"]
+  highlightRecent = blue,12 month ago,white,1 month ago,yellow
 [color "branch"]
-	current = yellow reverse
-	local = yellow
-	remote = green
+  current = white bold
+  local = white
+  remote = green
 [color "diff"]
-	frag = magenta bold
-	meta = yellow bold
-	new = green bold
-	old = red bold
+  frag = white bold
+  func = white bold
+  meta = white
+  new = green bold
+  old = red bold
+[color "grep"]
+  filename = white
+  lineNumber = green bold
 [color "status"]
-	added = yellow
-	changed = green
-	untracked = cyan
+  added = yellow
+  changed = green
+  untracked = cyan
 [commit]
-	gpgsign = true
-	verbose = true
+  gpgSign = true
+  verbose = true
 [core]
-	attributesFile = ~/.gitattributes
-	editor = atom --wait
-	excludesFile = ~/.gitignore
+  attributesFile = ~/.gitattributes
+  autocrlf = input
+  excludesFile = ~/.gitignore
+  ignoreCase = true
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [diff]
-	algorithm = histogram
+  algorithm = histogram
+  colorMoved = dimmed-zebra
+  colorMovedWS = allow-indentation-change
+[diff "epub"]
+  binary = true
+  cachetextconv = true
+  textconv = pandoc --standalone --from=epub --to=plain
+[diff "exif"]
+  binary = true
+  cachetextconv = true
+  textconv = exiftool
 [diff "rspec"]
-	xfuncname = "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario)[ \t].*)$"
+  xfuncname = "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario|background)[ \t].*)$"
+[diff "swift"]
+  xfuncname = "^[ \t]*((class|func)[ \t].*)$"
+[difftool]
+  prompt = no
 [fetch]
-	prune = true
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  prune = true
+  pruneTags = true
+# [gpg "ssh"]
+#   allowedSignersFile = ~/.ssh/allowed_signers
+#   defaultKeyCommand =
+[grep]
+  lineNumber = true
+  patternType = extended
 [help]
-	autoCorrect = prompt
+  autoCorrect = prompt
+[include]
+  path = ~/.gitconfig.local
 [init]
-	defaultBranch = main
+  defaultBranch = main
+[log]
+  date = iso
+[merge]
+  log = true
+  verbosity = 2
+[mergetool]
+  prompt = no
 [pager]
-	branch = false
+  branch = false
+  stash = false
+[pretty]
+  changelog = "format:* %Cred%h%Creset %s"
+[protocol "http"]
+  allow = never
+[pull]
+  rebase = true
+[push]
+  autoSetupRemote = true
+  followTags = true
+[stash]
+  showIncludeUntracked = true
+[status]
+  showStash = true
+  showUntrackedFiles = all
 [tag]
-	gpgsign = true
+  forceSignAnnotated = true
+  gpgSign = true
 [url "git@github.com:"]
-	insteadOf = github:
-	pushInsteadOf = https://github.com/
+  pushInsteadOf = https://github.com/
 [url "git@gist.github.com:"]
-	insteadOf = gist:
-	pushInsteadOf = https://gist.github.com/
-[user]
-	name = Jason Garber
-	email = jason@sixtwothree.org
-	signingkey = 58103168713E8E69
+  pushInsteadOf = https://gist.github.com/
+[url "git@gitlab.com:"]
+  pushInsteadOf = https://gitlab.com/
