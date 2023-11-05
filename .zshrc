@@ -5,10 +5,14 @@
 
 setopt extended_glob
 
-fpath=(${HOME}/.config/zsh/functions $fpath)
+zsh_config_path="${HOME}/.config/zsh"
+
+fpath=(${zsh_config_path}/functions $fpath)
 autoload -Uz $fpath[1]/*(.:t)
 
-source ${HOME}/.config/zsh/.zstyles
+source ${zsh_config_path}/.zstyles
+
+unset zsh_config_path
 
 #
 # Antidote - https://getantidote.github.io

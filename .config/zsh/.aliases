@@ -7,7 +7,7 @@
 # Dotfiles - https://github.com/jgarber623/dotfiles
 #
 
-alias dotcd="cd ${DOTDIR}"
+alias dotfiles="cd ${DOTFILES}"
 
 #
 # Homebrew - https://brew.sh

@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
 
 #function marked() {
-  open -a 'Marked 2.app' ${1}
+  open -a 'Marked 2.app' "${1}"
 #}

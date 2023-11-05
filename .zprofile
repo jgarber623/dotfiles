@@ -31,7 +31,7 @@ export BROWSER="${BROWSER:-open}"
 # Dotfiles - https://github.com/jgarber623/dotfiles
 #
 
-export DOTDIR="${HOME}/.dotfiles"
+export DOTFILES="${${(%):-%x}:A:h}"
 
 #
 # Editors/Pagers
@@ -50,13 +50,6 @@ export GIT_AUTHOR_NAME="${USER_NAME}"
 export GIT_AUTHOR_EMAIL="${USER_EMAIL}"
 export GIT_COMMITTER_NAME="${USER_NAME}"
 export GIT_COMMITTER_EMAIL="${USER_EMAIL}"
-
-#
-# ohmyzsh - https://github.com/ohmyzsh/ohmyzsh
-#
-
-export ZSH="${HOME}/.oh-my-zsh"
-export ZSH_COLORIZE_STYLE="friendly"
 
 #
 # Secretive - https://github.com/maxgoedjen/secretive
