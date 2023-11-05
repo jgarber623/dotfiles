@@ -7,7 +7,7 @@
 # Local Plugins
 #
 
-$ZDOTDIR/.aliases
+${HOME}/.config/zsh/.aliases
 
 #
 # Plugins

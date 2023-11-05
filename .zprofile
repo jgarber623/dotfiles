@@ -7,7 +7,7 @@
 # Secrets
 #
 
-[[ -s $HOME/.env ]] && source $HOME/.env
+[[ -s $HOME/.zprofile.local ]] && source $HOME/.zprofile.local
 
 #
 # Homebrew - https://brew.sh
@@ -38,7 +38,7 @@ export DOTDIR="${HOME}/.dotfiles"
 #
 
 export EDITOR="${EDITOR:-nano}"
-export VISUAL="${VISUAL:-atom --wait}"
+export VISUAL="${VISUAL:-atom --new-window --wait}"
 export PAGER="${PAGER:-less}"
 export LESS="-FMR"
 

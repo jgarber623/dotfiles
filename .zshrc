@@ -5,10 +5,10 @@
 
 setopt extended_glob
 
-fpath=($ZDOTDIR/functions $fpath)
+fpath=(${HOME}/.config/zsh/functions $fpath)
 autoload -Uz $fpath[1]/*(.:t)
 
-source ${ZDOTDIR}/.zstyles
+source ${HOME}/.config/zsh/.zstyles
 
 #
 # Antidote - https://getantidote.github.io
