@@ -15,6 +15,12 @@
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+HOMEBREW_BAT="true"
+HOMEBREW_BOOTSNAP="true"
+HOMEBREW_DISPLAY_INSTALL_TIMES="true"
+HOMEBREW_NO_ANALYTICS="true"
+HOMEBREW_NO_INSECURE_REDIRECT="true"
+
 #
 # Remove duplicates in $FPATH and $PATH
 #
