@@ -28,6 +28,7 @@ ohmyzsh/ohmyzsh path:plugins/extract
 ohmyzsh/ohmyzsh path:plugins/gcloud kind:defer
 ohmyzsh/ohmyzsh path:plugins/gpg-agent kind:defer
 ohmyzsh/ohmyzsh path:plugins/nvm kind:defer
+ohmyzsh/ohmyzsh path:plugins/urltools
 
 #
 # zsh-utils - https://github.com/belak/zsh-utils
