@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
 #function marked() {
   open -a 'Marked 2.app' "${1}"
