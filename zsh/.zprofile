@@ -52,9 +52,11 @@ export LESS="-FMR"
 # Secretive - https://github.com/maxgoedjen/secretive
 #
 
-SECRETIVE_SSH_AUTH_SOCK="${HOME}/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh"
+secretive_ssh_auth_sock="${HOME}/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh"
 
-[ -S "${SECRETIVE_SSH_AUTH_SOCK}" ] && export SSH_AUTH_SOCK="${SECRETIVE_SSH_AUTH_SOCK}"
+[[ $OSTYPE == "darwin"* && -S "${secretive_ssh_auth_sock}" ]] && export SSH_AUTH_SOCK="${secretive_ssh_auth_sock}"
+
+unset secretive_ssh_auth_sock
 
 #
 # Terminal
