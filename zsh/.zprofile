@@ -69,3 +69,11 @@ export TERM="xterm-256color"
 #
 
 export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
+
+#
+# Zsh
+#
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8,underline"
+ZSH_AUTOSUGGEST_HISTORY_IGNORE="git commit *"
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
