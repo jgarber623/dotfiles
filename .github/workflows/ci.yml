@@ -6,7 +6,8 @@ on:
     - cron: "2 16 * * 2"
 
 jobs:
-  ci:
+  test:
+    name: Test
     runs-on: macos-13
     steps:
       - name: Remove pre-installed software
@@ -18,7 +19,7 @@ jobs:
         run: |
           brew update
           brew install stow
-      - run: actions/checkout@v4
+      - uses: actions/checkout@v4
       - name: Install dotfiles
         run: make
       - run: printenv
