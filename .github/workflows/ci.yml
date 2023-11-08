@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+  schedule:
+    - cron: "2 16 * * 2"
+
+jobs:
+  ci:
+    runs-on: macos-13
+    steps:
+      - name: Remove pre-installed software
+        run: |
+          brew uninstall --force --ignore-dependencies $(brew list --formulae)
+          brew uninstall --force --zap $(brew list --casks)
+          brew cleanup --prune-prefix
+      - name: Install GNU stow
+        run: |
+          brew update
+          brew install stow
+      - run: actions/checkout@v4
+      - name: Install dotfiles
+        run: make
+      - run: printenv
+        shell: zsh {0}
