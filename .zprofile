@@ -49,15 +49,6 @@ export PAGER="${PAGER:-less}"
 export LESS="-FMR"
 
 #
-# Git - https://git-scm.com/docs/git-config
-#
-
-export GIT_AUTHOR_NAME="${USER_NAME}"
-export GIT_AUTHOR_EMAIL="${USER_EMAIL}"
-export GIT_COMMITTER_NAME="${USER_NAME}"
-export GIT_COMMITTER_EMAIL="${USER_EMAIL}"
-
-#
 # Secretive - https://github.com/maxgoedjen/secretive
 #
 

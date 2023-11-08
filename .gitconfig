@@ -117,3 +117,6 @@
   pushInsteadOf = https://gist.github.com/
 [url "git@gitlab.com:"]
   pushInsteadOf = https://gitlab.com/
+[user]
+  name = Jason Garber
+  email = jason@sixtwothree.org
