@@ -26,5 +26,5 @@ jobs:
         run: make
       - run: |
           zsh
-          ls ~
+          ls -hlAFG ~
           printenv
