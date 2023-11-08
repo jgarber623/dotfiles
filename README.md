@@ -3,8 +3,7 @@
 ## Usage
 
 ```sh
-# Install GNU stow
-# https://www.gnu.org/software/stow/
+# Install GNU stow (https://www.gnu.org/software/stow/)
 brew install stow
 
 # Clone this repository
