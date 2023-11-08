@@ -4,6 +4,12 @@
 #
 
 #
+# Remove duplicates in $FPATH and $PATH
+#
+
+typeset -gU fpath path
+
+#
 # Secrets
 #
 
@@ -20,12 +26,6 @@ HOMEBREW_BOOTSNAP="true"
 HOMEBREW_DISPLAY_INSTALL_TIMES="true"
 HOMEBREW_NO_ANALYTICS="true"
 HOMEBREW_NO_INSECURE_REDIRECT="true"
-
-#
-# Remove duplicates in $FPATH and $PATH
-#
-
-typeset -gU fpath path
 
 #
 # Browser
@@ -61,3 +61,9 @@ SECRETIVE_SSH_AUTH_SOCK="${HOME}/Library/Containers/com.maxgoedjen.Secretive.Sec
 #
 
 export TERM="xterm-256color"
+
+#
+# User
+#
+
+export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
