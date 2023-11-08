@@ -1,18 +1,20 @@
 # jgarber623's dotfiles
 
-Check out [this repo's branches](https://github.com/jgarber623/dotfiles/branches) for device-specific configurations.
+## Usage
 
-## Acknowledgments
+```sh
+# Install GNU stow
+# https://www.gnu.org/software/stow/
+brew install stow
 
-Significant portions of this work are based on the following projects:
+# Clone this repository
+git clone https://github.com/jgarber623/dotfiles ~/.dotfiles
 
-- [Chavez's mac-ansible](https://github.com/mtchavez/mac-ansible)
-- [Jeff Geerling's dotfiles](https://github.com/geerlingguy/dotfiles)
-- [Mathias Bynens' dotfiles](https://github.com/mathiasbynens/dotfiles)
-- [Ryan Bates' dotfiles](https://github.com/ryanb/dotfiles)
-- [Robby Russell's oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+cd ~/.dotfiles
 
-The rest is picked up from various sources online, co-workers, friends, and others. Thanks, everyone!
+# Install symlinks for all packages using GNU stow
+make install
+```
 
 ## License
 
