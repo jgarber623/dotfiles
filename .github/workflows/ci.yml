@@ -23,9 +23,7 @@ jobs:
           sudo mkdir -p /opt/homebrew
           sudo chown -R $(whoami) /opt/homebrew
           git clone --depth=1 https://github.com/Homebrew/brew /opt/homebrew
-          ls -la /opt/homebrew
-          ls -la /opt/homebrew/bin
-          eval $("/opt/homebrew/bin/brew shellenv")
+          eval "$(/opt/homebrew/bin/brew shellenv)"
           brew update --force --quiet
           chmod -R go-w "$(brew --prefix)/share/zsh"
       - uses: actions/checkout@v4
