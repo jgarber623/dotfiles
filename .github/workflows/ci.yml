@@ -16,22 +16,9 @@ jobs:
           brew uninstall --force --zap $(brew list --casks)
           brew untap --force $(brew tap)
           brew cleanup --prune-prefix
-      - name: Uninstall Homebrew
-        run: NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
-      - name: Install Homebrew to /opt/homebrew
-        run: |
-          sudo mkdir -p /opt/homebrew
-          sudo chown -R $(whoami) /opt/homebrew
-          git clone --depth=1 https://github.com/Homebrew/brew /opt/homebrew
-          eval "$(/opt/homebrew/bin/brew shellenv)"
-          source $HOME/.bash_profile
-          brew update --force --quiet
-          chmod -R go-w "$(brew --prefix)/share/zsh"
       - uses: actions/checkout@v4
       - name: Install dotfiles dependencies
-        run: |
-          eval "$(/opt/homebrew/bin/brew shellenv)"
-          brew install antidote starship rbenv stow
+        run: brew install antidote starship rbenv stow
       - name: Remove existing config file(s)
         run: rm -f ~/.gitconfig
       - name: Install dotfiles
@@ -39,6 +26,7 @@ jobs:
       - name: Test dotfiles installation
         run: |
           [[ ! -L "${HOME}/.zprofile" ]] && exit 1
+          [[ $(uname -m) == "x86_64" ]] && sed -i -e 's/\/opt\/homebrew/\/usr\/local' $HOME/.zprofile
           source $HOME/.zprofile
           source $HOME/.zshrc
           [[ $(git config --global --get user.name) != "Jason Garber ]] && exit 1
