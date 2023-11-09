@@ -25,9 +25,13 @@ jobs:
         run: make install
       - name: Test dotfiles installation
         run: |
+          echo "🧪 Testing symlink installation..."
           [[ ! -L "${HOME}/.zprofile" ]] && exit 1
+          echo "🍺 Accounting for Homebrew running on an Intel system..."
           [[ $(uname -m) == "x86_64" ]] && sed -i -e 's/\/opt\/homebrew/\/usr\/local/' zsh/.zprofile
+          echo "🧙‍♂️ Sourcing ZSH files..."
           source $HOME/.zprofile
           source $HOME/.zshrc
-          [[ $(git config --global --get user.name) != "Jason Garber" ]] && exit 1
+          echo "👨🏻‍💻 Validating Git configuration..."
+          [[ "$(git config --global --get user.name)" != "Jason Garber" ]] && exit 1
         shell: zsh {0}
