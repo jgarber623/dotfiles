@@ -33,5 +33,6 @@ jobs:
           source $HOME/.zprofile
           source $HOME/.zshrc
           echo "👨🏻‍💻 Validating Git configuration..."
-          [[ "$(git config --global --get user.name)" != "Jason Garber" ]] && exit 1
+          [ "$(git config --global --get user.name)" = "Jason Garber" ]
+          echo '✨ All done!'
         shell: zsh {0}
