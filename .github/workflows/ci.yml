@@ -14,19 +14,23 @@ jobs:
         run: |
           brew uninstall --force --ignore-dependencies $(brew list --formulae)
           brew uninstall --force --zap $(brew list --casks)
+          brew untap --force $(brew tap)
           brew cleanup --prune-prefix
-      - name: Remove existing config file(s)
-        run: rm -f ~/.gitconfig
-      - name: Install GNU stow
+      - name: Install GNU Stow
         run: |
           brew update
           brew install stow
       - uses: actions/checkout@v4
+      - name: Install dotfiles dependencies
+        run: brew install antidote starship rbenv
+      - name: Remove existing config file(s)
+        run: rm -f ~/.gitconfig
       - name: Install dotfiles
-        run: make
-      - run: |
-          source ~/.zprofile
-          source ~/.zshrc
-          ls -hlAFG ~
-          printenv
+        run: make install
+      - name: Test dotfiles installation
+        run: |
+          [[ ! -L "${HOME}/.zprofile" ]] && exit 1
+          source $HOME/.zprofile
+          source $HOME/.zshrc
+          [[ $(git config --global --get user.name) != "Jason Garber ]] && exit 1
         shell: zsh {0}
