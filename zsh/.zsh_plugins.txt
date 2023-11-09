@@ -8,6 +8,8 @@
 #
 
 ${HOME}/.config/zsh/.aliases
+${HOME}/.config/zsh/plugins/rbenv kind:defer
+${HOME}/.config/zsh/plugins/starship
 
 #
 # Plugins
@@ -45,7 +47,7 @@ zsh-users/zsh-completions path:src kind:fpath
 belak/zsh-utils path:completion
 
 #
-# Deferred plugins
+# zsh-users - https://github.com/zsh-users
 #
 
 zsh-users/zsh-autosuggestions kind:defer

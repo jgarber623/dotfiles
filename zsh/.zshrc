@@ -17,15 +17,3 @@ source ${XDG_CONFIG_HOME}/zsh/.zstyles
 source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
 
 antidote load
-
-#
-# Starship - https://starship.rs
-#
-
-eval "$(starship init zsh)"
-
-#
-# rbenv - https://github.com/rbenv/rbenv
-#
-
-eval "$(rbenv init - zsh)"
