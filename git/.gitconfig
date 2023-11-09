@@ -29,14 +29,24 @@
   local = white
   remote = green
 [color "diff"]
+  commit = yellow bold
   frag = white bold
   func = white bold
-  meta = white
+  meta = yellow bold
   new = green bold
   old = red bold
+  whitespace = red reverse
+[color "diff-highlight"]
+  newHighlight = green bold 22
+  newNormal = green bold
+  oldHighlight = red bold 52
+  oldNormal = red bold
 [color "grep"]
   filename = white
   lineNumber = green bold
+[color "interactive"]
+  header = yellow bold
+  prompt = white bold
 [color "status"]
   added = yellow
   changed = green
