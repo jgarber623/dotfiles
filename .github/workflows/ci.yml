@@ -25,6 +25,8 @@ jobs:
       - name: Install dotfiles
         run: make
       - run: |
-          zsh
+          source ~/.zprofile
+          source ~/.zshrc
           ls -hlAFG ~
           printenv
+        shell: zsh {0}
