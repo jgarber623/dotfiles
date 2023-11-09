@@ -37,7 +37,7 @@ export BROWSER="${BROWSER:-open}"
 # Dotfiles - https://github.com/jgarber623/dotfiles
 #
 
-export DOTFILES="${${(%):-%x}:A:h}"
+export DOTFILES="${${(%):-%x}:A:h}/.."
 
 #
 # Editors/Pagers
