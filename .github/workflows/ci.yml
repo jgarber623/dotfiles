@@ -26,7 +26,7 @@ jobs:
       - name: Test dotfiles installation
         run: |
           [[ ! -L "${HOME}/.zprofile" ]] && exit 1
-          [[ $(uname -m) == "x86_64" ]] && sed -i -e 's/\/opt\/homebrew/\/usr\/local/' $HOME/.zprofile
+          [[ $(uname -m) == "x86_64" ]] && sed --in-place --follow-symlinks 's/\/opt\/homebrew/\/usr\/local/' $HOME/.zprofile
           source $HOME/.zprofile
           source $HOME/.zshrc
           [[ $(git config --global --get user.name) != "Jason Garber" ]] && exit 1
