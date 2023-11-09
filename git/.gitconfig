@@ -59,6 +59,7 @@
   autocrlf = input
   excludesFile = ~/.gitignore
   ignoreCase = true
+  pager = diff-so-fancy | less
 [credential]
   helper = osxkeychain
 [diff]
@@ -94,6 +95,8 @@
   path = ~/.gitconfig.local
 [init]
   defaultBranch = main
+[interactive]
+  diffFilter = diff-so-fancy --patch
 [log]
   date = iso
 [merge]
