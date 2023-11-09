@@ -23,7 +23,25 @@ cd ~/.dotfiles
 
 # Install symlinks for all packages using GNU Stow
 make install
+
+# Remove symlinks for all packages using GNU Stow
+make uninstall
 ```
+
+### Local configuration files
+
+Use `*.local` files to store secrets:
+
+```sh
+cat <<EOF >> git/.gitconfig.local
+[user]
+  signingKey = …
+EOF
+
+echo 'export HOMEBREW_GITHUB_API_TOKEN="…"' >> zsh/.zprofile.local
+```
+
+Re-run `make install` after creating these files.
 
 ## License
 
