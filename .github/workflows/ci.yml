@@ -16,13 +16,18 @@ jobs:
           brew uninstall --force --zap $(brew list --casks)
           brew untap --force $(brew tap)
           brew cleanup --prune-prefix
-      - name: Install GNU Stow
+      - name: Uninstall Homebrew
+        run: NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+      - name: Install Homebrew to /opt/homebrew
         run: |
-          brew update
-          brew install stow
+          mkdir -p /opt/homebrew
+          git clone --shallow https://github.com/Homebrew/brew /opt/homebrew
+          eval $("/opt/homebrew/bin/brew shellenv")
+          brew update --force --quiet
+          chmod -R go-w "$(brew --prefix)/share/zsh"
       - uses: actions/checkout@v4
       - name: Install dotfiles dependencies
-        run: brew install antidote starship rbenv
+        run: brew install antidote starship rbenv stow
       - name: Remove existing config file(s)
         run: rm -f ~/.gitconfig
       - name: Install dotfiles
