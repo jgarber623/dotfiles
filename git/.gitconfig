@@ -1,4 +1,5 @@
 [alias]
+  aliases = !git config --get-regexp ^alias. | sed -e 's/^alias\\.\\([^ ]*\\)/→ \\x1B[93m\\1\\x1B[0m =/'
   branches = branch --all --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:iso)) %(color:blue bold)%(authoremail)' --sort=-committerdate
   changelog = log --format=changelog
   co = checkout
