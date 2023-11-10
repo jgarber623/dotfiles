@@ -3,7 +3,7 @@
   branches = branch --all --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:iso)) %(color:blue bold)%(authoremail)' --sort=-committerdate
   changelog = log --format=changelog
   co = checkout
-  graph = log --graph --format='format:%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%ae>%Creset'
+  graph = log --graph --format='format:%C(auto)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%ae>%Creset'
   last-commit = log -1 HEAD --stat
   l = log
   ll = log --oneline
@@ -30,7 +30,7 @@
   local = white
   remote = green
 [color "diff"]
-  commit = yellow bold
+  commit = white bold
   frag = white bold
   func = white bold
   meta = yellow bold
@@ -110,7 +110,7 @@
   branch = false
   stash = false
 [pretty]
-  changelog = "format:* %Cred%h%Creset %s"
+  changelog = "format:* %C(auto)%h%Creset - %s"
 [protocol "http"]
   allow = never
 [pull]
