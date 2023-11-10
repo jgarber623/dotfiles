@@ -31,12 +31,19 @@ make uninstall
 Use `*.local` files to store secrets:
 
 ```sh
+# See `man 1 git-config` for details on this configuration option.
 cat <<EOF >> git/.gitconfig.local
 [user]
-  signingKey = …
+  signingKey = <file_path_or_key_identifier>
 EOF
 
-echo 'export HOMEBREW_GITHUB_API_TOKEN="…"' >> zsh/.zprofile.local
+# See `man 1 ssh-keygen` for details on this file's formatting.
+cat <<EOF >> ssh/.ssh/allowed_signers.local
+<email_address> <keytype> <key>
+EOF
+
+# A GitHub Personal Access Token with repo scope.
+echo 'export HOMEBREW_GITHUB_API_TOKEN="<github_api_token>"' >> zsh/.zprofile.local
 ```
 
 Re-run `make install` after creating these files.
