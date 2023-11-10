@@ -7,8 +7,6 @@
 - macOS (Ventura 13.x or newer)
 - [Homebrew](https://brew.sh) – macOS package manager
 - [Antidote](https://getantidote.github.io) – Zsh plugin manager
-- [Starship](https://starship.rs) – cross-shell prompt
-- [rbenv](https://github.com/rbenv/rbenv) – Ruby version manager
 
 ## Usage
 
