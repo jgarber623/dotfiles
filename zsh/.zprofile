@@ -29,7 +29,6 @@ eval "$(${homebrew_prefix}/bin/brew shellenv)"
 unset homebrew_prefix
 
 export HOMEBREW_BAT="true"
-export HOMEBREW_BOOTSNAP="true"
 export HOMEBREW_DISPLAY_INSTALL_TIMES="true"
 export HOMEBREW_NO_ANALYTICS="true"
 export HOMEBREW_NO_INSECURE_REDIRECT="true"
