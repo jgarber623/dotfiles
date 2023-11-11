@@ -61,8 +61,6 @@
   excludesFile = ~/.gitignore
   ignoreCase = true
   pager = diff-so-fancy | less
-[credential]
-  helper = osxkeychain
 [diff]
   algorithm = histogram
   colorMoved = dimmed-zebra
