@@ -19,13 +19,20 @@ typeset -gU fpath path
 # Homebrew - https://brew.sh
 #
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+homebrew_prefix="/opt/homebrew"
 
-HOMEBREW_BAT="true"
-HOMEBREW_BOOTSNAP="true"
-HOMEBREW_DISPLAY_INSTALL_TIMES="true"
-HOMEBREW_NO_ANALYTICS="true"
-HOMEBREW_NO_INSECURE_REDIRECT="true"
+[[ $(uname) == "Darwin" && $(uname -m) == "x86_64" ]] && homebrew_prefix="/usr/local"
+[[ $(uname) == "Linux" ]] && homebrew_prefix="/home/linuxbrew/.linuxbrew"
+
+eval "$(${homebrew_prefix}/bin/brew shellenv)"
+
+unset homebrew_prefix
+
+export HOMEBREW_BAT="true"
+export HOMEBREW_BOOTSNAP="true"
+export HOMEBREW_DISPLAY_INSTALL_TIMES="true"
+export HOMEBREW_NO_ANALYTICS="true"
+export HOMEBREW_NO_INSECURE_REDIRECT="true"
 
 #
 # Browser
