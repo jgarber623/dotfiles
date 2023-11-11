@@ -32,6 +32,10 @@ success_symbol = '[●](bold green)'
 format = '\([$duration]($style)\)'
 style = 'normal'
 
+[container]
+symbol = '📦'
+style = 'bold blue'
+
 [directory]
 style = 'white'
 truncation_symbol = '…/'
@@ -74,4 +78,5 @@ style = 'normal'
 [username]
 format = '[$user]($style) '
 show_always = true
+style_root = 'bold yellow'
 style_user = 'bold yellow'
