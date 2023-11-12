@@ -43,7 +43,7 @@ cat <<EOF >> ssh/.ssh/allowed_signers.local
 EOF
 
 # A GitHub Personal Access Token with repo scope.
-echo 'export HOMEBREW_GITHUB_API_TOKEN="<github_api_token>"' >> zsh/.zprofile.local
+echo 'export HOMEBREW_GITHUB_API_TOKEN="<github_api_token>"' >> zsh/.zshrc.local
 ```
 
 Re-run `make install` after creating these files.
