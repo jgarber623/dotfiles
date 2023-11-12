@@ -1,26 +1,14 @@
 #!/usr/bin/env zsh
-#
-# .zsh_plugins.txt - Antidote plugins file
-#
 
-#
-# Local Plugins
-#
-
+# Local plugins
 ${HOME}/.config/zsh/.aliases
 ${HOME}/.config/zsh/plugins/rbenv kind:defer
 ${HOME}/.config/zsh/plugins/starship
 
-#
-# Plugins
-#
-
+# `cd` up any number of directories - https://github.com/peterhurford/up.zsh
 peterhurford/up.zsh
 
-#
 # oh-my-zsh - https://github.com/ohmyzsh/ohmyzsh
-#
-
 ohmyzsh/ohmyzsh path:lib/clipboard.zsh
 ohmyzsh/ohmyzsh path:lib/completion.zsh
 ohmyzsh/ohmyzsh path:lib/key-bindings.zsh
@@ -32,23 +20,14 @@ ohmyzsh/ohmyzsh path:plugins/gpg-agent kind:defer
 ohmyzsh/ohmyzsh path:plugins/nvm kind:defer
 ohmyzsh/ohmyzsh path:plugins/urltools
 
-#
 # zsh-utils - https://github.com/belak/zsh-utils
-#
-
 belak/zsh-utils path:history
 
-#
 # Completions
-#
-
 Homebrew/brew path:completions/zsh kind:fpath
 zsh-users/zsh-completions path:src kind:fpath
 belak/zsh-utils path:completion
 
-#
 # zsh-users - https://github.com/zsh-users
-#
-
 zsh-users/zsh-autosuggestions kind:defer
 zsh-users/zsh-history-substring-search kind:defer
