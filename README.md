@@ -42,7 +42,9 @@ cat <<EOF >> ssh/.ssh/allowed_signers.local
 <email_address> <keytype> <key>
 EOF
 
-# A GitHub Personal Access Token with repo scope.
+# See https://docs.brew.sh/Manpage#environment for details on Homebrew's use of
+# this environment variable. The repo scope is necessary in order to install
+# formulae and casks from private repositories.
 echo 'export HOMEBREW_GITHUB_API_TOKEN="<github_api_token>"' >> zsh/.zshrc.local
 ```
 
