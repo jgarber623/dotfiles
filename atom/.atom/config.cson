@@ -21,6 +21,7 @@
         "sequelizerc"
       ]
       "source.json": [
+        "brakeman.ignore"
         "json.liquid"
         "webfinger"
         "webmanifest.liquid"
