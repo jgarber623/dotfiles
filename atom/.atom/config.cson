@@ -18,6 +18,8 @@
         ".npmrc"
       ]
       "source.js": [
+        "cjs"
+        "mjs"
         "sequelizerc"
       ]
       "source.json": [
