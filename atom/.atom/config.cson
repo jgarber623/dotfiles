@@ -18,8 +18,6 @@
         ".npmrc"
       ]
       "source.js": [
-        "cjs"
-        "mjs"
         "sequelizerc"
       ]
       "source.json": [
@@ -71,9 +69,6 @@
       "whitespace"
       "language-gfm"
       "link"
-      "linter-stylelint"
-      "pigments"
-      "linter-markdown"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
@@ -87,7 +82,6 @@
     ]
     titleBar: "custom-inset"
   editor:
-    fontSize: 15
     lineHeight: 1.6
     scrollPastEnd: true
     showInvisibles: true
