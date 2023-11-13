@@ -5,15 +5,13 @@
 ## Prerequisites
 
 - macOS (Ventura 13.x or newer)
+- Xcode Command Line Tools (`xcode-select --install`)
 - [Homebrew](https://brew.sh) – macOS package manager
-- [Antidote](https://getantidote.github.io) – Zsh plugin manager
+- [GNU Stow](https://www.gnu.org/software/stow/) – a symlink farm manager (`brew install stow`)
 
 ## Usage
 
 ```sh
-# Install GNU Stow (https://www.gnu.org/software/stow/)
-brew install stow
-
 # Clone this repository
 git clone https://github.com/jgarber623/dotfiles ~/.dotfiles
 
@@ -26,9 +24,9 @@ make install
 make uninstall
 ```
 
-### Local configuration files
+## Local configuration files
 
-Use `*.local` files to store secrets:
+Use `*.local` files to store secrets or override configuration. The examples below use specific file names referenced by existing configuration, but any `*.local` files will be ignored by version control and symlinked by GNU Stow.
 
 ```sh
 # See `man 1 git-config` for details on this configuration option.
