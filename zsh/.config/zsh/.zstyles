@@ -1,32 +1,17 @@
 #!/usr/bin/env zsh
-#
-# .zstyles - Set zstyle settings for plugins.
-#
 
-#
 # Antidote - https://getantidote.github.io
-#
-
 zstyle ':antidote:bundle' use-friendly-names 'yes'
 
-#
 # Docker - https://github.com/docker/cli/commit/b10fb43048
-#
-
 zstyle ':completion:*:*:docker:*' option-stacking yes
 zstyle ':completion:*:*:docker-*:*' option-stacking yes
 
-#
 # ohmyzsh: nvm - https://github.com/ohmyzsh/tree/master/plugins/nvm
-#
-
 zstyle ':omz:plugins:nvm' autoload yes
 zstyle ':omz:plugins:nvm' silent-autoload yes
 
-#
 # Zsh
-#
-
 zstyle ':completion:*:descriptions' format '%F{yellow}%B→ %d%b%f'
 zstyle ':completion:*:messages' format '%d'
 zstyle ':completion:*:warnings' format '%F{red}%BNo matches for:%b%f %d'
@@ -34,8 +19,5 @@ zstyle ':completion:*' group-name ''
 zstyle ':completion:*' menu select
 zstyle ':completion:*' verbose yes
 
-#
 # zsh-utils: history - https://github.com/belak/zsh-utils
-#
-
 zstyle ':zsh-utils:plugins:history' use-xdg-basedirs 'no'

@@ -1,24 +1,12 @@
 #!/usr/bin/env sh
-#
-# .aliases - Useful aliases
-#
 
-#
 # Dotfiles - https://github.com/jgarber623/dotfiles
-#
-
 alias dotfiles="cd ${DOTFILES}"
 
-#
 # Homebrew - https://brew.sh
-#
-
 alias brews="brew list"
 
-#
 # Shell built-in commands
-#
-
 alias l="ls -hlAFG"
 alias ll="ls -hlFG"
 alias mkdir="mkdir -p"
