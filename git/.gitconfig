@@ -4,6 +4,7 @@
   changelog = log --format=changelog
   co = checkout
   graph = log --graph --format='format:%C(auto)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%ae>%Creset'
+  ignore-rev = !sh -c 'echo $(git rev-parse ${@:-HEAD}) >> $(git config --get blame.ignoreRevsFile)' --
   last-commit = log -1 HEAD --stat
   l = log
   ll = log --oneline
@@ -16,6 +17,7 @@
   unstage = reset HEAD --
 [blame]
   coloring = highlightRecent
+  ignoreRevsFile = .git-blame-ignore-revs
   markIgnoredLines = true
   markUnblamableLines = true
   showEmail = true
