@@ -65,13 +65,13 @@
       "language-c"
       "language-clojure"
       "language-csharp"
+      "language-gfm"
       "language-java"
       "language-objective-c"
       "language-perl"
+      "link"
       "welcome"
       "whitespace"
-      "language-gfm"
-      "link"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
