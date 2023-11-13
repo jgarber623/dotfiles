@@ -70,6 +70,9 @@
       "language-objective-c"
       "language-perl"
       "link"
+      "linter-markdown"
+      "linter-stylelint"
+      "pigments"
       "welcome"
       "whitespace"
     ]
