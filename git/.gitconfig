@@ -91,8 +91,6 @@
   patternType = extended
 [help]
   autoCorrect = prompt
-[include]
-  path = ~/.gitconfig.local
 [init]
   defaultBranch = main
 [interactive]
@@ -133,3 +131,5 @@
 [user]
   name = Jason Garber
   email = jason@sixtwothree.org
+[include]
+  path = ~/.gitconfig.local
