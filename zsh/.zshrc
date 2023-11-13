@@ -21,5 +21,11 @@ done
 [[ -s $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
 
 # Antidote - https://getantidote.github.io
-source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
-antidote load
+antidote_script_path="$(brew --prefix)/opt/antidote/share/antidote/antidote.zsh"
+
+if [[ -s $antidote_script_path ]]; then
+  source $antidote_script_path
+  antidote load
+fi
+
+unset antidote_script_path
