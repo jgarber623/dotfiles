@@ -9,7 +9,6 @@ $git_commit\
 $git_state\
 $git_metrics\
 $git_status\
-$docker_context\
 $crystal\
 $elixir\
 $erlang\
@@ -63,11 +62,11 @@ format = '@ [$hostname](blue) '
 ssh_only = false
 
 [nodejs]
-format = '[<$version>]($style) '
+format = '[<Node.js: $version>]($style) '
 style = 'purple'
 
 [ruby]
-format = '[<$version>]($style) '
+format = '[<Ruby: $version>]($style) '
 style = 'red'
 
 [time]
