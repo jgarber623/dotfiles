@@ -1,0 +1,5 @@
+#!/usr/bin/env zsh
+
+zparseopts -D -E -A opts -from: -to:
+
+ln -fsvF $opts[--to] $opts[--from]
