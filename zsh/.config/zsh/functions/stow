@@ -4,6 +4,4 @@
 #
 # https://github.com/aspiers/stow/issues/65
 
-#function stow() {
-  command stow "${@}" 2> >(grep -v 'BUG in find_stowed_path' 1>&2)
-#}
+command stow "${@}" 2> >(grep -v 'BUG in find_stowed_path' 1>&2)
