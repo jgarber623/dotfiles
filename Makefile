@@ -1,7 +1,9 @@
+SOURCE_DIR := $(dir $(realpath $(lastword $(MAKEFILE_LIST))))
+
 all: install
 
 install:
-	stow --verbose --target=$$HOME --restow */
+	stow --verbose --dir=$(SOURCE_DIR) --target=$(HOME) --restow */
 
 uninstall:
-	stow --verbose --target=$$HOME --delete */
+	stow --verbose --dir=$(SOURCE_DIR) --target=$(HOME) --delete */
