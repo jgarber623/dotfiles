@@ -36,6 +36,7 @@ symbol = '📦'
 style = 'bold blue'
 
 [directory]
+format = '[$path]($style) [$read_only]($read_only_style) '
 style = 'white'
 truncation_symbol = '…/'
 
