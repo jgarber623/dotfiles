@@ -1,9 +1,9 @@
 #!/usr/bin/env zsh
 
 # Local plugins
-${HOME}/.config/zsh/.aliases
-${HOME}/.config/zsh/plugins/rbenv kind:defer
-${HOME}/.config/zsh/plugins/starship
+${XDG_CONFIG_HOME}/zsh/.aliases
+${XDG_CONFIG_HOME}/zsh/plugins/rbenv kind:defer
+${XDG_CONFIG_HOME}/zsh/plugins/starship
 
 # `cd` up any number of directories - https://github.com/peterhurford/up.zsh
 peterhurford/up.zsh
