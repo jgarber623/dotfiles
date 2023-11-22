@@ -58,9 +58,7 @@
   gpgSign = true
   verbose = true
 [core]
-  attributesFile = ~/.gitattributes
   autocrlf = input
-  excludesFile = ~/.gitignore
   ignoreCase = true
   pager = diff-so-fancy | less
 [diff]
@@ -134,4 +132,4 @@
   name = Jason Garber
   email = jason@sixtwothree.org
 [include]
-  path = ~/.gitconfig.local
+  path = ~/.config/git/config.local
