@@ -12,6 +12,10 @@ typeset -gU fpath path
 # Completion styles, etc.
 source ${XDG_CONFIG_HOME}/zsh/.zstyles
 
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8,underline"
+ZSH_AUTOSUGGEST_HISTORY_IGNORE="git commit *"
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+
 # Source configuration files
 for config in "${XDG_CONFIG_HOME}/zsh/configs"/**/*(N-.); do
   source $config
