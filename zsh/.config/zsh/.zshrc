@@ -22,7 +22,7 @@ for config in "${XDG_CONFIG_HOME}/zsh/configs"/**/*(N-.); do
 done
 
 # Source local configuration files
-[[ -s $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
+[[ -s $XDG_CONFIG_HOME/zsh/.zshrc.local ]] && source $XDG_CONFIG_HOME/zsh/.zshrc.local
 
 # Antidote - https://getantidote.github.io
 antidote_script_path="$(brew --prefix)/opt/antidote/share/antidote/antidote.zsh"

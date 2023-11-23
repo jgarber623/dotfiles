@@ -18,6 +18,3 @@ zstyle ':completion:*:warnings' format '%F{red}%BNo matches for:%b%f %d'
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' menu select
 zstyle ':completion:*' verbose yes
-
-# zsh-utils: history - https://github.com/belak/zsh-utils
-zstyle ':zsh-utils:plugins:history' use-xdg-basedirs 'no'
