@@ -1,3 +1,5 @@
+cache = "${XDG_CACHE_HOME}/npm"
+
 init-author-name = "Jason Garber"
 init-author-email = "jason@sixtwothree.org"
 init-author-url = "https://sixtwothree.org"
