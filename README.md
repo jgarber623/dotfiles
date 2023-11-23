@@ -30,7 +30,7 @@ Use `*.local` files to store secrets or override configuration. The examples bel
 
 ```sh
 # See `man 1 git-config` for details on this configuration option.
-cat <<EOF >> git/.gitconfig.local
+cat <<EOF >> git/.config/git/config.local
 [user]
   signingKey = <file_path_or_key_identifier>
 EOF
@@ -43,7 +43,7 @@ EOF
 # See https://docs.brew.sh/Manpage#environment for details on Homebrew's use of
 # this environment variable. The repo scope is necessary in order to install
 # formulae and casks from private repositories.
-echo 'export HOMEBREW_GITHUB_API_TOKEN="<github_api_token>"' >> zsh/.zshrc.local
+echo 'export HOMEBREW_GITHUB_API_TOKEN="<github_api_token>"' >> zsh/.config/zsh/.zshrc.local
 ```
 
 Re-run `make install` after creating these files.
