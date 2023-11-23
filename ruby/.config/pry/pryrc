@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-Pry.config.history_file = "~/.irb_history"
+Pry.config.history_file = File.join(ENV["XDG_DATA_HOME"], "irb", "irb_history")
 Pry.config.pager = false
 
 Pry::Commands.block_command "clear", "Clear the terminal screen" do
