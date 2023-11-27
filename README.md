@@ -35,11 +35,6 @@ cat <<EOF >> git/.config/git/config.local
   signingKey = <file_path_or_key_identifier>
 EOF
 
-# See `man 1 ssh-keygen` for details on this file's formatting.
-cat <<EOF >> ssh/.ssh/allowed_signers.local
-<email_address> <keytype> <key>
-EOF
-
 # See https://docs.brew.sh/Manpage#environment for details on Homebrew's use of
 # this environment variable. The repo scope is necessary in order to install
 # formulae and casks from private repositories.

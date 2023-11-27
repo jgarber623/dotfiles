@@ -85,7 +85,7 @@
 [gpg]
   format = ssh
 [gpg "ssh"]
-  allowedSignersFile = ~/.ssh/allowed_signers.local
+  allowedSignersFile = ~/.ssh/allowed_signers
 [grep]
   lineNumber = true
   patternType = extended
