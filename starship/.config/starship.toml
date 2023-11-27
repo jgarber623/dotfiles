@@ -41,10 +41,10 @@ style = 'white'
 truncation_symbol = '…/'
 
 [elixir]
-format = '[\(Elixir: $version\)]($style) '
+format = '[\(Elixir(: $version)\)]($style) '
 
 [erlang]
-format = '[\(Erlang: $version\)]($style) '
+format = '[\(Erlang(: $version)\)]($style) '
 
 [fill]
 symbol = '·'
@@ -69,12 +69,10 @@ format = '@ [$hostname](blue) '
 ssh_only = false
 
 [nodejs]
-detect_files = ['.nvmrc']
-detect_folders = []
-format = '[\(Node.js: $version\)]($style) '
+format = '[\(Node.js(: $version)\)]($style) '
 
 [ruby]
-format = '[\(Ruby: $version\)]($style) '
+format = '[\(Ruby(: $version)\)]($style) '
 
 [time]
 format = ' [\[ $time \]]($style)'
