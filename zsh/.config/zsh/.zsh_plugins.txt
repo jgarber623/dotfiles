@@ -25,7 +25,7 @@ belak/zsh-utils path:history
 
 # Completions
 Homebrew/brew path:completions/zsh kind:fpath
-zsh-users/zsh-completions path:src kind:fpath
+zsh-users/zsh-completions
 belak/zsh-utils path:completion
 
 # zsh-users - https://github.com/zsh-users
