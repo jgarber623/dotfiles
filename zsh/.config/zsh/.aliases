@@ -7,6 +7,7 @@ alias dotfiles="cd ${DOTFILES}"
 alias brews="brew list"
 
 # Shell built-in commands
+alias history="fc -ir -l 1 | less"
 alias l="ls -hlAFG"
 alias ll="ls -hlFG"
 alias mkdir="mkdir -p"
