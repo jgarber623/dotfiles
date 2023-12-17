@@ -26,7 +26,7 @@ jobs:
       - name: Test dotfiles installation
         run: |
           echo "🧪 Testing symlink installation..."
-          [[ ! -L "${HOME}/.config/zsh/.zprofile" ]] && exit 1
+          [[ ! -L "${HOME}/.config/zsh" ]] && exit 1
           echo "🧙‍♂️ Sourcing ZSH files..."
           source $HOME/.config/zsh/.zprofile
           source $HOME/.config/zsh/.zshrc
