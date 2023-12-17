@@ -26,10 +26,10 @@ jobs:
       - name: Test dotfiles installation
         run: |
           echo "🧪 Testing symlink installation..."
-          [[ ! -L "${XDG_CONFIG_HOME}/zsh/.zprofile" ]] && exit 1
+          [[ ! -L "${HOME}/.config/zsh/.zprofile" ]] && exit 1
           echo "🧙‍♂️ Sourcing ZSH files..."
-          source ${XDG_CONFIG_HOME}/zsh/.zprofile
-          source ${XDG_CONFIG_HOME}/zsh/.zshrc
+          source $HOME/.config/zsh/.zprofile
+          source $HOME/.config/zsh/.zshrc
           echo "👨🏻‍💻 Validating Git configuration..."
           [ "$(git config --global --get user.name)" = "Jason Garber" ]
           echo '✨ All done!'
