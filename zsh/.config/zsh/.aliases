@@ -7,8 +7,11 @@ alias dotfiles="cd ${DOTFILES}"
 alias brews="brew list"
 
 # Shell built-in commands
+alias cp="cp -i"
+alias grep="grep --color"
 alias history="fc -ir -l 1 | less"
 alias l="ls -hlAFG"
 alias ll="ls -hlFG"
 alias mkdir="mkdir -p"
+alias mv="mv -i"
 alias type="type -a"
