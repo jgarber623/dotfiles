@@ -114,6 +114,8 @@
 [push]
   autoSetupRemote = true
   followTags = true
+[rerere]
+  enabled = true
 [stash]
   showIncludeUntracked = true
 [status]
