@@ -50,6 +50,7 @@ format = '[\(Erlang(: $version)\)]($style) '
 
 [fill]
 symbol = '·'
+style = 'bright black'
 
 [git_branch]
 always_show_remote = true
