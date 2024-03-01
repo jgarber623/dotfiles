@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # Dotfiles - https://github.com/jgarber623/dotfiles
-alias dotfiles="cd ${DOTFILES}"
+alias dotfiles="cd '${DOTFILES}'"
 
 # Homebrew - https://brew.sh
 alias brews="brew list"
@@ -15,4 +15,4 @@ alias ll="ls -hlFG"
 alias mkdir="mkdir -p"
 alias mv="mv -i"
 alias type="type -a"
-alias whereami="echo ${PWD}"
+alias whereami="echo '${PWD}'"
