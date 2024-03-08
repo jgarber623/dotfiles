@@ -7,7 +7,7 @@ zstyle ':antidote:bundle' use-friendly-names 'yes'
 zstyle ':completion:*:*:docker:*' option-stacking yes
 zstyle ':completion:*:*:docker-*:*' option-stacking yes
 
-# ohmyzsh: nvm - https://github.com/ohmyzsh/tree/master/plugins/nvm
+# ohmyzsh: nvm - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/nvm
 zstyle ':omz:plugins:nvm' autoload yes
 zstyle ':omz:plugins:nvm' silent-autoload yes
 
