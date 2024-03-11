@@ -124,7 +124,7 @@
 [tag]
   forceSignAnnotated = true
   gpgSign = true
-[url "git@codeberg.org"]
+[url "git@codeberg.org:"]
   pushInsteadOf = https://codeberg.org/
 [url "git@github.com:"]
   pushInsteadOf = https://github.com/
