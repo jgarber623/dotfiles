@@ -3,7 +3,7 @@
   branches = branch --all --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:iso)) %(color:blue bold)%(authoremail)' --sort=-committerdate
   changelog = log --format=changelog
   co = checkout
-  cp-branch-name = git branch --show-current | xargs echo -n | pbcopy
+  cp-branch-name = branch --show-current | xargs echo -n | pbcopy
   graph = log --graph --format='format:%C(auto)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%ae>%Creset'
   ignore-rev = !sh -c 'echo $(git rev-parse ${@:-HEAD}) >> $(git config --get blame.ignoreRevsFile)' --
   last-commit = log -1 HEAD --stat
