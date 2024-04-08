@@ -1,7 +1,0 @@
-#!/usr/bin/env sh
-
-# Forward arguments to GNU stow and strip spurious warning
-#
-# https://github.com/aspiers/stow/issues/65
-
-command stow "${@}" 2> >(grep -v 'BUG in find_stowed_path' 1>&2)
