@@ -1,4 +1,5 @@
 ---
+BUNDLE_AUTO_INSTALL: "true"
 BUNDLE_GEM__CHANGELOG: "true"
 BUNDLE_GEM__CI: "github"
 BUNDLE_GEM__COC: "true"
