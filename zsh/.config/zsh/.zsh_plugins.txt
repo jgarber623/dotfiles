@@ -2,8 +2,12 @@
 
 # Local plugins
 ${XDG_CONFIG_HOME}/zsh/.aliases
-${XDG_CONFIG_HOME}/zsh/plugins/rbenv kind:defer
-${XDG_CONFIG_HOME}/zsh/plugins/starship
+
+# zsh-plugins - https://codeberg.org/jgarber/zsh-plugins
+https://codeberg.org/jgarber/zsh-plugins path:orbstack
+https://codeberg.org/jgarber/zsh-plugins path:rbenv kind:defer
+https://codeberg.org/jgarber/zsh-plugins path:secretive
+https://codeberg.org/jgarber/zsh-plugins path:starship
 
 # `cd` up any number of directories - https://github.com/peterhurford/up.zsh
 peterhurford/up.zsh
