@@ -1,11 +1,7 @@
-# jgarber623's dotfiles
-
-[![Build](https://img.shields.io/github/actions/workflow/status/jgarber623/dotfiles/ci.yml?branch=main&logo=github&style=for-the-badge)](https://github.com/jgarber623/dotfiles/actions/workflows/ci.yml)
+# dotfiles
 
 ## Prerequisites
 
-- macOS (Ventura 13.x or newer)
-- Xcode Command Line Tools (`xcode-select --install`)
 - [Homebrew](https://brew.sh) – macOS package manager
 - [GNU Stow](https://www.gnu.org/software/stow/) – a symlink farm manager (`brew install stow`)
 
@@ -13,7 +9,7 @@
 
 ```sh
 # Clone this repository
-git clone https://github.com/jgarber623/dotfiles ~/.dotfiles
+git clone --depth=1 https://github.com/jgarber623/dotfiles ~/.dotfiles
 
 cd ~/.dotfiles
 
@@ -45,4 +41,4 @@ Re-run `make install` after creating these files.
 
 ## License
 
-This code is freely available under the [MIT License](https://opensource.org/licenses/MIT). Use it, learn from it, fork it, improve it, change it, tailor it to your needs.
+This project is freely available under the [MIT License](https://opensource.org/licenses/MIT).
